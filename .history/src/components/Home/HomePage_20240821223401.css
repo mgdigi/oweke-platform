@@ -4,14 +4,14 @@ body {
     color: #4A4A4A;
     margin: 0;
     padding: 0;
-    background-color: #f7f1f1;  /* Background color from your image */
+    background-color: #ece8f6;  /* Fond proche de l'image pour l'harmonisation */
 }
 
 .home-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #f7f1f1;  /* Ensure the container background matches the body background */
+    background-color: #ece8f6;  /* S'assurer que tout le conteneur est cohérent */
 }
 
 /* Navigation Bar */
@@ -20,15 +20,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f7f1f1;  /* Background color matching the overall page */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: #ece8f6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     margin-bottom: 20px;
 }
 
 .logo img {
-    height: 45px;
-    opacity: 0.9;
+    height: 45px; /* Ajustement pour un aspect plus fin */
+    opacity: 0.9; /* Légère opacité pour se fondre dans le décor */
 }
 
 .nav-links {
@@ -47,15 +47,15 @@ body {
 }
 
 .nav-links a:hover {
-    color: #7f4fc9;
+    color: #7f4fc9; /* Couleur d'accentuation plus douce au survol */
 }
 
-/* Buttons */
+/* Boutons */
 .get-app-button, .cta-button {
-    background-color: #000;
+    background-color: #000; /* Couleur de fond noire */
     color: #fff;
-    padding: 8px 20px;
-    border: 1px solid #000;
+    padding: 8px 20px;  /* Padding réduit pour un bouton plus fin */
+    border: 1px solid #000; /* Légère bordure noire */
     border-radius: 20px;
     font-weight: 600;
     cursor: pointer;
@@ -63,9 +63,9 @@ body {
 }
 
 .get-app-button:hover, .cta-button:hover {
-    background-color: #333;
-    border: 1px solid #7f4fc9;
-    color: #f7f1f1;
+    background-color: #333; /* Couleur de fond plus claire au survol */
+    border: 1px solid #7f4fc9; /* Bordure accentuée au survol */
+    color: #ece8f6; /* Couleur du texte au survol */
 }
 
 /* Hero Section */
@@ -75,72 +75,60 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px;  /* Adjust padding as needed */
-    background-color: #f7f1f1;  /* Match the section background with the image background */
+    padding: 50px 20px;
+    background-color: #ffffff; /* Blanc pur pour une meilleure intégration des images */
+    margin-bottom: 30px;
     border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero-section h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: #4A4A4A;
+.hero-content {
+    max-width: 600px;
     margin-bottom: 20px;
 }
 
-.hero-section p {
-    font-size: 18px;
-    color: #4A4A4A;
-    margin-bottom: 40px;
+.hero-image img {
+    max-width: 75%; /* Taille réduite pour un meilleur ajustement */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère pour se fondre avec le fond */
 }
 
-.hero-section .cta-button {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hero-section .cta-button:hover {
-    background-color: #333;
-}
-
-/* Other Sections */
+/* Content Sections */
 section {
-    padding: 60px 20px;
+    padding: 30px 20px; /* Espacement réduit pour une meilleure mise en page */
     text-align: center;
-    background-color: #f7f1f1;  /* Ensure all sections have the same background */
+    background-color: #ffffff; /* Fond blanc pur */
     border-radius: 12px;
-}
-
-section h2, section h3 {
-    font-size: 28px;
-    color: #4A4A4A;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 16px;
-    color: #4A4A4A;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
+section h2, section h3 {
+    font-size: 26px;
+    color: #4A4A4A;
+    margin-bottom: 18px;
+}
+
+section p {
+    font-size: 15px;
+    color: #6d6d6d;
+    margin-bottom: 25px;
+}
+
 .section-image {
-    max-width: 65%;
+    max-width: 65%; /* Taille réduite pour un meilleur ajustement */
     height: auto;
     margin: 15px 0;
     border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 .footer {
     background-color: #4A4A4A;
     color: #fff;
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
     border-radius: 12px;
 }
@@ -203,16 +191,16 @@ section p {
         flex-direction: column;
     }
 
-    .hero-section h1 {
-        font-size: 32px;
+    .hero-image img {
+        max-width: 85%;
     }
 
-    .hero-section p {
-        font-size: 14px;
+    section h2, section h3 {
+        font-size: 22px;
     }
 
     .cta-button {
-        padding: 10px 20px;
-        font-size: 14px;
+        padding: 8px 15px;
+        font-size: 13px;
     }
 }

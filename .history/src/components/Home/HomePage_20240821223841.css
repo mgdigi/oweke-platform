@@ -4,7 +4,7 @@ body {
     color: #4A4A4A;
     margin: 0;
     padding: 0;
-    background-color: #f7f1f1;  /* Background color from your image */
+    background-color: #f7f1f1;  /* Updated background color from your image */
 }
 
 .home-container {
@@ -50,7 +50,7 @@ body {
     color: #7f4fc9;
 }
 
-/* Buttons */
+/* Boutons */
 .get-app-button, .cta-button {
     background-color: #000;
     color: #fff;
@@ -75,57 +75,45 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px;  /* Adjust padding as needed */
-    background-color: #f7f1f1;  /* Match the section background with the image background */
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
     border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.hero-section h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: #4A4A4A;
+.hero-content {
+    max-width: 600px;
     margin-bottom: 20px;
 }
 
-.hero-section p {
-    font-size: 18px;
-    color: #4A4A4A;
-    margin-bottom: 40px;
-}
-
-.hero-section .cta-button {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hero-section .cta-button:hover {
-    background-color: #333;
-}
-
-/* Other Sections */
-section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f7f1f1;  /* Ensure all sections have the same background */
+.hero-image img {
+    max-width: 75%;
+    height: auto;
     border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Sections */
+section {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
 }
 
 section h2, section h3 {
-    font-size: 28px;
+    font-size: 26px;
     color: #4A4A4A;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 section p {
-    font-size: 16px;
-    color: #4A4A4A;
-    margin-bottom: 30px;
+    font-size: 15px;
+    color: #6d6d6d;
+    margin-bottom: 25px;
 }
 
 .section-image {
@@ -140,7 +128,7 @@ section p {
 .footer {
     background-color: #4A4A4A;
     color: #fff;
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
     border-radius: 12px;
 }
@@ -203,16 +191,16 @@ section p {
         flex-direction: column;
     }
 
-    .hero-section h1 {
-        font-size: 32px;
+    .hero-image img {
+        max-width: 85%;
     }
 
-    .hero-section p {
-        font-size: 14px;
+    section h2, section h3 {
+        font-size: 22px;
     }
 
     .cta-button {
-        padding: 10px 20px;
-        font-size: 14px;
+        padding: 8px 15px;
+        font-size: 13px;
     }
 }
