@@ -1,3 +1,4 @@
+// src/components/Home/HomePage.js
 import React from 'react';
 import './HomePage.css';
 
@@ -5,6 +6,7 @@ import './HomePage.css';
 import OwekeLogo from '../../assets/oweke-logo.png';  // Updated logo
 import HeroImage from '../../assets/hero-image.png';
 import EventImage from '../../assets/event-image.png';
+import StoreImage from '../../assets/store-image.png';
 import UsageImage from '../../assets/usage-image.png';
 
 const HomePage = () => {
@@ -44,6 +46,13 @@ const HomePage = () => {
         <p>Participez à nos prochains événements communautaires et rencontrez d'autres personnes comme vous.</p>
         <img src={EventImage} alt="Community Events" className="section-image" />
         <button className="cta-button">Participer À Un Événement</button>
+      </section>
+
+      {/* Section Store Communautaire */}
+      <section className="community-store">
+        <h3>Visitez le Community Store!</h3>
+        <img src={StoreImage} alt="Community Store" className="section-image" />
+        <button className="cta-button">Visitez Community Shop</button>
       </section>
 
       {/* Section Simple d'Utilisation */}
