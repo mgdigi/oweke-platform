@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 // Importation des images
@@ -16,11 +17,11 @@ const HomePage = () => {
           <img src={OwekeLogo} alt="Oweke Logo" style={{ height: '50px' }} />
         </div>
         <ul className="nav-links">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/events">Community Events</a></li>
-          <li><a href="/counseling">Conseiller Love</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to="/">Accueil</Link></li>
+          <li><Link to="/events">Community Events</Link></li>
+          <li><Link to="/counseling">Conseiller Love</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
         <button className="get-app-button">Get App</button>
       </nav>
@@ -43,7 +44,9 @@ const HomePage = () => {
         <h2>Envolez-vous à la rencontre de <br />Votre âme sœur</h2>
         <p>Participez à nos prochains événements communautaires et rencontrez d'autres personnes comme vous.</p>
         <img src={EventImage} alt="Community Events" className="section-image" />
-        <button className="cta-button">Participer À Un Événement</button>
+        <Link to="/events">
+          <button className="cta-button">Participer À Un Événement</button>
+        </Link>
       </section>
 
       {/* Section Simple d'Utilisation */}
@@ -62,10 +65,10 @@ const HomePage = () => {
         </div>
         <div className="footer-links">
           <ul>
-            <li><a href="/about">A propos</a></li>
-            <li><a href="/events">Community Events</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/about">A propos</Link></li>
+            <li><Link to="/events">Community Events</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
       </footer>
