@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f2f2;  /* Updated background color to match exactly */
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f8f2f2;  /* Ensure the container background matches */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    background-color: transparent;  /* Transparent background to blend with the page */
+    margin-bottom: 10px; /* Adjusted spacing */
+}
+
+.logo img {
+    height: 40px; /* Reduced logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Reduced gap between links */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px; /* Reduced font size */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+    text-decoration: underline; /* Underline on hover */
+}
+
+.get-app-button {
+    background-color: #000; /* Black button color */
+    color: #fff;
+    padding: 8px 25px; /* Adjusted padding */
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    transition: background-color 0.3s ease;
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 80px 20px; /* Reduced padding */
+    background-color: #f8f2f2; /* Matching background color */
+    margin-bottom: 30px; /* Reduced margin */
+}
+
+.hero-content {
+    max-width: 500px; /* Reduced max width */
+}
+
+.hero-content h1 {
+    font-size: 42px; /* Reduced font size */
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 15px; /* Adjusted spacing */
+}
+
+.hero-content h1 span {
+    text-decoration: underline; /* Underline certain text */
+}
+
+.hero-content p {
+    font-size: 18px; /* Reduced font size */
+    color: #4A4A4A;
+    margin-bottom: 20px; /* Adjusted spacing */
+}
+
+.cta-button {
+    background-color: #000; /* Black button color */
+    color: #fff;
+    padding: 12px 35px; /* Adjusted padding */
+    border-radius: 30px;
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.hero-image img {
+    max-width: 400px; /* Reduced image size */
+    height: auto;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px; /* Spacing between social icons */
+    margin-top: 20px; /* Space between button and icons */
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 24px; /* Icon size */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #b969d4; /* Change color on hover */
+}
+
+/* Community Events Section */
+.community-events,
+.simple-use {
+    background-color: #f8f2f2;  /* Matching background color */
+    padding: 50px 20px; /* Reduced padding */
+    margin-bottom: 30px; /* Reduced margin */
+    border-radius: 12px;
+    text-align: center;
+}
+
+.community-events h2,
+.simple-use h2 {
+    font-size: 28px; /* Reduced font size */
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 15px; /* Adjusted spacing */
+}
+
+.community-events p,
+.simple-use p {
+    font-size: 16px; /* Reduced font size */
+    color: #6d6d6d;
+    margin-bottom: 20px; /* Adjusted spacing */
+}
+
+.section-image {
+    max-width: 70%; /* Reduced image size */
+    height: auto;
+    margin: 15px 0; /* Adjusted margin */
+    border-radius: 12px;
+}
+
+.cta-button-small {
+    background-color: #000; /* Black button color */
+    color: #fff;
+    padding: 10px 25px; /* Adjusted padding */
+    border-radius: 25px;
+    font-size: 14px; /* Reduced font size */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-small:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #4A4A4A;
+    color: #fff;
+    padding: 50px 20px; /* Reduced padding */
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+    margin-top: 30px; /* Reduced margin */
+}
+
+.footer h4 {
+    font-size: 22px; /* Reduced font size */
+    margin-bottom: 15px; /* Adjusted spacing */
+}
+
+.footer p {
+    font-size: 14px; /* Reduced font size */
+    margin-bottom: 15px; /* Adjusted spacing */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Reduced gap */
+    margin-top: 15px; /* Adjusted spacing */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px; /* Reduced font size */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #b969d4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px; /* Adjusted padding */
+    }
+
+    .hero-content h1 {
+        font-size: 30px; /* Adjusted font size */
+    }
+
+    .hero-content p {
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .cta-button {
+        font-size: 14px; /* Adjusted font size */
+        padding: 10px 25px; /* Adjusted padding */
+    }
+
+    .footer-links {aa
+        flex-direction: column;
+        gap: 15px; /* Adjusted gap */
+    }
+}

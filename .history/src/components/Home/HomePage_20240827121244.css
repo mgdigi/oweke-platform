@@ -4,14 +4,13 @@ body {
     color: #4A4A4A;
     margin: 0;
     padding: 0;
-    background-color: #f5eded;  /* Background color */
+    background-color: #f8f2f2;  /* Updated background color */
 }
 
 .home-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #f5eded;  /* Ensure the container background matches */
 }
 
 /* Navigation Bar */
@@ -23,12 +22,8 @@ body {
     margin-bottom: 10px;
 }
 
-.logo-text {
-    font-size: 28px;
-    font-weight: bold;
-    color: #4A4A4A;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.logo img {
+    height: 40px;
 }
 
 .nav-links {
@@ -75,7 +70,7 @@ body {
     align-items: center;
     text-align: left;
     padding: 50px 20px;
-    background-color: #f5eded; /* Updated background color */
+    background-color: #f8f2f2;
 }
 
 .hero-content {
@@ -90,29 +85,17 @@ body {
     margin-bottom: 15px;
 }
 
-.hero-content h1 span.underline {
-    position: relative;
-    color: #000; /* Ensure text is black */
+.hero-content h1 span {
+    text-decoration: underline;
+    color: #b969d4; /* Matching underline color */
 }
 
-.hero-content h1 span.underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjusts the vertical position of the underline */
-    width: 100%;
-    height: 2px; /* Adjust thickness of the underline */
-    background-color: #b969d4; /* Color of the underline */
-    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
-}
-
-/* Hero Section - Paragraph */
 .hero-content p {
     font-size: 18px;
     color: #4A4A4A;
     margin-bottom: 20px;
     line-height: 1.6; /* Improved line spacing */
-    border-left: 3px solid #000; /* Changed the line color to black */
+    border-left: 3px solid #b969d4; /* Vertical line to the left of the paragraph */
     padding-left: 10px; /* Spacing between the line and the text */
 }
 
@@ -134,7 +117,7 @@ body {
 }
 
 .hero-image img {
-    max-width: 500px;
+    max-width: 500px; /* Adjusted size of the hero image */
     height: auto;
     margin-left: 50px; /* Adjust spacing to position image */
 }
@@ -157,85 +140,31 @@ body {
     color: #b969d4;
 }
 
-/* Community Events Section */
-.community-events,
-.simple-use {
-    background-color: #f5eded;  /* Matching background color */
-    padding: 50px 20px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.community-events h2,
-.simple-use h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #4A4A4A;
-    margin-bottom: 15px;
-}
-
-.community-events p,
-.simple-use p {
-    font-size: 16px;
-    color: #6d6d6d;
-    margin-bottom: 20px;
-}
-
-.section-image {
-    max-width: 70%;
-    height: auto;
-    margin: 15px 0;
-    border-radius: 12px;
-}
-
-.cta-button-small {
-    background-color: #000; /* Black button color */
-    color: #fff;
-    padding: 10px 25px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button-small:hover {
-    background-color: #333;
-}
-
 /* Footer */
 .footer {
-    background-color: #12002B; /* Dark purple background */
+    background-color: #4A4A4A;
     color: #fff;
-    padding: 60px 20px;
+    padding: 50px 20px;
     text-align: center;
-    border-radius: 40px 40px 0 0; /* Rounded top corners */
-    margin-top: 40px;
-    position: relative;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    border-radius: 0 0 12px 12px;
+    margin-top: 30px;
 }
 
 .footer h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .footer p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 20px;
+    gap: 30px;
+    margin-top: 15px;
 }
 
 .footer-links ul {
@@ -244,34 +173,15 @@ body {
     margin: 0;
 }
 
-.footer-links ul li {
-    margin-bottom: 10px;
-}
-
 .footer-links a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
     color: #b969d4;
-}
-
-/* Footer images */
-.footer-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 200px; /* Adjust size as needed */
-}
-
-.footer-image-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 200px; /* Adjust size as needed */
 }
 
 /* Responsive Design */

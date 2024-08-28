@@ -1,0 +1,70 @@
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #f8f2f2;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 span.underline {
+    position: relative;
+    color: #000; /* Ensure text is black */
+}
+
+.hero-content h1 span.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjusts the vertical position of the underline */
+    width: 100%;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #b969d4; /* Color of the underline */
+    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
+}
+
+/* Hero Section - Paragraph */
+.hero-content p {
+    font-size: 18px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved line spacing */
+    border-left: 3px solid #b969d4; /* Vertical line to the left of the paragraph */
+    padding-left: 10px; /* Spacing between the line and the text */
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Spacing between button and icons */
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: auto;
+    margin-left: 50px; /* Adjust spacing to position image */
+}

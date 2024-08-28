@@ -259,49 +259,84 @@ body {
     color: #b969d4;
 }
 
-/* Footer images */
+/* Footer */
+.footer {
+    background-color: #000; /* Changed to black */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0; /* Rounded top corners */
+    margin-top: 40px;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* Increased gap for better spacing */
+    margin-top: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #b969d4;
+}
+
+/* Footer Image */
 .footer-image {
     position: absolute;
     bottom: 0;
-    right: 0;
-    height: 200px; /* Adjust size as needed */
-}
-
-.footer-image-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 200px; /* Adjust size as needed */
+    right: 20px;
+    height: 150px; /* Adjust size as needed */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column;
+    .footer {
         text-align: center;
         padding: 40px 20px;
     }
 
-    .hero-content h1 {
-        font-size: 30px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
-
-    .cta-button {
-        font-size: 14px;
-        padding: 10px 25px;
-    }
-
-    .hero-image img {
-        margin-left: 0;
-        max-width: 100%;
-    }
-
     .footer-links {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
+    }
+
+    .footer-image {
+        height: 100px; /* Adjust for smaller screens */
     }
 }

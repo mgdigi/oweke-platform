@@ -207,35 +207,29 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #12002B; /* Dark purple background */
+    background-color: #4A4A4A;
     color: #fff;
-    padding: 60px 20px;
+    padding: 50px 20px;
     text-align: center;
-    border-radius: 40px 40px 0 0; /* Rounded top corners */
-    margin-top: 40px;
-    position: relative;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    border-radius: 0 0 12px 12px;
+    margin-top: 30px;
 }
 
 .footer h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .footer p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 20px;
+    gap: 30px;
+    margin-top: 15px;
 }
 
 .footer-links ul {
@@ -244,34 +238,15 @@ body {
     margin: 0;
 }
 
-.footer-links ul li {
-    margin-bottom: 10px;
-}
-
 .footer-links a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
     color: #b969d4;
-}
-
-/* Footer images */
-.footer-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 200px; /* Adjust size as needed */
-}
-
-.footer-image-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 200px; /* Adjust size as needed */
 }
 
 /* Responsive Design */
@@ -303,5 +278,5 @@ body {
     .footer-links {
         flex-direction: column;
         gap: 15px;
-    }
+    }aa
 }

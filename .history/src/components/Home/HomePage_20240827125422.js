@@ -2,12 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 
-// Importing images
-import OwekeLogo from '../../assets/oweke-logo.png';  // Updated logo
-import HeroImage from '../../assets/hero-image.png';
-import EventImage from '../../assets/event-image.png';
-import UsageImage from '../../assets/usage-image.png';
-
 // Importing social media icons
 import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
@@ -54,7 +48,8 @@ const HomePage = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src={HeroImage} alt="Hero Image" />
+          {/* If you had an image, you would include it here */}
+          {/* <img src={HeroImage} alt="Hero Image" /> */}
         </div>
       </header>
 
@@ -62,7 +57,7 @@ const HomePage = () => {
       <section className="community-events">
         <h2>Envolez-vous à la rencontre de <br />Votre âme sœur</h2>
         <p>Participez à nos prochains événements communautaires et rencontrez d'autres personnes comme vous.</p>
-        <img src={EventImage} alt="Community Events" className="section-image" />
+        {/* Replace src with the correct image path if using an image */}
         <Link to="/events">
           <button className="cta-button">Participer À Un Événement</button>
         </Link>
@@ -72,7 +67,7 @@ const HomePage = () => {
       <section className="simple-use">
         <h3>Et c’est Simple à Utiliser!</h3>
         <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
-        <img src={UsageImage} alt="Simple to Use" className="section-image" />
+        {/* Replace src with the correct image path if using an image */}
         <button className="cta-button">Accéder à Oweke Online</button>
       </section>
 
@@ -90,7 +85,7 @@ const HomePage = () => {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
-      </footer>a
+      </footer>
     </div>
   );
 };

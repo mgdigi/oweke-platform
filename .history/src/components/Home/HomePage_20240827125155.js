@@ -90,7 +90,7 @@ const HomePage = () => {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
-      </footer>a
+      </footer>
     </div>
   );
 };

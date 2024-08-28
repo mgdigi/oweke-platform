@@ -2,19 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 
-// Importing images
-import OwekeLogo from '../../assets/oweke-logo.png';  // Updated logo
-import HeroImage from '../../assets/hero-image.png';
-import EventImage from '../../assets/event-image.png';
-import UsageImage from '../../assets/usage-image.png';
-
-// Importing social media icons
+// Importation des icônes de médias sociaux
 import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const HomePage = () => {
   return (
     <div className="home-container">
-      {/* Navigation Bar */}
+      {/* Barre de navigation */}
       <nav className="navbar">
         <div className="logo-text">
           Oweke
@@ -29,7 +23,7 @@ const HomePage = () => {
         <button className="get-app-button">Get App</button>
       </nav>
 
-      {/* Hero Section */}
+      {/* Section Hero */}
       <header className="hero-section">
         <div className="hero-content">
           <h1>Une Rencontre <br /><span className="underline">Depuis Ta Webcam</span></h1>
@@ -58,7 +52,7 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Community Events Section */}
+      {/* Section Événements Communautaires */}
       <section className="community-events">
         <h2>Envolez-vous à la rencontre de <br />Votre âme sœur</h2>
         <p>Participez à nos prochains événements communautaires et rencontrez d'autres personnes comme vous.</p>
@@ -68,7 +62,7 @@ const HomePage = () => {
         </Link>
       </section>
 
-      {/* Simple to Use Section */}
+      {/* Section Simple d'Utilisation */}
       <section className="simple-use">
         <h3>Et c’est Simple à Utiliser!</h3>
         <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
@@ -76,7 +70,7 @@ const HomePage = () => {
         <button className="cta-button">Accéder à Oweke Online</button>
       </section>
 
-      {/* Footer */}
+      {/* Pied de page */}
       <footer className="footer">
         <div className="footer-content">
           <h4>Votre Partenaire de vie.</h4>
@@ -90,9 +84,9 @@ const HomePage = () => {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
-      </footer>a
+      </footer>
     </div>
   );
-};
+};a
 
 export default HomePage;
