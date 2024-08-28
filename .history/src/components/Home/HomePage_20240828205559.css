@@ -78,34 +78,24 @@ body {
     background-color: #f5eded; /* Updated background color */
 }
 
-.hero-content {
-    max-width: 600px;
-    margin-bottom: 20px;
+.hero-content h1,
+.community-events h2,
+.simple-use h2 {
+    color: #2E2E2E; /* Updated darker color */
 }
 
-.hero-content h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #4A4A4A;
-    margin-bottom: 15px;
+.hero-content h1 span.underline::after,
+.community-events h2::after,
+.simple-use h2::after {
+    background-color: #2E2E2E; /* Updated underline color */
+    border-bottom: 3px solid #2E2E2E; /* Adds the border beneath */
 }
 
-.hero-content h1 span.underline {
-    position: relative;
-    color: #000; /* Ensure text is black */
+.hero-content p,
+.community-events p,
+.simple-use p {
+    color: #2E2E2E; /* Updated darker color */
 }
-
-.hero-content h1 span.underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjusts the vertical position of the underline */
-    width: 100%;
-    height: 2px; /* Adjust thickness of the underline */
-    background-color: #b969d4; /* Color of the underline */
-    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
-}
-
 /* Hero Section - Paragraph */
 .hero-content p {
     font-size: 18px;

@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #4A4A4A;
+    color: #2E2E2E; /* Darker font color */
     margin: 0;
     padding: 0;
     background-color: #f9efef;  /* Background color */
@@ -86,13 +86,14 @@ body {
 .hero-content h1 {
     font-size: 36px;
     font-weight: bold;
-    color: #4A4A4A;
+    color: #2E2E2E; /* Darker font color */
     margin-bottom: 15px;
 }
 
 .hero-content h1 span.underline {
     position: relative;
-    color: #000; /* Ensure text is black */
+    color: #2E2E2E; /* Darker font color */
+    font-weight: bold; /* Ensure text is bold */
 }
 
 .hero-content h1 span.underline::after {
@@ -109,7 +110,7 @@ body {
 /* Hero Section - Paragraph */
 .hero-content p {
     font-size: 18px;
-    color: #4A4A4A;
+    color: #2E2E2E; /* Darker font color */
     margin-bottom: 20px;
     line-height: 1.6; /* Improved line spacing */
     border-left: 3px solid #000; /* Changed the line color to black */
@@ -169,30 +170,18 @@ body {
 
 .community-events h2,
 .simple-use h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2E2E2E; /* Darker color */
-    margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
-}
-
-.community-events h2::after,
-.simple-use h2::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjusts the vertical position of the underline */
-    width: 100%;
-    height: 2px; /* Adjust thickness of the underline */
-    background-color: #2E2E2E; /* Color of the underline */
-    border-bottom: 3px solid #2E2E2E; /* Adds the border beneath */
+    font-size: 32px; /* Slightly larger heading */
+    font-weight: bold; /* Ensure the text is bold */
+    color: #2E2E2E; /* Darker font color */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .community-events p,
 .simple-use p {
-    font-size: 16px;
-    color: #6d6d6d;
+    font-size: 18px; /* Slightly larger paragraph text */
+    color: #2E2E2E; /* Darker font color */
+    line-height: 1.6; /* Improved line spacing */
     margin-bottom: 20px;
 }
 
@@ -313,7 +302,7 @@ body {
         margin-left: 0;
         max-width: 100%;
     }
-
+a
     .footer-links {
         flex-direction: column;
         gap: 15px;

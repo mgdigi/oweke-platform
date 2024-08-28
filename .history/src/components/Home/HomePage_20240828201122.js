@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 // Importing images
+import OwekeLogo from '../../assets/oweke-logo.png';  // Updated logo
 import HeroImage from '../../assets/hero-image.png';
 import EventImage from '../../assets/event-image.png';
 import UsageImage from '../../assets/usage-image.png';
@@ -70,7 +71,7 @@ const HomePage = () => {
         </p>
         <img src={EventImage} alt="Community Events" className="section-image" />
         <Link to="/events">
-          <button className="cta-button-small">Participer À Un Événement</button>
+          <button className="cta-button">Participer À Un Événement</button>
         </Link>
       </section>
 
@@ -79,7 +80,7 @@ const HomePage = () => {
         <h3>Et c’est Simple à Utiliser!</h3>
         <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
         <img src={UsageImage} alt="Simple to Use" className="section-image" />
-        <button className="cta-button-small">Accéder à Oweke Online</button>
+        <button className="cta-button">Accéder à Oweke Online</button>
       </section>
 
       {/* Footer */}

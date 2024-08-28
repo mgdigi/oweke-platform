@@ -4,9 +4,6 @@ import './HomePage.css';
 
 // Importing images
 import HeroImage from '../../assets/hero-image.png';
-import EventImage from '../../assets/event-image.png';
-import UsageImage from '../../assets/usage-image.png';
-import FooterImage from '../../assets/footer-image.png'; // Importing footer image
 
 // Importing social media icons
 import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
@@ -16,9 +13,7 @@ const HomePage = () => {
     <div className="home-container">
       {/* Navigation Bar */}
       <nav className="navbar">
-        <div className="logo-text">
-          Oweke
-        </div>
+        <div className="logo-text">OWEKE</div>
         <ul className="nav-links">
           <li><Link to="/">Accueil</Link></li>
           <li><Link to="/events">Community Events</Link></li>
@@ -54,32 +49,24 @@ const HomePage = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src={HeroImage} alt="Hero" />
+          <img src={HeroImage} alt="Rencontre image" />
         </div>
       </header>
 
       {/* Community Events Section */}
       <section className="community-events">
-        <h2>Envolez-vous à la rencontre de <br />Votre âme sœur</h2>
-        <p>
-          L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve.
-          Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de bonheur.
-          C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques.
-          N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux.
-          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke.
+        <h2 className="section-title">Envolez-vous à la rencontre de <span className="underline">Votre âme sœur</span></h2>
+        <p className="section-text">
+            L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve.
+            <br />Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de bonheur.
+            <br />C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques.
+            <br />N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux.
+            <br />Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec <span className="bold-text-emphasized">Oweke</span>.
         </p>
-        <img src={EventImage} alt="Community Events" className="section-image" />
+        <img src={HeroImage} alt="Community Events" className="section-image" />
         <Link to="/events">
           <button className="cta-button-small">Participer À Un Événement</button>
         </Link>
-      </section>
-
-      {/* Simple to Use Section */}
-      <section className="simple-use">
-        <h3>Et c’est Simple à Utiliser!</h3>
-        <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
-        <img src={UsageImage} alt="Simple to Use" className="section-image" />
-        <button className="cta-button-small">Accéder à Oweke Online</button>
       </section>
 
       {/* Footer */}
@@ -105,7 +92,6 @@ const HomePage = () => {
           </div>
           <p>Copyright © 2023 Oweke</p>
         </div>
-        <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
       </footer>
     </div>
   );

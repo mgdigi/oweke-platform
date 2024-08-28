@@ -11,7 +11,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #f9efef;  /* Ensure the container background matches */
+    background-color: #f5eded;  /* Ensure the container background matches */
 }
 
 /* Navigation Bar */
@@ -171,22 +171,8 @@ body {
 .simple-use h2 {
     font-size: 28px;
     font-weight: bold;
-    color: #2E2E2E; /* Darker color */
+    color: #4A4A4A;
     margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
-}
-
-.community-events h2::after,
-.simple-use h2::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjusts the vertical position of the underline */
-    width: 100%;
-    height: 2px; /* Adjust thickness of the underline */
-    background-color: #2E2E2E; /* Color of the underline */
-    border-bottom: 3px solid #2E2E2E; /* Adds the border beneath */
 }
 
 .community-events p,
