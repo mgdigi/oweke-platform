@@ -304,6 +304,9 @@ body {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer h4 {
@@ -319,8 +322,9 @@ body {
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 60px; /* Increase gap for spacing between columns */
+    gap: 60px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-links ul {
@@ -335,13 +339,13 @@ body {
 
 .footer-links a {
     text-decoration: none;
-    color: #fff; /* Ensure text is white */
+    color: #fff;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #b969d4; /* Hover color */
+    color: #b969d4;
 }
 
 /* Footer images */
@@ -350,4 +354,16 @@ body {
     bottom: 0;
     right: 0;
     height: 200px; /* Adjust size as needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

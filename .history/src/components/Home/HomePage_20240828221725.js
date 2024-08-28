@@ -93,40 +93,35 @@ const HomePage = () => {
         <button className="cta-button">Accéder à Oweke Online</button>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h4>Community</h4>
+      <footer class="footer">
+    <div class="footer-content">
+        <h4>Community</h4>
+        <div class="footer-links">
             <ul>
-              <li><Link to="/about">À propos</Link></li>
-              <li><Link to="/live-dating">Live Dating</Link></li>
-              <li><Link to="/events">Community Events</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Live Dating</a></li>
+                <li><a href="#">Community Events</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Collaborateurs</h4>
             <ul>
-              <li><Link to="/signin">Se connecter</Link></li>
-              <li><Link to="/partners">Espace Partenaires</Link></li>
-              <li><Link to="/signup">S’inscrire</Link></li>
+                <h4>Collaborateurs</h4>
+                <li><a href="#">Se connecter</a></li>
+                <li><a href="#">Espace Partenaires</a></li>
+                <li><a href="#">S’inscrire</a></li>
             </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Politique de confidentialité & CGV</h4>
             <ul>
-              <li><Link to="/privacy">Politique de confidentialité</Link></li>
-              <li><Link to="/terms">CGV</Link></li>
+                <h4>Politique de confidentialité & CGV</h4>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">CGV</a></li>
             </ul>
-          </div>
         </div>
-        <p>Copyright © 2023 oweke</p>
-        <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
-      </footer>
+        <p>Copyright © 2023 Vizmeet</p>
+    </div>
+    <img src="path_to_footer_image.png" alt="Footer Decoration" class="footer-image">
+</footer>
     </div>
   );
 };
-
+a
 export default HomePage;

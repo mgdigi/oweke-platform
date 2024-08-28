@@ -122,7 +122,7 @@ const HomePage = () => {
             </ul>
           </div>
         </div>
-        <p>Copyright © 2023 oweke</p>
+        <p>Copyright © 2023 owoke</p>
         <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
       </footer>
     </div>

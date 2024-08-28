@@ -304,22 +304,25 @@ body {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: left; /* Align text to the left */
 }
 
 .footer h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .footer p {
     font-size: 16px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer-links {
     display: flex;
-    justify-content: center;
-    gap: 60px; /* Increase gap for spacing between columns */
+    justify-content: space-between; /* Evenly distributes the links */
+    gap: 40px;
     margin-top: 20px;
 }
 
@@ -327,6 +330,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: left; /* Aligns list items to the left */
 }
 
 .footer-links ul li {
@@ -335,13 +339,13 @@ body {
 
 .footer-links a {
     text-decoration: none;
-    color: #fff; /* Ensure text is white */
-    font-size: 16px;
+    color: #fff;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #b969d4; /* Hover color */
+    color: #b969d4;
 }
 
 /* Footer images */
