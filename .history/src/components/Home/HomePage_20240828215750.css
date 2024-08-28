@@ -134,7 +134,7 @@ body {
 }
 
 .hero-image img {
-    max-width: 400px;
+    max-width: 40px;
     height: auto;
     margin-left: 50px; /* Adjust spacing to position image */
 }

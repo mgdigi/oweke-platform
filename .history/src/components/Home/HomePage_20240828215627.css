@@ -134,9 +134,9 @@ body {
 }
 
 .hero-image img {
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
-    margin-left: 50px; /* Adjust spacing to position image */
+    margin-left: 50px; /* Adjust spacing to position image */a
 }
 
 /* Social Icons */
@@ -344,7 +344,6 @@ body {
     color: #b969d4;
 }
 
-/* Footer images */
 .footer-image {
     position: absolute;
     bottom: 0;

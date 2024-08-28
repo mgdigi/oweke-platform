@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 // Importing images
-import OwekeLogo from '../../assets/oweke-logo.png';  // Updated logo
 import HeroImage from '../../assets/hero-image.png';
 import EventImage from '../../assets/event-image.png';
 import UsageImage from '../../assets/usage-image.png';
@@ -59,30 +58,20 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Envolée Section */}
-      <section className="envolee-section">
-        <h2>Envolez-vous à la rencontre de <br /><span className="underline">Votre âme sœur</span></h2>
+      {/* Community Events Section */}
+      <section className="community-events">
+        <h2>Envolez-vous à la rencontre de <br />Votre âme sœur</h2>
         <p>
           L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve.
           Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de bonheur.
           C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques.
           N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux.
-          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Vizmeet.
+          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke.
         </p>
-        <button className="cta-button">Participer À Un Événement</button>
-      </section>
-
-      {/* Community Events Section */}
-      <section className="community-events">
-        <div className="content">
-          <h2>Faites partie de notre prochain <br /><span className="underline">Community Events.</span></h2>
-          <p>
-            Participez à nos prochains événements communautaires et rencontrez d’autres personnes comme vous. 
-            <br /><strong>Partagez, discutez et trouvez peut-être votre partenaire de vie !</strong>
-          </p>
-          <button className="cta-button">Découvrez nos Community Events</button>
-        </div>
         <img src={EventImage} alt="Community Events" className="section-image" />
+        <Link to="/events">
+          <button className="cta-button-small">Participer À Un Événement</button>
+        </Link>
       </section>
 
       {/* Simple to Use Section */}
@@ -90,7 +79,7 @@ const HomePage = () => {
         <h3>Et c’est Simple à Utiliser!</h3>
         <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
         <img src={UsageImage} alt="Simple to Use" className="section-image" />
-        <button className="cta-button">Accéder à Oweke Online</button>
+        <button className="cta-button-small">Accéder à Oweke Online</button>
       </section>
 
       {/* Footer */}

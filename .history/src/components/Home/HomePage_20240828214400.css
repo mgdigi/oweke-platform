@@ -134,7 +134,7 @@ body {
 }
 
 .hero-image img {
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     margin-left: 50px; /* Adjust spacing to position image */
 }
@@ -157,138 +157,7 @@ body {
     color: #b969d4;
 }
 
-/* Envolée Section */
-.envolee-section {
-    background-color: #f5eded;  /* Matching background color */
-    padding: 50px 20px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    text-align: center;
-}
 
-.envolee-section h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2E2E2E; /* Darker color */
-    margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
-}
-
-.envolee-section h2 .underline {
-    position: relative;
-    color: #000; /* Ensure text is black */
-}
-
-.envolee-section h2 .underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjusts the vertical position of the underline */
-    width: 100%;
-    height: 2px; /* Adjust thickness of the underline */
-    background-color: #b969d4; /* Color of the underline */
-    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
-}
-
-.envolee-section p {
-    font-size: 16px;
-    color: #6d6d6d;
-    margin-bottom: 20px;
-}
-
-/* Community Events Section */
-.community-events {
-    background-color: #f5eded;  /* Matching background color */
-    padding: 50px 20px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-}
-
-.community-events .content {
-    max-width: 50%;
-}
-
-.community-events h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2E2E2E; /* Darker color */
-    margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
-}
-
-.community-events h2 .underline {
-    position: relative;
-    color: #000; /* Ensure text is black */
-}
-
-.community-events h2 .underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjusts the vertical position of the underline */
-    width: 100%;
-    height: 2px; /* Adjust thickness of the underline */
-    background-color: #b969d4; /* Color of the underline */
-    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
-}
-
-.community-events p {
-    font-size: 16px;
-    color: #6d6d6d;
-    margin-bottom: 20px;
-}
-
-.section-image {
-    max-width: 40%;
-    height: auto;
-    border-radius: 12px;
-}
-
-.cta-button-small {
-    background-color: #000; /* Black button color */
-    color: #fff;
-    padding: 10px 25px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button-small:hover {
-    background-color: #333;
-}
-
-/* Simple to Use Section */
-.simple-use {
-    background-color: #f5eded;  /* Matching background color */
-    padding: 50px 20px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.simple-use h3 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2E2E2E; /* Darker color */
-    margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
-}
-
-.simple-use p {
-    font-size: 16px;
-    color: #6d6d6d;
-    margin-bottom: 20px;
-}
 
 /* Footer */
 .footer {
@@ -382,20 +251,6 @@ body {
 
     .hero-image img {
         margin-left: 0;
-        max-width: 100%;
-    }
-
-    .community-events {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .community-events .content {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .section-image {
         max-width: 100%;
     }
 
