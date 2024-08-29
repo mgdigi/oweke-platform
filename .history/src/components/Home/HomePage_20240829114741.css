@@ -150,12 +150,10 @@ body {
 
 /* Social Icons */
 .social-icons {
-    display: flex; /* Aligns icons horizontally */
+    display: flex; /* This makes the icons align horizontally */
     gap: 20px; /* Space between the icons */
     margin-top: 20px;
-    justify-content: flex-start; /* Aligns the icons to the left */
-    padding-left: 0; /* Removes any padding on the left */
-    margin-left: 0; /* Removes any margin on the left */
+    justify-content: center; /* Centering the icons horizontally */
 }
 
 .social-icons a {
@@ -176,7 +174,6 @@ body {
     background-color: #b969d4; /* Hover color for the circle */
     color: #fff; /* Icon color on hover */
 }
-
 
 /* Envolée Section */
 .envolee-section {

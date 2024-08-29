@@ -148,16 +148,6 @@ body {
     margin-top: 20px;
 }
 
-/* Social Icons */
-.social-icons {
-    display: flex; /* Aligns icons horizontally */
-    gap: 20px; /* Space between the icons */
-    margin-top: 20px;
-    justify-content: flex-start; /* Aligns the icons to the left */
-    padding-left: 0; /* Removes any padding on the left */
-    margin-left: 0; /* Removes any margin on the left */
-}
-
 .social-icons a {
     background-color: #12002B; /* Circle background color */
     color: #fff; /* Icon color */
@@ -176,7 +166,6 @@ body {
     background-color: #b969d4; /* Hover color for the circle */
     color: #fff; /* Icon color on hover */
 }
-
 
 /* Envolée Section */
 .envolee-section {

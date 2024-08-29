@@ -150,6 +150,14 @@ body {
 
 /* Social Icons */
 .social-icons {
+    display: flex; /* This makes the icons align horizontally */
+    gap: 20px; /* Space between the icons */
+    margin-top: 20px;
+    justify-content: center; /* Centering the icons horizontally */
+}
+
+/* Social Icons */
+.social-icons {
     display: flex; /* Aligns icons horizontally */
     gap: 20px; /* Space between the icons */
     margin-top: 20px;
@@ -159,24 +167,22 @@ body {
 }
 
 .social-icons a {
-    background-color: #12002B; /* Circle background color */
-    color: #fff; /* Icon color */
+    color: #000;
     font-size: 24px;
-    width: 50px; /* Width of the circle */
-    height: 50px; /* Height of the circle */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: #12002B; /* Dark purple background */
+    border-radius: 50%;
+    width: 50px; /* Fixed width for the icons */
+    height: 50px; /* Fixed height for the icons */
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%; /* Makes the icons circular */
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
-    background-color: #b969d4; /* Hover color for the circle */
-    color: #fff; /* Icon color on hover */
+    color: #b969d4;
 }
-
 
 /* Envolée Section */
 .envolee-section {
