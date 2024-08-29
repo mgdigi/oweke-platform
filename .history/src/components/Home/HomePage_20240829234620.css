@@ -148,34 +148,7 @@ body {
     margin-top: 20px;
 }
 
-/* Social Icons */
-.social-icons {
-    display: flex; /* Aligns icons horizontally */
-    gap: 15px; /* Space between the icons */
-    margin-top: 20px;
-    justify-content: flex-start; /* Aligns the icons to the left */
-    padding-left: 0; /* Removes any padding on the left */
-    margin-left: 0; /* Removes any margin on the left */
-}
 
-.social-icons a {
-    background-color: #12002B; /* Circle background color */
-    color: #fff; /* Icon color */
-    font-size: 20px; /* Reduce the font size for smaller icons */
-    width: 40px; /* Decrease the width of the circle */
-    height: 40px; /* Decrease the height of the circle */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; /* Makes the icons circular */
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-    background-color: #b969d4; /* Hover color for the circle */
-    color: #fff; /* Icon color on hover */
-}
 
 
 /* Envolée Section */

@@ -151,7 +151,7 @@ body {
 /* Social Icons */
 .social-icons {
     display: flex; /* Aligns icons horizontally */
-    gap: 15px; /* Space between the icons */
+    gap: 20px; /* Space between the icons */
     margin-top: 20px;
     justify-content: flex-start; /* Aligns the icons to the left */
     padding-left: 0; /* Removes any padding on the left */
@@ -161,9 +161,9 @@ body {
 .social-icons a {
     background-color: #12002B; /* Circle background color */
     color: #fff; /* Icon color */
-    font-size: 20px; /* Reduce the font size for smaller icons */
-    width: 40px; /* Decrease the width of the circle */
-    height: 40px; /* Decrease the height of the circle */
+    font-size: 24px;
+    width: 50px; /* Width of the circle */
+    height: 50px; /* Height of the circle */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -503,12 +503,12 @@ body {
     }
 
     .cta-button {
-        padding: 10px 25px;
+        padding: 100px 25px;
         font-size: 14px;
     }
 
     .footer h4 {
-        font-size: 180px;
+        font-size: 18px;
     }
 
     .footer p {
