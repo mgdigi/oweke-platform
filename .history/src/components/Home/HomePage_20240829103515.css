@@ -4,14 +4,14 @@ body {
     color: #4A4A4A;
     margin: 0;
     padding: 0;
-    background-color: #FBF7F6;  /* Background color */
+    background-color: #f9efef;  /* Background color */
 }
 
 .home-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #FBF7F6;  /* Ensure the container background matches */
+    background-color: #f9efef;  /* Ensure the container background matches */
 }
 
 /* Navigation Bar */
@@ -75,7 +75,7 @@ body {
     align-items: center;
     text-align: left;
     padding: 50px 20px;
-    background-color: #FBF7F6; /* Updated background color */
+    background-color: #f5eded; /* Updated background color */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
@@ -103,7 +103,7 @@ body {
     bottom: -5px; /* Adjusts the vertical position of the underline */
     width: 100%;
     height: 2px; /* Adjust thickness of the underline */
-    background-color: #FBF7F6; /* Color of the underline */
+    background-color: #b969d4; /* Color of the underline */
     border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
 }
 
@@ -135,11 +135,10 @@ body {
 }
 
 .hero-image img {
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
     margin-left: 50px; /* Adjust spacing to position image */
-}* Adjust spacing to position image */
-
+}
 
 /* Social Icons */
 .social-icons {
@@ -161,7 +160,7 @@ body {
 
 /* Envolée Section */
 .envolee-section {
-    background-color: #FBF7F6;  /* Matching background color */
+    background-color: #f5eded;  /* Matching background color */
     padding: 50px 20px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -189,7 +188,7 @@ body {
     bottom: -5px; /* Adjusts the vertical position of the underline */
     width: 100%;
     height: 2px; /* Adjust thickness of the underline */
-    background-color: #FBF7F6; /* Color of the underline */
+    background-color: #b969d4; /* Color of the underline */
     border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
 }
 
@@ -201,7 +200,7 @@ body {
 
 /* Community Events Section */
 .community-events {
-    background-color: #FBF7F6;  /* Matching background color */
+    background-color: #f5eded;  /* Matching background color */
     padding: 50px 20px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -237,7 +236,7 @@ body {
     bottom: -5px; /* Adjusts the vertical position of the underline */
     width: 100%;
     height: 2px; /* Adjust thickness of the underline */
-    background-color: #FBF7F6; /* Color of the underline */
+    background-color: #b969d4; /* Color of the underline */
     border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
 }
 
@@ -271,7 +270,7 @@ body {
 
 /* Simple to Use Section */
 .simple-use {
-    background-color: #FBF7F6;  /* Matching background color */
+    background-color: #f5eded;  /* Matching background color */
     padding: 50px 20px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -321,178 +320,4 @@ body {
     bottom: -5px; /* Adjust the position below the text */
     width: 100%;
     height: 2px; /* Adjust the thickness of the underline */
-    background-color: #b969d4; /* Pink color */
-    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
-}
-
-.cta-button {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 35px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px; /* Added space above the button */
-}
-
-.cta-button:hover {
-    background-color: #333;
-}
-
-/* Footer */
-.footer {
-    background-color: #12002B; /* Dark purple background */
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-    border-radius: 40px 40px 0 0; /* Rounded top corners */
-    margin-top: 40px;
-    position: relative;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.footer p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 60px; /* Increase gap for spacing between columns */
-    margin-top: 20px;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links ul li {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: #fff; /* Ensure text is white */
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #b969d4; /* Hover color */
-}
-
-/* Footer images */
-.footer-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 200px; /* Adjust size as needed */
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-    .hero-section, .community-events, .simple-use {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .hero-content, .community-events .content, .simple-use .content {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .hero-image img, .section-image, .simple-use .image {
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-links ul {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .get-app-button {
-        width: 100%;
-        text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 28px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer {
-        padding: 40px 20px;
-    }
-
-    .footer h4 {
-        font-size: 20px;
-    }
-
-    .footer p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 24px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
-
-    .cta-button {
-        padding: 10px 25px;
-        font-size: 14px;
-    }
-
-    .footer h4 {
-        font-size: 18px;
-    }
-
-    .footer p {
-        font-size: 12px;
-    }
-}
+    background-color: #b969d4; /* Pink color

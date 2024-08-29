@@ -4,14 +4,14 @@ body {
     color: #4A4A4A;
     margin: 0;
     padding: 0;
-    background-color: #FBF7F6;  /* Background color */
+    background-color: #f9efef;  /* Background color */
 }
 
 .home-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #FBF7F6;  /* Ensure the container background matches */
+    background-color: #f9efef;  /* Ensure the container background matches */
 }
 
 /* Navigation Bar */
@@ -75,7 +75,7 @@ body {
     align-items: center;
     text-align: left;
     padding: 50px 20px;
-    background-color: #FBF7F6; /* Updated background color */
+    background-color: #f5eded; /* Updated background color */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
@@ -103,7 +103,7 @@ body {
     bottom: -5px; /* Adjusts the vertical position of the underline */
     width: 100%;
     height: 2px; /* Adjust thickness of the underline */
-    background-color: #FBF7F6; /* Color of the underline */
+    background-color: #b969d4; /* Color of the underline */
     border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
 }
 
@@ -135,11 +135,10 @@ body {
 }
 
 .hero-image img {
-    max-width: 400px;
+    max-width: 00%;
     height: auto;
     margin-left: 50px; /* Adjust spacing to position image */
-}* Adjust spacing to position image */
-
+}
 
 /* Social Icons */
 .social-icons {
@@ -161,7 +160,7 @@ body {
 
 /* Envolée Section */
 .envolee-section {
-    background-color: #FBF7F6;  /* Matching background color */
+    background-color: #f5eded;  /* Matching background color */
     padding: 50px 20px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -189,7 +188,7 @@ body {
     bottom: -5px; /* Adjusts the vertical position of the underline */
     width: 100%;
     height: 2px; /* Adjust thickness of the underline */
-    background-color: #FBF7F6; /* Color of the underline */
+    background-color: #b969d4; /* Color of the underline */
     border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
 }
 
@@ -201,7 +200,7 @@ body {
 
 /* Community Events Section */
 .community-events {
-    background-color: #FBF7F6;  /* Matching background color */
+    background-color: #f5eded;  /* Matching background color */
     padding: 50px 20px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -237,7 +236,7 @@ body {
     bottom: -5px; /* Adjusts the vertical position of the underline */
     width: 100%;
     height: 2px; /* Adjust thickness of the underline */
-    background-color: #FBF7F6; /* Color of the underline */
+    background-color: #b969d4; /* Color of the underline */
     border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
 }
 
@@ -271,7 +270,7 @@ body {
 
 /* Simple to Use Section */
 .simple-use {
-    background-color: #FBF7F6;  /* Matching background color */
+    background-color: #f5eded;  /* Matching background color */
     padding: 50px 20px;
     margin-bottom: 30px;
     border-radius: 12px;
