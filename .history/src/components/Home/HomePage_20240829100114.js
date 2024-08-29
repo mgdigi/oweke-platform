@@ -67,7 +67,7 @@ const HomePage = () => {
           Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de bonheur.
           C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques.
           N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux.
-          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke.
+          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Vizmeet.
         </p>
         <button className="cta-button">Participer À Un Événement</button>
       </section>
@@ -87,14 +87,10 @@ const HomePage = () => {
 
       {/* Simple to Use Section */}
       <section className="simple-use">
-        <div className="content">
-          <h3>Et c’est Simple <span class="underline">à Utiliser!</span></h3>
-          <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
-          <button className="cta-button">Accéder à Oweke Online</button>
-        </div>
-        <div className="image">
-          <img src={UsageImage} alt="Simple to Use" className="section-image" />
-        </div>
+        <h3>Et c’est Simple à Utiliser!</h3>
+        <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
+        <img src={UsageImage} alt="Simple to Use" className="section-image" />
+        <button className="cta-button">Accéder à Oweke Online</button>
       </section>
 
       {/* Footer */}

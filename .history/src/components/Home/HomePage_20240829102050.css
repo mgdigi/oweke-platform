@@ -288,14 +288,7 @@ body {
 }
 
 .simple-use .content {
-    max-width: 50%; /* 50% of the width for the text */
-    margin-right: 20px; /* Add space between text and image */
-}
-
-.simple-use .image {
-    max-width: 50%; /* 50% of the width for the image */
-    display: flex;
-    justify-content: center;
+    max-width: 45%; /* Adjusted to 45% for more balanced space */
 }
 
 .simple-use h3 {
@@ -307,43 +300,18 @@ body {
     display: inline-block;
 }
 
-.simple-use p {
-    font-size: 16px;
-    color: #6d6d6d;
-    margin-bottom: 20px;
-}
-.underline {
+.simple-use h3 span.underline {
     position: relative;
-    color: #2E2E2E; /* Text color */
+    color: #000; /* Ensure text is black */
 }
 
-.underline::after {
+.simple-use h3 span.underline::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px; /* Adjust the position below the text */
+    bottom: -5px; /* Adjusts the vertical position of the underline */
     width: 100%;
-    height: 2px; /* Adjust the thickness of the underline */
-    background-color: #b969d4; /* Pink color */
-    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
-}
-
-.cta-button {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 35px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px; /* Added space above the button */
-}
-
-.cta-button:hover {
-    background-color: #333;
-}
+    height: 2px
 /* Footer */
 .footer {
     background-color: #12002B; /* Dark purple background */

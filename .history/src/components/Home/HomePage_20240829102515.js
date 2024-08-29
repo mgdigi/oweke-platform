@@ -88,7 +88,7 @@ const HomePage = () => {
       {/* Simple to Use Section */}
       <section className="simple-use">
         <div className="content">
-          <h3>Et c’est Simple <span class="underline">à Utiliser!</span></h3>
+          <h3>Et c’est Simple à Utiliser!</h3>
           <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
           <button className="cta-button">Accéder à Oweke Online</button>
         </div>
@@ -133,4 +133,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePage;a

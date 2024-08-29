@@ -275,21 +275,22 @@ body {
     text-align: center;
 }
 
-/* Simple to Use Section */
-.simple-use {
-    background-color: #f5eded;  /* Matching background color */
-    padding: 50px 20px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left; /* Align text to the left */
+.simple-use h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2E2E; /* Darker color */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
 }
 
+.simple-use p {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 20px;
+}
 .simple-use .content {
     max-width: 50%; /* 50% of the width for the text */
-    margin-right: 20px; /* Add space between text and image */
 }
 
 .simple-use .image {
@@ -312,38 +313,13 @@ body {
     color: #6d6d6d;
     margin-bottom: 20px;
 }
-.underline {
-    position: relative;
-    color: #2E2E2E; /* Text color */
+
+.section-image {
+    max-width: 100%; /* Ensure the image fills its container */
+    height: auto;
+    border-radius: 12px;
 }
 
-.underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjust the position below the text */
-    width: 100%;
-    height: 2px; /* Adjust the thickness of the underline */
-    background-color: #b969d4; /* Pink color */
-    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
-}
-
-.cta-button {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 35px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px; /* Added space above the button */
-}
-
-.cta-button:hover {
-    background-color: #333;
-}
 /* Footer */
 .footer {
     background-color: #12002B; /* Dark purple background */
