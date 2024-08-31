@@ -37,53 +37,6 @@ const EventsPage = () => {
         </p>
       </section>
 
-      {/* Search Filters */}
-      <section className="search-filters">
-        <h3>Filtrer par :</h3>
-        <div className="filter-group">
-          <label>Région:</label>
-          <select>
-            <option>Voir liste</option>
-            {/* Add more regions here */}
-          </select>
-        </div>
-        <div className="filter-group">
-          <label>Catégorie:</label>
-          <select>
-            <option>Voir liste</option>
-            {/* Add more categories here */}
-          </select>
-        </div>
-        <div className="filter-group">
-          <label>Quand:</label>
-          <select>
-            <option>Le mercredi</option>
-            <option>Le vendredi</option>
-            <option>Le samedi</option>
-            {/* Add more days here */}
-          </select>
-        </div>
-        <div className="filter-group">
-          <label>Horaires:</label>
-          <select>
-            <option>19:00 à 20:00</option>
-            <option>21:00 à 22:00</option>
-            <option>23:00 à 24:00</option>
-            {/* Add more hours here */}
-          </select>
-        </div>
-        <div className="filter-group">
-          <label>Tranches d'âges:</label>
-          <select>
-            <option>Voir liste</option>
-            {/* Add more age ranges here */}
-          </select>
-        </div>
-        <p>Evènement en ligne encadrée par OWEKE</p>
-        <button className="search-button">Réserver Votre Ticket</button>
-        <button className="learn-more-button">En savoir plus</button>
-      </section>
-
       {/* Upcoming Events */}
       <section className="upcoming-events">
         <h3>Évènements à venir :</h3>
@@ -92,25 +45,22 @@ const EventsPage = () => {
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
-            <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
-            <button>Réserver Votre Ticket</button>
-            <button className="learn-more-button">En savoir plus</button>
+            <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Vizmeet</p>
+            <button>Reserver Votre Ticket</button>
           </div>
           <div className="event-card">
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
-            <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
-            <button>Réserver Votre Ticket</button>
-            <button className="learn-more-button">En savoir plus</button>
+            <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Vizmeet</p>
+            <button>Reserver Votre Ticket</button>
           </div>
           <div className="event-card">
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
-            <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
-            <button>Réserver Votre Ticket</button>
-            <button className="learn-more-button">En savoir plus</button>
+            <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Vizmeet</p>
+            <button>Reserver Votre Ticket</button>
           </div>
         </div>
       </section>
@@ -121,7 +71,7 @@ const EventsPage = () => {
           <div className="footer-links">
             <ul>
               <li><a href="/about">À propos</a></li>
-              <li><a href="/counseling">Conseiller Love</a></li>
+              <li><a href="/live-dating">Live Dating</a></li>
               <li><a href="/events">Community Events</a></li>
               <li><a href="/blog">Blog</a></li>
               <li><a href="/contact">Contact</a></li>
@@ -136,7 +86,7 @@ const EventsPage = () => {
               <li><a href="/terms">CGV</a></li>
             </ul>
           </div>
-          <p>Copyright © 2023 Oweke</p>
+          <p>Copyright © 2023 Vizmeet</p>
           <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
         </div>
       </footer>

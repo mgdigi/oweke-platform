@@ -1,0 +1,300 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F6;  /* Background color */
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #FBF7F6;  /* Ensure the container background matches */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+    text-decoration: underline;
+}
+
+.get-app-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #FBF7F6; /* Updated background color */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 span.underline {
+    position: relative;
+    color: #000; /* Ensure text is black */
+}
+
+.hero-content h1 span.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjusts the vertical position of the underline */
+    width: 100%;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #FBF7F6; /* Color of the underline */
+    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
+}
+
+/* Hero Section - Paragraph */
+.hero-content p {
+    font-size: 18px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved line spacing */
+    border-left: 3px solid #000; /* Changed the line color to black */
+    padding-left: 10px; /* Spacing between the line and the text */
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Spacing between button and icons */
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+    margin-left: 50px; /* Adjust spacing to position image */
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 20px; /* Space between the icons */
+    margin-top: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex; /* Aligns icons horizontally */
+    gap: 20px; /* Space between the icons */
+    margin-top: 20px;
+    justify-content: flex-start; /* Aligns the icons to the left */
+    padding-left: 0; /* Removes any padding on the left */
+    margin-left: 0; /* Removes any margin on the left */
+}
+
+.social-icons a {
+    background-color: #12002B; /* Circle background color */
+    color: #fff; /* Icon color */
+    font-size: 24px;
+    width: 50px; /* Width of the circle */
+    height: 50px; /* Height of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Makes the icons circular */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #b969d4; /* Hover color for the circle */
+    color: #fff; /* Icon color on hover */
+}
+
+/* Event Hero Section */
+.event-hero {
+    background-color: #12002B; /* Dark purple background */
+    padding: 50px 0; /* Add some padding to give space */
+    text-align: center; /* Center align the content */
+    border-radius: 10px;
+}
+
+.event-hero img {
+    width: 100%; /* Image should span the full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+.event-title {
+    color: #fff; /* Ensure the text is white */
+    font-size: 36px; /* Adjust the size as needed */
+    margin-top: 20px; /* Space between the icon and the text */
+    text-align: center;
+}
+
+.event-description {
+    color: #fff; /* Ensure the text is white */
+    font-size: 18px; /* Adjust the size as needed */
+    margin-top: 10px;
+    text-align: center;
+    max-width: 800px; /* Limit the width to avoid text stretching too wide */
+    margin: 0 auto; /* Center the text block */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hero-section, .community-events, .simple-use {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content, .community-events .content, .simple-use .content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img, .section-image, .simple-use .image {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links ul {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .get-app-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .footer h4 {
+        font-size: 180px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
