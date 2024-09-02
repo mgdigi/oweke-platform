@@ -1,8 +1,7 @@
 import React from 'react';
 import './EventsPage.css';
-import EventHeroImage from '../../assets/event-hero.png'; // Updated path as necessary
-import EventCardImage from '../../assets/event-card.png'; // Updated image for event card
-import FooterImage from '../../assets/footer-image.png'; // Updated path as necessary
+import EventHeroImage from '../../assets/event-hero.png'; // Update the path as necessary
+import FooterImage from '../../assets/footer-image.png'; // Update the path as necessary
 
 const EventsPage = () => {
   return (
@@ -40,41 +39,44 @@ const EventsPage = () => {
 
       {/* Search Filters */}
       <section className="search-filters">
-        <h3>Rajouter des filtres de recherches :</h3>
-        <div className="filters">
-          <div className="filter-item">
-            <label>Région:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <div className="filter-item">
-            <label>Catégorie:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <div className="filter-item">
-            <label>Rencontres:</label>
-            <p>Entre Hommes et Femmes</p>
-          </div>
-          <div className="filter-item">
-            <label>Quand:</label>
-            <p>Le mercredi, vendredi, samedi</p>
-          </div>
-          <div className="filter-item">
-            <label>Horaires:</label>
-            <p>19:00 à 20:00, 21:00 à 22:00, 23:00 à 24:00</p>
-          </div>
-          <div className="filter-item">
-            <label>Tranches d'âges:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
+        <h3>Filtrer par :</h3>
+        <div className="filter-group">
+          <label>Région:</label>
+          <select>
+            <option>Voir liste</option>
+            {/* Add more regions here */}
+          </select>
+        </div>
+        <div className="filter-group">
+          <label>Catégorie:</label>
+          <select>
+            <option>Voir liste</option>
+            {/* Add more categories here */}
+          </select>
+        </div>
+        <div className="filter-group">
+          <label>Quand:</label>
+          <select>
+            <option>Le mercredi</option>
+            <option>Le vendredi</option>
+            <option>Le samedi</option>
+            {/* Add more days here */}
+          </select>
+        </div>
+        <div className="filter-group">
+          <label>Horaires:</label>
+          <select>
+            <option>19:00 à 20:00</option>
+            <option>21:00 à 22:00</option>
+            <option>23:00 à 24:00</option>
+          </select>
+        </div>
+        <div className="filter-group">
+          <label>Tranches d'âges:</label>
+          <select>
+            <option>Voir liste</option>
+            {/* Add more age groups here */}
+          </select>
         </div>
       </section>
 
@@ -83,40 +85,28 @@ const EventsPage = () => {
         <h3>Évènements à venir :</h3>
         <div className="events-list">
           <div className="event-card">
-            <img src={EventCardImage} alt="Event" />
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
-            <button className="btn">Reserver Votre Ticket</button>
-            <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
+            <button>Reserver Votre Ticket</button>
+            <button className="learn-more-button">En savoir plus</button>
           </div>
           <div className="event-card">
-            <img src={EventCardImage} alt="Event" />
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
-            <button className="btn">Reserver Votre Ticket</button>
-            <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
+            <button>Reserver Votre Ticket</button>
+            <button className="learn-more-button">En savoir plus</button>
           </div>
           <div className="event-card">
-            <img src={EventCardImage} alt="Event" />
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
-            <button className="btn">Reserver Votre Ticket</button>
-            <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
+            <button>Reserver Votre Ticket</button>
+            <button className="learn-more-button">En savoir plus</button>
           </div>
         </div>
       </section>

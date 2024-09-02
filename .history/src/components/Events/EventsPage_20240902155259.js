@@ -1,8 +1,7 @@
 import React from 'react';
 import './EventsPage.css';
-import EventHeroImage from '../../assets/event-hero.png'; // Updated path as necessary
-import EventCardImage from '../../assets/event-card.png'; // Updated image for event card
-import FooterImage from '../../assets/footer-image.png'; // Updated path as necessary
+import EventHeroImage from '../../assets/event-hero.png'; // Update the path as necessary
+import FooterImage from '../../assets/footer-image.png'; // Update the path as necessary
 
 const EventsPage = () => {
   return (
@@ -29,7 +28,7 @@ const EventsPage = () => {
 
       {/* Events Description */}
       <section className="events-description">
-        <h2>Events</h2>
+        <h2>Évènements à venir :</h2>
         <p>
           Les Community Events de Oweke sont des événements en ligne passionnants et instructifs, 
           organisés par des coachs et des experts renommés dans le domaine de la vie amoureuse. 
@@ -38,85 +37,36 @@ const EventsPage = () => {
         </p>
       </section>
 
-      {/* Search Filters */}
-      <section className="search-filters">
-        <h3>Rajouter des filtres de recherches :</h3>
-        <div className="filters">
-          <div className="filter-item">
-            <label>Région:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <div className="filter-item">
-            <label>Catégorie:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <div className="filter-item">
-            <label>Rencontres:</label>
-            <p>Entre Hommes et Femmes</p>
-          </div>
-          <div className="filter-item">
-            <label>Quand:</label>
-            <p>Le mercredi, vendredi, samedi</p>
-          </div>
-          <div className="filter-item">
-            <label>Horaires:</label>
-            <p>19:00 à 20:00, 21:00 à 22:00, 23:00 à 24:00</p>
-          </div>
-          <div className="filter-item">
-            <label>Tranches d'âges:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
-        </div>
-      </section>
-
       {/* Upcoming Events */}
       <section className="upcoming-events">
         <h3>Évènements à venir :</h3>
         <div className="events-list">
           <div className="event-card">
-            <img src={EventCardImage} alt="Event" />
+            <img src={require('../../assets/event-image.png')} alt="Event" className="event-image" />
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
             <button className="btn">Reserver Votre Ticket</button>
             <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
           </div>
           <div className="event-card">
-            <img src={EventCardImage} alt="Event" />
+            <img src={require('../../assets/event-image.png')} alt="Event" className="event-image" />
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
             <button className="btn">Reserver Votre Ticket</button>
             <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
           </div>
           <div className="event-card">
-            <img src={EventCardImage} alt="Event" />
+            <img src={require('../../assets/event-image.png')} alt="Event" className="event-image" />
             <h4>Rencontres : entre hommes et femmes</h4>
             <p>Quand : vendredi 14 avril 2023</p>
             <p>Horraire : de 20:00 à 22:00</p>
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
             <button className="btn">Reserver Votre Ticket</button>
             <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
           </div>
         </div>
       </section>

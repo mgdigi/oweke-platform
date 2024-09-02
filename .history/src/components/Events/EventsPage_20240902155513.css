@@ -1,10 +1,9 @@
-/* General Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #4A4A4A;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f9efef;
 }
 
 .events-page {
@@ -13,7 +12,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -67,95 +65,46 @@ body {
     background-color: #333;
 }
 
-/* Hero Section */
 .hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
-    background-color: #12002B;
-    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5eded;
 }
 
 .hero-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 12px;
 }
 
-/* Events Description */
 .events-description {
-    padding: 30px 0;
+    background-color: #f5eded;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
     text-align: center;
 }
 
 .events-description h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #2E2E2E;
-}
-
-.events-description p {
-    font-size: 18px;
-    color: #6d6d6d;
-    line-height: 1.6;
-}
-
-/* Search Filters */
-.search-filters {
-    padding: 30px 0;
-    background-color: #FBF7F6;
-    border-radius: 12px;
-    margin-bottom: 30px;
-}
-
-.search-filters h3 {
     font-size: 28px;
     font-weight: bold;
     color: #2E2E2E;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
 }
 
-.filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.filter-item {
-    flex: 1;
-    min-width: 200px;
-}
-
-.filter-item label {
-    font-size: 16px;
-    color: #2E2E2E;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.filter-item select,
-.filter-item p {
-    width: 100%;
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    background-color: #fff;
-}
-
-/* Upcoming Events */
 .upcoming-events {
-    padding: 30px 0;
+    padding: 50px 20px;
+    background-color: #FBF7F6;
+    margin-bottom: 30px;
+    border-radius: 12px;
 }
 
 .upcoming-events h3 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-    color: #2E2E2E;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -168,39 +117,35 @@ body {
 }
 
 .event-card {
-    flex: 1;
-    background-color: #E0B0FF;
-    border-radius: 12px;
+    background-color: #b969d4;
+    color: #fff;
     padding: 20px;
+    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    min-width: 280px;
+    flex-basis: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .event-card img {
     width: 100%;
-    height: auto;
-    margin-bottom: 15px;
     border-radius: 12px;
+    margin-bottom: 15px;
 }
 
 .event-card h4 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #2E2E2E;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
 .event-card p {
     font-size: 16px;
-    color: #6d6d6d;
     margin-bottom: 15px;
 }
 
-.event-card .btn {
+.btn {
     background-color: #000;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 25px;
     font-size: 14px;
     font-weight: bold;
@@ -208,27 +153,13 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-right: 10px;
-    margin-bottom: 10px;
+    display: inline-block;
 }
 
-.event-card .btn:hover {
+.btn:hover {
     background-color: #333;
 }
 
-/* Advertisement section */
-.advertisement {
-    background-color: #FFC0CB;
-    border-radius: 8px;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.advertisement p {
-    font-size: 14px;
-    color: #4A4A4A;
-}
-
-/* Footer */
 .footer {
     background-color: #12002B;
     color: #fff;
@@ -242,16 +173,6 @@ body {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.footer h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.footer p {
-    font-size: 16px;
-    margin-bottom: 20px;
 }
 
 .footer-links {
@@ -283,7 +204,6 @@ body {
     color: #b969d4;
 }
 
-/* Footer images */
 .footer-image {
     position: absolute;
     bottom: 0;
@@ -291,14 +211,18 @@ body {
     height: 200px;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-    .hero-section, .events-list {
+    .hero-section, .community-events, .simple-use {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .hero-image img, .section-image, .event-card img {
+    .hero-content, .community-events .content, .simple-use .content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img, .section-image, .simple-use .image {
         max-width: 100%;
         margin-left: 0;
     }
@@ -329,15 +253,15 @@ body {
         text-align: center;
     }
 
-    .hero-section h1 {
+    .hero-content h1 {
         font-size: 28px;
     }
 
-    .events-description p, .filter-item select, .filter-item p {
+    .hero-content p {
         font-size: 16px;
     }
 
-    .cta-button, .event-card .btn {
+    .cta-button {
         width: 100%;
         text-align: center;
     }
@@ -356,21 +280,21 @@ body {
 }
 
 @media (max-width: 480px) {
-    .events-description h2 {
+    .hero-content h1 {
         font-size: 24px;
     }
 
-    .events-description p, .event-card h4 {
+    .hero-content p {
         font-size: 14px;
     }
 
-    .cta-button, .event-card .btn {
+    .cta-button {
         padding: 10px 25px;
         font-size: 14px;
     }
 
     .footer h4 {
-        font-size: 18px;
+        font-size: 180px;
     }
 
     .footer p {

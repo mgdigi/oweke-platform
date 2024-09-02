@@ -38,46 +38,6 @@ const EventsPage = () => {
         </p>
       </section>
 
-      {/* Search Filters */}
-      <section className="search-filters">
-        <h3>Rajouter des filtres de recherches :</h3>
-        <div className="filters">
-          <div className="filter-item">
-            <label>Région:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <div className="filter-item">
-            <label>Catégorie:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <div className="filter-item">
-            <label>Rencontres:</label>
-            <p>Entre Hommes et Femmes</p>
-          </div>
-          <div className="filter-item">
-            <label>Quand:</label>
-            <p>Le mercredi, vendredi, samedi</p>
-          </div>
-          <div className="filter-item">
-            <label>Horaires:</label>
-            <p>19:00 à 20:00, 21:00 à 22:00, 23:00 à 24:00</p>
-          </div>
-          <div className="filter-item">
-            <label>Tranches d'âges:</label>
-            <select>
-              <option>Voir liste</option>
-              {/* Add options here */}
-            </select>
-          </div>
-        </div>
-      </section>
-
       {/* Upcoming Events */}
       <section className="upcoming-events">
         <h3>Évènements à venir :</h3>
@@ -90,9 +50,6 @@ const EventsPage = () => {
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
             <button className="btn">Reserver Votre Ticket</button>
             <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
           </div>
           <div className="event-card">
             <img src={EventCardImage} alt="Event" />
@@ -102,9 +59,6 @@ const EventsPage = () => {
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
             <button className="btn">Reserver Votre Ticket</button>
             <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
           </div>
           <div className="event-card">
             <img src={EventCardImage} alt="Event" />
@@ -114,9 +68,6 @@ const EventsPage = () => {
             <p>Tranches d'âges : 45 à 54 ans Soirée célibataires encadrée par Oweke</p>
             <button className="btn">Reserver Votre Ticket</button>
             <button className="btn">En savoir plus</button>
-            <div className="advertisement">
-              <p>Publicité ici</p>
-            </div>
           </div>
         </div>
       </section>
