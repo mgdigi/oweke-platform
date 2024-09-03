@@ -69,20 +69,7 @@ body {
 }
 
 /* Hero Section */
-.hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    background-color: #12002B;  /* Replace with the exact color code from the image */
-    border-radius: 12px;
-}
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
 
 /* Main Section */
 .main-section {
