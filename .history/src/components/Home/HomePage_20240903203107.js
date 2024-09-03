@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 // Importing images
+import OwekeLogo from '../../assets/oweke-logo.png';  // Updated logo
 import HeroImage from '../../assets/hero-image.png';
 import EventImage from '../../assets/event-image.png';
 import UsageImage from '../../assets/usage-image.png';
@@ -23,7 +24,7 @@ const HomePage = () => {
           <li><Link to="/">Accueil</Link></li>
           <li><Link to="/events">Community Events</Link></li>
           <li><Link to="/counseling">Conseiller Love</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/blog">Blog</Link></li> {/* Corrected the closing tag */}
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/signup">Inscription</Link></li>
           <li><Link to="/partners">Devenir Partenaire</Link></li>

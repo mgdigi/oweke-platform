@@ -23,7 +23,7 @@ const HomePage = () => {
           <li><Link to="/">Accueil</Link></li>
           <li><Link to="/events">Community Events</Link></li>
           <li><Link to="/counseling">Conseiller Love</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/blog">Blog</li></Link>
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/signup">Inscription</Link></li>
           <li><Link to="/partners">Devenir Partenaire</Link></li>
@@ -102,8 +102,7 @@ const HomePage = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <div className="footer-section">
-            <h4>Community</h4>
+          <div className="footer-links">
             <ul>
               <li><Link to="/about">À propos</Link></li>
               <li><Link to="/live-dating">Live Dating</Link></li>
@@ -111,25 +110,19 @@ const HomePage = () => {
               <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Collaborateurs</h4>
             <ul>
               <li><Link to="/signin">Se connecter</Link></li>
               <li><Link to="/partners">Espace Partenaires</Link></li>
               <li><Link to="/signup">S’inscrire</Link></li>
             </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Politique de confidentialité & CGV</h4>
             <ul>
               <li><Link to="/privacy">Politique de confidentialité</Link></li>
               <li><Link to="/terms">CGV</Link></li>
             </ul>
           </div>
+          <p>Copyright © 2023 Oweke</p>
+          <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
         </div>
-        <p>Copyright © 2023 oweke</p>
-        <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
       </footer>
     </div>
   );
