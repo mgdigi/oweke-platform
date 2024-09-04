@@ -1,0 +1,119 @@
+/* General Blog Page Styles */
+.blog-page {
+    font-family: 'Arial', sans-serif;
+    color: #4A4A4A;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Blog Hero Section */
+  .blog-hero-section {
+    background-color: #12002B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+  }
+  
+  .blog-hero-image {
+    max-width: 200px;
+    height: auto;
+    margin-right: 30px;
+  }
+  
+  .blog-hero-text {
+    color: white;
+    text-align: left;
+  }
+  
+  .blog-hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-hero-text p {
+    font-size: 18px;
+  }
+  
+  /* Blog Content Section */
+  .blog-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+    gap: 30px;
+    padding: 50px;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .blog-post h2 {
+    font-size: 20px;
+    color: #4A4A4A;
+  }
+  
+  .blog-post p {
+    font-size: 14px;
+    color: #6d6d6d;
+    margin-bottom: 15px;
+  }
+  
+  .blog-post button.cta-button {
+    background-color: #12002B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-post button.cta-button:hover {
+    background-color: #b969d4;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #12002B;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    text-align: left;
+  }
+  
+  .footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-image {
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+  }
