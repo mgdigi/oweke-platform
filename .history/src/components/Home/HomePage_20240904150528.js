@@ -29,7 +29,7 @@ const HomePage = () => {
           <li><Link to="/partners">Devenir Partenaire</Link></li>
           <li><Link to="/shop">Shop</Link></li>
         </ul>
-        <button className="get-app-button">Telecharger</button>
+        <button className="get-app-button">Telecharger  App</button>
       </nav>
 
       {/* Hero Section */}
