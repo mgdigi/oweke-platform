@@ -9,7 +9,7 @@ import UsageImage from '../../assets/usage-image.png';
 import FooterImage from '../../assets/footer-image.png'; // Importing footer image
 
 // Importing social media icons
-import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const HomePage = () => {
   return (
@@ -61,19 +61,6 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Envolée Section */}
-      <section className="envolee-section">
-        <h2>Envolez-vous à la rencontre de <br /><span className="underline">Votre âme sœur</span></h2>
-        <p>
-          L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve.
-          Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de bonheur.
-          C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques.
-          N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux.
-          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke.
-        </p>
-        <button className="cta-button">Participer À Un Événement</button>
-      </section>
-
       {/* Community Events Section */}
       <section className="community-events">
         <div className="content">
@@ -87,15 +74,24 @@ const HomePage = () => {
         <img src={EventImage} alt="Community Events" className="section-image" />
       </section>
 
-      {/* Simple to Use Section */}
-      <section className="simple-use">
-        <div className="content">
-          <h3>Et c’est Simple <span className="underline">à Utiliser!</span></h3>
-          <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
-          <button className="cta-button">Accéder à Oweke Online</button>
-        </div>
-        <div className="image">
-          <img src={UsageImage} alt="Simple to Use" className="section-image" />
+      {/* Newsletter Section */}
+      <section className="newsletter">
+        <h4>S'inscrire à la Newsletter</h4>
+        <form className="newsletter-form">
+          <input type="email" placeholder="Votre adresse email" />
+          <button type="submit">S'inscrire</button>
+        </form>
+        <div className="social-icons">
+          <h4>Rejoindre notre Communauté</h4>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
         </div>
       </section>
 
@@ -128,37 +124,9 @@ const HomePage = () => {
             </ul>
           </div>
         </div>
-        <p>Copyright © 2023 oweke</p>
+        <p>Copyright © 2023 Oweke</p>
         <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
       </footer>
-
-      {/* Newsletter Section */}
-      <section className="newsletter-section">
-        <div className="newsletter-container">
-          <h3>S'inscrire au Newsletter</h3>
-          <form className="newsletter-form">
-            <input type="email" placeholder="Votre adresse email" />
-            <button type="submit">S'inscrire</button>
-          </form>
-        </div>
-        <div className="newsletter-social">
-          <h3>Rejoindre notre Communauté</h3>
-          <div className="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

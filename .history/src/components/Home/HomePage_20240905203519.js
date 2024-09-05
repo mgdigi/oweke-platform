@@ -9,7 +9,7 @@ import UsageImage from '../../assets/usage-image.png';
 import FooterImage from '../../assets/footer-image.png'; // Importing footer image
 
 // Importing social media icons
-import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const HomePage = () => {
   return (
@@ -153,8 +153,8 @@ const HomePage = () => {
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
+            <a href="mailto:info@oweke.com" target="_blank" rel="noopener noreferrer">
+              <FaEnvelope />
             </a>
           </div>
         </div>
