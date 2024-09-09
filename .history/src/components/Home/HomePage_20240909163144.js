@@ -16,7 +16,7 @@ import { auth, onAuthStateChange } from '../firebase';  // Firebase auth and lis
 import { signOut } from 'firebase/auth';
 
 const HomePage = () => {
-  const [user, setUser] = useState(null);  // State to track logged-in user
+  const [user, setUser] = useState(null);
   const navigate = useNavigate();  // Hook to navigate programmatically
 
   useEffect(() => {
@@ -54,16 +54,15 @@ const HomePage = () => {
           <li><Link to="/counseling">Conseiller Love</Link></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          {!user && (
+          {user ? (
+            <>
+              <li>{user.displayName}</li> {/* Display logged-in user's name */}
+              <li><button onClick={handleLogout} className="logout-btn">Logout</button></li> {/* Logout button */}
+            </>
+          ) : (
             <>
               <li><Link to="/signup">Inscription</Link></li>
               <li><Link to="/login">Login</Link></li>
-            </>
-          )}
-          {user && (
-            <>
-              <li>{user.displayName}</li>  {/* Show user's name */}
-              <li><button onClick={handleLogout} className="logout-btn">Logout</button></li>  {/* Logout button */}
             </>
           )}
         </ul>
@@ -99,43 +98,8 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Envolée Section */}
-      <section className="envolee-section">
-        <h2>Envolez-vous à la rencontre de <br /><span className="underline">Votre âme sœur</span></h2>
-        <p>
-          L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve.
-          Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de bonheur.
-          C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques.
-          N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux.
-          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke.
-        </p>
-        <button className="cta-button">Participer À Un Événement</button>
-      </section>
-
-      {/* Community Events Section */}
-      <section className="community-events">
-        <div className="content">
-          <h2>Faites partie de notre prochain <br /><span className="underline">Community Events.</span></h2>
-          <p>
-            Participez à nos prochains événements communautaires et rencontrez d’autres personnes comme vous. 
-            <br /><strong>Partagez, discutez et trouvez peut-être votre partenaire de vie !</strong>
-          </p>
-          <button className="cta-button">Découvrez nos Community Events</button>
-        </div>
-        <img src={EventImage} alt="Community Events" className="section-image" />
-      </section>
-
-      {/* Simple to Use Section */}
-      <section className="simple-use">
-        <div className="content">
-          <h3>Et c’est Simple <span className="underline">à Utiliser!</span></h3>
-          <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
-          <button className="cta-button">Accéder à Oweke Online</button>
-        </div>
-        <div className="image">
-          <img src={UsageImage} alt="Simple to Use" className="section-image" />
-        </div>
-      </section>
+      {/* Other sections like "Envolée Section", "Community Events Section", etc. */}
+      {/* Add your other sections here... */}
 
       {/* Footer */}
       <footer className="footer">
@@ -166,7 +130,7 @@ const HomePage = () => {
             </ul>
           </div>
         </div>
-        <p>Copyright © 2023 oweke</p>
+        <p>Copyright © 2023 Oweke</p>
         <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
       </footer>
 

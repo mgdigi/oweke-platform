@@ -1,46 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 // Importing images
 import HeroImage from '../../assets/hero-image.png';
 import EventImage from '../../assets/event-image.png';
 import UsageImage from '../../assets/usage-image.png';
-import FooterImage from '../../assets/footer-image.png';  // Importing footer image
+import FooterImage from '../../assets/footer-image.png'; // Importing footer image
 
 // Importing social media icons
 import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
-// Firebase imports
-import { auth, onAuthStateChange } from '../firebase';  // Firebase auth and listener
-import { signOut } from 'firebase/auth';
-
 const HomePage = () => {
-  const [user, setUser] = useState(null);  // State to track logged-in user
-  const navigate = useNavigate();  // Hook to navigate programmatically
-
-  useEffect(() => {
-    // Listen for authentication state changes
-    const unsubscribe = onAuthStateChange((authUser) => {
-      if (authUser) {
-        setUser(authUser);  // User is logged in
-      } else {
-        setUser(null);  // No user is logged in
-      }
-    });
-
-    return () => unsubscribe();
-  }, []);
-
-  const handleLogout = async () => {
-    try {
-      await signOut(auth);
-      navigate('/login');  // Redirect to login after logout
-    } catch (error) {
-      console.error('Logout error:', error);
-    }
-  };
-
   return (
     <div className="home-container">
       {/* Navigation Bar */}
@@ -54,18 +25,9 @@ const HomePage = () => {
           <li><Link to="/counseling">Conseiller Love</Link></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          {!user && (
-            <>
-              <li><Link to="/signup">Inscription</Link></li>
-              <li><Link to="/login">Login</Link></li>
-            </>
-          )}
-          {user && (
-            <>
-              <li>{user.displayName}</li>  {/* Show user's name */}
-              <li><button onClick={handleLogout} className="logout-btn">Logout</button></li>  {/* Logout button */}
-            </>
-          )}
+          <li><Link to="/signup">Inscription</Link></li>
+          <li><Link to="/partners">Devenir Partenaire</Link></li>
+          <li><Link to="/shop">Shop</Link></li>
         </ul>
         <button className="get-app-button">Telecharger</button>
       </nav>
