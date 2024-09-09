@@ -1,11 +1,11 @@
 // src/components/Signup.js
 import React, { useState } from 'react';
 import { signInWithPopup } from 'firebase/auth';
-import { auth, googleProvider, sendEmailVerification } from './firebase';
+import { auth, googleProvider, sendEmailVerification } from './firebase';  // Firebase auth and verification
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
-  const navigate = useNavigate();  // Use navigate to redirect
+  const navigate = useNavigate();
   const [verificationSent, setVerificationSent] = useState(false);
 
   const handleGoogleSignup = async () => {
@@ -17,7 +17,7 @@ const Signup = () => {
       if (result.user) {
         await sendEmailVerification(result.user);
         setVerificationSent(true);
-        navigate('/verify-email');  // Redirect to a verification info page if needed
+        console.log('Verification email sent');
       }
     } catch (error) {
       console.error('Google sign-up error:', error);
@@ -31,7 +31,7 @@ const Signup = () => {
         Sign up with Google
       </button>
 
-      {/* Show verification message */}
+      {/* Show a message if verification email is sent */}
       {verificationSent && (
         <p className="verification-message">A verification email has been sent. Please check your inbox to verify your email address.</p>
       )}

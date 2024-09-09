@@ -1,29 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomePage.css';
-
-// Import Firebase methods
-import { auth, onAuthStateChange } from '../firebase';  // Correct Firebase auth listener import
 import { signOut } from 'firebase/auth';  // Import signOut directly from Firebase
-
-// Importing images and social icons
+// Importing images
 import HeroImage from '../../assets/hero-image.png';
 import EventImage from '../../assets/event-image.png';
 import UsageImage from '../../assets/usage-image.png';
 import FooterImage from '../../assets/footer-image.png';  // Importing footer image
+
+// Importing social media icons
 import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
+// Firebase imports
+import { auth, onAuthStateChange, signOut } from '../firebase';  // Firebase auth and listener
+
 const HomePage = () => {
-  const [user, setUser] = useState(null);
-  const [emailVerified, setEmailVerified] = useState(false);
-  const navigate = useNavigate();
+  const [user, setUser] = useState(null);  // Track logged-in user state
+  const [emailVerified, setEmailVerified] = useState(false);  // Track email verification state
+  const navigate = useNavigate();  // Hook to navigate programmatically
 
   useEffect(() => {
     // Listen for authentication state changes
     const unsubscribe = onAuthStateChange((authUser) => {
       if (authUser) {
         setUser(authUser);
-        setEmailVerified(authUser.emailVerified);  // Track email verification status
+        setEmailVerified(authUser.emailVerified);  // Check email verification status
       } else {
         setUser(null);  // No user logged in
       }
@@ -66,7 +67,7 @@ const HomePage = () => {
             </>
           ) : (
             <>
-              <li>{user.displayName}</li>  {/* Show logged-in user's name */}
+              <li>{user.displayName}</li>  {/* Display logged-in user's name */}
               <li><button onClick={handleLogout} className="logout-btn">Logout</button></li>  {/* Logout button */}
             </>
           )}
@@ -78,7 +79,8 @@ const HomePage = () => {
       <header className="hero-section">
         <div className="hero-content">
           <h1>Une Rencontre <br /><span className="underline">Depuis Ta Webcam</span></h1>
-          <p>Oweke : Votre Destination Pour L'Amour Et La Romance. <br />Connectez-Vous Avec Votre Partenaire Idéal Sur Oweke.</p>
+          <p>Oweke : Votre Destination Pour L'Amour Et La Romance. <br />
+            Connectez-Vous Avec Votre Partenaire Idéal Sur Oweke.</p>
           <button className="cta-button">En Profiter</button>
           
           {/* Social Media Links */}
@@ -169,7 +171,7 @@ const HomePage = () => {
             </ul>
           </div>
         </div>
-        <p>Copyright © 2023 oweke</p>
+        <p>Copyright © 2023 Oweke</p>
         <img src={FooterImage} alt="Footer Decoration" className="footer-image" />
       </footer>
 
@@ -199,7 +201,7 @@ const HomePage = () => {
             </a>
           </div>
         </div>
-      </section>
+        </section>
     </div>
   );
 };
