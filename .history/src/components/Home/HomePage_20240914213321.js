@@ -161,7 +161,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Footer Section */}
+      {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-section">
@@ -204,7 +204,7 @@ const HomePage = () => {
         <div className="newsletter-social">
           <h3>Rejoindre notre Communauté</h3>
           <div className="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
@@ -223,4 +223,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePage;a

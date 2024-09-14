@@ -226,57 +226,72 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #000;  /* Set to black */
+    background-color: #12002B;
+    color: #fff;
     padding: 50px 20px;  /* Reduced padding */
     text-align: center;
-    color: #fff;
+    border-radius: 40px 40px 0 0;
+    margin-top: 40px;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.footer-section h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.footer-section ul {
+.footer-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-section ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #ccc;
+.footer-links ul li {
+    margin-bottom: 10px;
 }
 
-.footer-section ul li a {
+.footer-links a {
     text-decoration: none;
-    color: #ccc;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-    color: #fff;
+.footer-links a:hover {
+    color: #b969d4;
 }
 
 /* Newsletter Section */
 .newsletter-section {
-    background-color: #000;  /* Set to black */
+    background-color: #17002B;
     padding: 60px 20px;  /* Reduced padding */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #fff;
 }
 
 .newsletter-form {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -284,7 +299,7 @@ body {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #CCCCCC;
+    border: none;
     width: 250px;
 }
 
@@ -300,14 +315,4 @@ body {
 
 .newsletter-form button:hover {
     background-color: #FF5430;
-}
-
-/* Social Icons in Newsletter */
-.newsletter-social {
-    margin-top: 20px;
-}
-
-.newsletter-social .social-icons {
-    justify-content: center;
-    gap: 15px;
 }

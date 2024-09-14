@@ -19,8 +19,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;  /* Reduced padding */
-    margin-bottom: 10px;
+    padding: 10px 0;
+    margin-bottom: 5px;
 }
 
 .logo-text {
@@ -34,7 +34,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;  /* Reduced gap */
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
@@ -55,7 +55,7 @@ body {
 .get-app-button {
     background-color: #000;
     color: #fff;
-    padding: 8px 20px;  /* Reduced padding */
+    padding: 6px 18px;
     border: none;
     border-radius: 20px;
     font-weight: bold;
@@ -74,21 +74,21 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 30px 20px;  /* Reduced padding */
+    padding: 20px 10px;
     background-color: #FBF7F6;
     flex-wrap: wrap;
 }
 
 .hero-content {
     max-width: 600px;
-    margin-bottom: 10px;  /* Reduced bottom margin */
+    margin-bottom: 5px;
 }
 
 .hero-content h1 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     color: #4A4A4A;
-    margin-bottom: 10px;  /* Reduced margin between title and text */
+    margin-bottom: 10px;
 }
 
 .hero-content h1 span.underline {
@@ -108,25 +108,25 @@ body {
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 16px;
     color: #4A4A4A;
-    margin-bottom: 15px;  /* Reduced spacing */
-    line-height: 1.6;
+    margin-bottom: 10px;
+    line-height: 1.5;
     border-left: 3px solid #000;
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 .cta-button {
     background-color: #000;
     color: #fff;
-    padding: 12px 35px;
+    padding: 10px 30px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 15px;  /* Reduced bottom margin */
+    margin-bottom: 10px;
 }
 
 .cta-button:hover {
@@ -135,11 +135,11 @@ body {
 
 /* Uniform Image Size for All Images */
 .img-same-size {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -148,7 +148,7 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-    margin-top: 10px;  /* Reduced margin above the icons */
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -173,17 +173,17 @@ body {
 /* Envolée Section */
 .envolee-section {
     background-color: #FBF7F6;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced bottom margin */
+    padding: 30px 15px;
+    margin-bottom: 15px;
     border-radius: 12px;
     text-align: center;
 }
 
 .envolee-section h2 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     color: #2E2E2E;
-    margin-bottom: 10px;  /* Reduced spacing */
+    margin-bottom: 8px;
     position: relative;
     display: inline-block;
 }
@@ -200,9 +200,9 @@ body {
 }
 
 .envolee-section p {
-    font-size: 16px;
+    font-size: 14px;
     color: #6d6d6d;
-    margin-bottom: 15px;  /* Reduced bottom margin */
+    margin-bottom: 10px;
 }
 
 /* Community Events and Other Sections */
@@ -212,102 +212,115 @@ body {
     align-items: center;
     text-align: left;
     flex-wrap: wrap;
-    gap: 0;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced margin between sections */
+    gap: 10px;
+    padding: 30px 15px;
+    margin-bottom: 15px;
 }
 
 .section-image {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     margin-left: 0;
     object-fit: cover;
+    display: block;
+}
+
+/* Ensure both images have the same size and alignment */
+.community-events .section-image, .simple-use .section-image {
+    width: 260px;  /* Ensure both are the same width */
+    height: 260px; /* Ensure both are the same height */
+    margin-right: 0; /* Ensures the images don't move or misalign */
 }
 
 /* Footer */
 .footer {
-    background-color: #000;  /* Set to black */
-    padding: 50px 20px;  /* Reduced padding */
-    text-align: center;
+    background-color: #12002B;
     color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    margin-top: 30px;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+    flex-wrap: wrap;
 }
 
-.footer-section h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.footer-section ul {
+.footer-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-section ul li {
+.footer-links ul li {
     margin-bottom: 8px;
-    font-size: 14px;
-    color: #ccc;
 }
 
-.footer-section ul li a {
+.footer-links a {
     text-decoration: none;
-    color: #ccc;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-    color: #fff;
+.footer-links a:hover {
+    color: #b969d4;
 }
 
 /* Newsletter Section */
 .newsletter-section {
-    background-color: #000;  /* Set to black */
-    padding: 60px 20px;  /* Reduced padding */
-    text-align: center;
+    background-color: #17002B;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #fff;
 }
 
 .newsletter-form {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
 .newsletter-form input[type="email"] {
-    padding: 10px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 14px;
     border-radius: 5px;
-    border: 1px solid #CCCCCC;
-    width: 250px;
+    border: none;
+    width: 240px;
 }
 
 .newsletter-form button {
     background-color: #FF6C3E;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .newsletter-form button:hover {
     background-color: #FF5430;
-}
-
-/* Social Icons in Newsletter */
-.newsletter-social {
-    margin-top: 20px;
-}
-
-.newsletter-social .social-icons {
-    justify-content: center;
-    gap: 15px;
 }

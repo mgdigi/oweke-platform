@@ -226,10 +226,9 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #000;  /* Set to black */
+    background-color: #FBF7F6;  /* Updated footer to no background */
     padding: 50px 20px;  /* Reduced padding */
     text-align: center;
-    color: #fff;
 }
 
 .footer-content {
@@ -242,7 +241,7 @@ body {
 .footer-section h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #4A4A4A;
 }
 
 .footer-section ul {
@@ -254,24 +253,24 @@ body {
 .footer-section ul li {
     margin-bottom: 8px;
     font-size: 14px;
-    color: #ccc;
+    color: #7D7D7D;
 }
 
 .footer-section ul li a {
     text-decoration: none;
-    color: #ccc;
+    color: #7D7D7D;
 }
 
 .footer-section ul li a:hover {
-    color: #fff;
+    color: #000;
 }
 
 /* Newsletter Section */
 .newsletter-section {
-    background-color: #000;  /* Set to black */
+    background-color: #FBF7F6;  /* Removed dark background */
     padding: 60px 20px;  /* Reduced padding */
     text-align: center;
-    color: #fff;
+    color: #4A4A4A;
 }
 
 .newsletter-form {

@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;  /* Reduced padding */
+    padding: 10px 0;
     margin-bottom: 10px;
 }
 
@@ -34,7 +34,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;  /* Reduced gap */
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
@@ -55,7 +55,7 @@ body {
 .get-app-button {
     background-color: #000;
     color: #fff;
-    padding: 8px 20px;  /* Reduced padding */
+    padding: 8px 20px;
     border: none;
     border-radius: 20px;
     font-weight: bold;
@@ -74,21 +74,21 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 30px 20px;  /* Reduced padding */
+    padding: 30px 20px;
     background-color: #FBF7F6;
     flex-wrap: wrap;
 }
 
 .hero-content {
     max-width: 600px;
-    margin-bottom: 10px;  /* Reduced bottom margin */
+    margin-bottom: 10px;
 }
 
 .hero-content h1 {
     font-size: 36px;
     font-weight: bold;
     color: #4A4A4A;
-    margin-bottom: 10px;  /* Reduced margin between title and text */
+    margin-bottom: 10px;
 }
 
 .hero-content h1 span.underline {
@@ -110,7 +110,7 @@ body {
 .hero-content p {
     font-size: 18px;
     color: #4A4A4A;
-    margin-bottom: 15px;  /* Reduced spacing */
+    margin-bottom: 15px;
     line-height: 1.6;
     border-left: 3px solid #000;
     padding-left: 10px;
@@ -126,7 +126,7 @@ body {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 15px;  /* Reduced bottom margin */
+    margin-bottom: 15px;
 }
 
 .cta-button:hover {
@@ -148,7 +148,7 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-    margin-top: 10px;  /* Reduced margin above the icons */
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -173,8 +173,8 @@ body {
 /* Envolée Section */
 .envolee-section {
     background-color: #FBF7F6;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced bottom margin */
+    padding: 40px 20px;
+    margin-bottom: 20px;
     border-radius: 12px;
     text-align: center;
 }
@@ -183,7 +183,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     color: #2E2E2E;
-    margin-bottom: 10px;  /* Reduced spacing */
+    margin-bottom: 10px;
     position: relative;
     display: inline-block;
 }
@@ -202,7 +202,7 @@ body {
 .envolee-section p {
     font-size: 16px;
     color: #6d6d6d;
-    margin-bottom: 15px;  /* Reduced bottom margin */
+    margin-bottom: 15px;
 }
 
 /* Community Events and Other Sections */
@@ -213,8 +213,8 @@ body {
     text-align: left;
     flex-wrap: wrap;
     gap: 0;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced margin between sections */
+    padding: 40px 20px;
+    margin-bottom: 20px;
 }
 
 .section-image {
@@ -226,57 +226,72 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #000;  /* Set to black */
-    padding: 50px 20px;  /* Reduced padding */
-    text-align: center;
+    background-color: #000;  /* Changed to black */
     color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    margin-top: 40px;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.footer-section h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.footer-section ul {
+.footer-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-section ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #ccc;
+.footer-links ul li {
+    margin-bottom: 10px;
 }
 
-.footer-section ul li a {
+.footer-links a {
     text-decoration: none;
-    color: #ccc;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-    color: #fff;
+.footer-links a:hover {
+    color: #b969d4;
 }
 
 /* Newsletter Section */
 .newsletter-section {
-    background-color: #000;  /* Set to black */
-    padding: 60px 20px;  /* Reduced padding */
-    text-align: center;
+    background-color: #000;  /* Changed to black */
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #fff;
 }
 
 .newsletter-form {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -284,7 +299,7 @@ body {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #CCCCCC;
+    border: none;
     width: 250px;
 }
 
@@ -302,12 +317,19 @@ body {
     background-color: #FF5430;
 }
 
-/* Social Icons in Newsletter */
-.newsletter-social {
-    margin-top: 20px;
+/* Button Styling (To Match the Button Look) */
+.cta-button, .get-app-button, .newsletter-form button {
+    background-color: #000; /* Set background to black */
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.newsletter-social .social-icons {
-    justify-content: center;
-    gap: 15px;
+.cta-button:hover, .get-app-button:hover, .newsletter-form button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
 }
