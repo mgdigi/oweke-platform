@@ -126,23 +126,13 @@ const HomePage = () => {
       {/* Envolée Section */}
       <section className="envolee-section">
         <h2>Envolez-vous à la rencontre de <br /><span className="underline">Votre âme sœur</span></h2>
-        
         <p>
-          L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve.
+          L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve. <br /><span 
+          Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de <br /><span bonheur.
+          C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques. <br /><span 
+          N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux. <br /><span 
+          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke. <br /><span 
         </p>
-        <p>
-          Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de bonheur.
-        </p>
-        <p>
-          C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques.
-        </p>
-        <p>
-          N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux.
-        </p>
-        <p>
-          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke.
-        </p>
-
         <button className="cta-button">Participer À Un Événement</button>
       </section>
 
@@ -171,7 +161,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer Section */}
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-section">
@@ -209,7 +199,7 @@ const HomePage = () => {
           <form className="newsletter-form">
             <input type="email" placeholder="Votre adresse email" />
             <button type="submit">S'inscrire</button>
-            </form>
+          </form>
         </div>
         <div className="newsletter-social">
           <h3>Rejoindre notre Communauté</h3>

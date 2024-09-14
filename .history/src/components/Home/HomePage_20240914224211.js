@@ -209,28 +209,3 @@ const HomePage = () => {
           <form className="newsletter-form">
             <input type="email" placeholder="Votre adresse email" />
             <button type="submit">S'inscrire</button>
-            </form>
-        </div>
-        <div className="newsletter-social">
-          <h3>Rejoindre notre Communauté</h3>
-          <div className="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default HomePage;
