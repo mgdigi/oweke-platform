@@ -7,7 +7,7 @@ import { auth, onAuthStateChange } from '../firebase';
 import { signOut, reload } from 'firebase/auth';  // Import Firebase methods
 
 // Importing images and icons
-import HeroImage from '../../assets/heroimage.png';  // Correct image import
+import HeroImage from '../../assets/heroimage.png';
 import EventImage from '../../assets/event-image.png';
 import UsageImage from '../../assets/usage-image.png';
 
@@ -94,7 +94,7 @@ const HomePage = () => {
         <button className="get-app-button">Telecharger</button>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section - No inline background styles */}
       <header className="hero">
         <div className="hero-content">
           <h1>Une Rencontre <br /><span className="underline">Depuis Ta Webcam</span></h1>
@@ -119,7 +119,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="heroimage">
-          <img src={HeroImage} alt="Hero" className="img-same-size" />  {/* Corrected HeroImage usage */}
+          />
         </div>
       </header>
 
@@ -171,6 +171,7 @@ const HomePage = () => {
               <li><Link to="/live-dating">Live Dating</Link></li>
               <li><Link to="/events">Community Events</Link></li>
               <li><Link to="/blog">Blog</Link></li>
+              
             </ul>
           </div>
           <div className="footer-section">
@@ -204,8 +205,11 @@ const HomePage = () => {
         <div className="newsletter-social">
           <h3>Rejoindre notre Communauté</h3>
           <div className="social-icons">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                          <FaInstagram />
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
