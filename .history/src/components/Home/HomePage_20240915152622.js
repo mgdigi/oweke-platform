@@ -173,65 +173,35 @@ const HomePage = () => {
 
       {/* Footer */}
       <footer className="footer1">
-  <div className="footer-content">
-    <div className="footer-section">
-      <h4>Community</h4>
-      <ul>
-        <li><Link to="/about">À propos</Link></li>
-        <li><Link to="/live-dating">Live Dating</Link></li>
-        <li><Link to="/events">Community Events</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </div>
-    <div className="footer-section">
-      <h4>Collaborateurs</h4>
-      <ul>
-        <li><Link to="/signin">Se connecter</Link></li>
-        <li><Link to="/partners">Espace Partenaires</Link></li>
-        <li><Link to="/signup">S’inscrire</Link></li>
-      </ul>
-    </div>
-    <div className="footer-section">
-      <h4>Politique de confidentialité & CGV</h4>
-      <ul>
-        <li><Link to="/privacy">Politique de confidentialité</Link></li>
-        <li><Link to="/terms">CGV</Link></li>
-      </ul>
-    </div>
-  </div>
-  <p>Copyright © 2024 oweke</p>
-</footer>
-
-      {/* Newsletter Section */}
-      <section className="newsletter-section">
-        <div className="newsletter-container">
-          <h3>S'inscrire au Newsletter</h3>
-          <form className="newsletter-form">
-            <input type="email" placeholder="Votre adresse email" />
-            <button type="submit">S'inscrire</button>
-          </form>
-        </div>
-        <div className="newsletter-social">
-          <h3>Rejoindre notre Communauté</h3>
-          <div className="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
-            </a>
+        <div className="footer-content">
+          <div className="footer-section">
+            <h4>Community</h4>
+            <ul>
+              <li><Link to="/about">À propos</Link></li>
+              <li><Link to="/live-dating">Live Dating</Link></li>
+              <li><Link to="/events">Community Events</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Collaborateurs</h4>
+            <ul>
+              <li><Link to="/signin">Se connecter</Link></li>
+              <li><Link to="/partners">Espace Partenaires</Link></li>
+              <li><Link to="/signup">S’inscrire</Link></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Politique de confidentialité & CGV</h4>
+            <ul>
+              <li><Link to="/privacy">Politique de confidentialité</Link></li>
+              <li><Link to="/terms">CGV</Link></li>
+            </ul>
           </div>
         </div>
-      </section>
-    </div>
-  );
-};
+        <p>Copyright © 2024 oweke</p>
+      </footer>
 
-export default HomePage;
+      {/* Newsletter Section */}
+      <section class

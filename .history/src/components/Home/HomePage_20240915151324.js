@@ -200,7 +200,7 @@ const HomePage = () => {
       </ul>
     </div>
   </div>
-  <p>Copyright © 2024 oweke</p>
+  <p>Copyright © 2024 Vizmeet</p>
 </footer>
 
       {/* Newsletter Section */}
