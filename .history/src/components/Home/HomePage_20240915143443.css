@@ -5,9 +5,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FBF7F6;
-    line-height: 1.6; /* Ensures consistent line spacing */
-    letter-spacing: 0.5px; /* Adds uniform letter spacing */
-    font-weight: 500; /* Applies slight boldness */
 }
 
 .home-container {
@@ -22,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;  /* Reduced padding */
+    padding: 10px 0;
     margin-bottom: 10px;
 }
 
@@ -37,7 +34,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;  /* Reduced gap */
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
@@ -47,7 +44,6 @@ body {
     color: #4A4A4A;
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: 0.5px; /* Added consistent letter spacing */
     transition: color 0.3s ease;
 }
 
@@ -59,14 +55,13 @@ body {
 .get-app-button {
     background-color: #000;
     color: #fff;
-    padding: 8px 20px;  /* Reduced padding */
+    padding: 8px 20px;
     border: none;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease;
-    letter-spacing: 0.5px; /* Ensures consistent character spacing */
 }
 
 .get-app-button:hover {
@@ -79,23 +74,21 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 30px 20px;  /* Reduced padding */
+    padding: 30px 20px;
     background-color: #FBF7F6;
     flex-wrap: wrap;
 }
 
 .hero-content {
     max-width: 600px;
-    margin-bottom: 10px;  /* Reduced bottom margin */
+    margin-bottom: 10px;
 }
 
 .hero-content h1 {
     font-size: 36px;
     font-weight: bold;
     color: #4A4A4A;
-    margin-bottom: 10px;  /* Reduced margin between title and text */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
+    margin-bottom: 10px;
 }
 
 .hero-content h1 span.underline {
@@ -117,10 +110,8 @@ body {
 .hero-content p {
     font-size: 18px;
     color: #4A4A4A;
-    margin-bottom: 15px;  /* Reduced spacing */
-    line-height: 1.6; /* Consistent line height */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    font-weight: 500; /* Slightly bold text */
+    margin-bottom: 15px;
+    line-height: 1.6;
     border-left: 3px solid #000;
     padding-left: 10px;
 }
@@ -132,11 +123,10 @@ body {
     border-radius: 30px;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 15px;  /* Reduced bottom margin */
+    margin-bottom: 15px;
 }
 
 .cta-button:hover {
@@ -158,7 +148,7 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-    margin-top: 10px;  /* Reduced margin above the icons */
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -183,8 +173,8 @@ body {
 /* Envolée Section */
 .envolee-section {
     background-color: #FBF7F6;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced bottom margin */
+    padding: 40px 20px;
+    margin-bottom: 20px;
     border-radius: 12px;
     text-align: center;
 }
@@ -193,9 +183,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     color: #2E2E2E;
-    margin-bottom: 10px;  /* Reduced spacing */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
+    margin-bottom: 10px;
     position: relative;
     display: inline-block;
 }
@@ -212,60 +200,28 @@ body {
 }
 
 .envolee-section p {
-    font-size: 18px;
+    font-size: 16px;
     color: #6d6d6d;
-    margin-bottom: 15px;  /* Reduced bottom margin */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
-    font-weight: 500; /* Slightly bold text */
+    margin-bottom: 15px;
 }
 
-/* Community Events and Other Sections */
-.community-events, .simple-use {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    flex-wrap: wrap;
-    gap: 0;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced margin between sections */
-}
-
-.section-image {
-    width: 300px;
-    height: 300px;
-    margin-left: 0;
-    object-fit: cover;
-}
-
-/* Footer */
+/* Footer (Renamed to footer1) */
 .footer1 {
-    background-color: #000;  /* Set to black */
-    padding: 50px 20px;  /* Reduced padding */
+    background-color: transparent; /* Set background to transparent */
+    padding: 50px 20px;
     text-align: center;
-    color: #fff;
+    margin-top: 40px;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.footer-section {
-    margin: 0 20px;
 }
 
 .footer-section h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
-    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4A4A4A; /* Adjust color to ensure visibility */
 }
 
 .footer-section ul {
@@ -275,33 +231,31 @@ body {
 }
 
 .footer-section ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #ccc;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #4A4A4A;
 }
 
 .footer-section ul li a {
     text-decoration: none;
-    color: #ccc;
+    color: #4A4A4A; /* Ensure links are visible */
 }
 
 .footer-section ul li a:hover {
-    color: #fff;
+    color: #b969d4;
 }
 
 /* Newsletter Section */
 .newsletter-section {
-    background-color: #000;  /* Set to black */
-    padding: 60px 20px;  /* Reduced padding */
+    background-color: transparent; /* Set background to transparent */
+    padding: 60px 20px;
     text-align: center;
-    color: #fff;
+    color: #4A4A4A;
 }
 
 .newsletter-form {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -309,9 +263,8 @@ body {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #CCCCCC;
+    border: none;
     width: 250px;
-    letter-spacing: 0.5px; /* Consistent character spacing */
 }
 
 .newsletter-form button {
@@ -322,21 +275,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    transition: background-color 0.3s ease;
 }
 
 .newsletter-form button:hover {
     background-color: #FF5430;
 }
 
-/* Social Icons in Newsletter */
 .newsletter-social {
     margin-top: 20px;
+    text-align: center;
 }
 
-.newsletter-social .social-icons {
+.social-icons {
+    display: flex;
     justify-content: center;
     gap: 15px;
 }

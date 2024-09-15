@@ -220,23 +220,99 @@ body {
     font-weight: 500; /* Slightly bold text */
 }
 
-/* Community Events and Other Sections */
-.community-events, .simple-use {
+/* Community Events Section */
+.community-events {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
     flex-wrap: wrap;
     gap: 0;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced margin between sections */
+    padding: 40px 20px;
+    margin-bottom: 20px;
 }
 
-.section-image {
-    width: 300px;
-    height: 300px;
-    margin-left: 0;
-    object-fit: cover;
+.community-events h2 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.5px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
+    margin-bottom: 10px;
+    color: #2E2E2E;
+}
+
+.community-events p {
+    font-size: 18px;
+    font-weight: 500; /* Slightly bold */
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #4A4A4A;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Simple à Utiliser Section */
+.simple-use {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.simple-use h3 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.5px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
+    margin-bottom: 10px;
+    color: #2E2E2E;
+}
+
+.simple-use p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #4A4A4A;
+}
+
+.simple-use .cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.simple-use .cta-button:hover {
+    background-color: #333;
 }
 
 /* Footer */

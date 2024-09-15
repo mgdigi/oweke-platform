@@ -314,29 +314,4 @@ body {
     letter-spacing: 0.5px; /* Consistent character spacing */
 }
 
-.newsletter-form button {
-    background-color: #FF6C3E;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    transition: background-color 0.3s ease;
-}
-
-.newsletter-form button:hover {
-    background-color: #FF5430;
-}
-
-/* Social Icons in Newsletter */
-.newsletter-social {
-    margin-top: 20px;
-}
-
-.newsletter-social .social-icons {
-    justify-content: center;
-    gap: 15px;
-}
+.newsletter-form button

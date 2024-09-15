@@ -16,7 +16,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope, FaLinkedin } from 'rea
 const HomePage = () => {
   const [user, setUser] = useState(null);  // Track logged-in user state
   const [emailVerified, setEmailVerified] = useState(false);  // Track email verification state
-  const navigate = useNavigate();  // Hook to navigate programmatically
+  const navigate = useNavigate();  // React Router hook to navigate programmatically
 
   useEffect(() => {
     // Listen for authentication state changes
@@ -61,6 +61,10 @@ const HomePage = () => {
     }
   };
 
+  const redirectToEvents = () => {
+    navigate('/events');  // Redirect to the Events page
+  };
+
   return (
     <div className="home-container">
       {/* Email Verification Warning */}
@@ -91,7 +95,7 @@ const HomePage = () => {
             </>
           )}
         </ul>
-        <button className="get-app-button">Telecharger</button>
+        <button className="get-app-button" onClick={redirectToEvents}>Telecharger</button> {/* Redirect to events */}
       </nav>
 
       {/* Hero Section */}
@@ -100,7 +104,7 @@ const HomePage = () => {
           <h1>Une Rencontre <br /><span className="underline">Depuis Ta Webcam</span></h1>
           <p>Oweke : Votre Destination Pour L'Amour Et La Romance. <br />
             Connectez-Vous Avec Votre Partenaire Idéal Sur Oweke.</p>
-          <button className="cta-button" onClick={() => navigate('/events')}>En Profiter</button>
+          <button className="cta-button" onClick={redirectToEvents}>En Profiter</button> {/* Redirect to events */}
           
           {/* Social Media Links */}
           <div className="social-icons">
@@ -126,35 +130,16 @@ const HomePage = () => {
       {/* Envolée Section */}
       <section className="envolee-section">
         <h2>Envolez-vous à la rencontre de <br /><span className="underline">Votre âme sœur</span></h2>
-        
-        <p>
-          L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve.
-        </p>
-        <p>
-          Quel que soit le chemin que vous choisissez pour trouver l'amour, c'est une décision personnelle qui peut vous apporter beaucoup de joie et de bonheur.
-        </p>
-        <p>
-          C'est une aventure qui peut vous amener dans des endroits inattendus et vous permettre de vivre des moments magiques.
-        </p>
-        <p>
-          N'ayez pas peur de prendre le risque de trouver l'amour et de suivre votre cœur - vous pourriez bien trouver quelque chose de merveilleux.
-        </p>
-        <p>
-          Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke.
-        </p>
-
-        <button className="cta-button" onClick={() => navigate('/events')}>Participer À Un Événement</button>
+        <p>L'amour est une aventure qui mérite d'être vécue, peu importe où on la trouve.</p>
+        <button className="cta-button" onClick={redirectToEvents}>Participer À Un Événement</button> {/* Redirect to events */}
       </section>
 
       {/* Community Events Section */}
       <section className="community-events">
         <div className="content">
           <h2>Faites partie de notre prochain <br /><span className="underline">Community Events.</span></h2>
-          <p>
-            Participez à nos prochains événements communautaires et rencontrez d’autres personnes comme vous. 
-            <br /><strong>Partagez, discutez et trouvez peut-être votre partenaire de vie !</strong>
-          </p>
-          <button className="cta-button" onClick={() => navigate('/events')}>Découvrez nos Community Events</button>
+          <p>Participez à nos prochains événements communautaires et rencontrez d’autres personnes comme vous.</p>
+          <button className="cta-button" onClick={redirectToEvents}>Découvrez nos Community Events</button> {/* Redirect to events */}
         </div>
         <img src={EventImage} alt="Community Events" className="section-image img-same-size" />
       </section>
@@ -164,7 +149,7 @@ const HomePage = () => {
         <div className="content">
           <h3>Et c’est Simple <span className="underline">à Utiliser!</span></h3>
           <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
-          <button className="cta-button" onClick={() => navigate('/events')}>Accéder à Oweke Online</button>
+          <button className="cta-button" onClick={redirectToEvents}>Accéder à Oweke Online</button> {/* Redirect to events */}
         </div>
         <div className="image">
           <img src={UsageImage} alt="Simple to Use" className="section-image img-same-size" />
@@ -172,36 +157,35 @@ const HomePage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="footer1">
-  <div className="footer-content">
-    <div className="footer-section">
-      <h4>Community</h4>
-      <ul>
-        <li><Link to="/about">À propos</Link></li>
-        <li><Link to="/live-dating">Live Dating</Link></li>
-        <li><Link to="/events">Community Events</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </div>
-    <div className="footer-section">
-      <h4>Collaborateurs</h4>
-      <ul>
-        <li><Link to="/signin">Se connecter</Link></li>
-        <li><Link to="/partners">Espace Partenaires</Link></li>
-        <li><Link to="/signup">S’inscrire</Link></li>
-      </ul>
-    </div>
-    <div className="footer-section">
-      <h4>Politique de confidentialité & CGV</h4>
-      <ul>
-        <li><Link to="/privacy">Politique de confidentialité</Link></li>
-        <li><Link to="/terms">CGV</Link></li>
-      </ul>
-    </div>
-  </div>
-  <p>Copyright © 2023 Vizmeet</p>
-</footer>
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h4>Community</h4>
+            <ul>
+              <li><Link to="/about">À propos</Link></li>
+              <li><Link to="/live-dating">Live Dating</Link></li>
+              <li><Link to="/events">Community Events</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Collaborateurs</h4>
+            <ul>
+              <li><Link to="/signin">Se connecter</Link></li>
+              <li><Link to="/partners">Espace Partenaires</Link></li>
+              <li><Link to="/signup">S’inscrire</Link></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Politique de confidentialité & CGV</h4>
+            <ul>
+              <li><Link to="/privacy">Politique de confidentialité</Link></li>
+              <li><Link to="/terms">CGV</Link></li>
+            </ul>
+          </div>
+        </div>
+        <p>Copyright © 2023 Oweke</p>
+      </footer>
 
       {/* Newsletter Section */}
       <section className="newsletter-section">
@@ -223,7 +207,7 @@ const HomePage = () => {
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
-            </a>
+              </a>
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>

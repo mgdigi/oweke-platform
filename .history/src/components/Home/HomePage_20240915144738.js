@@ -100,7 +100,7 @@ const HomePage = () => {
           <h1>Une Rencontre <br /><span className="underline">Depuis Ta Webcam</span></h1>
           <p>Oweke : Votre Destination Pour L'Amour Et La Romance. <br />
             Connectez-Vous Avec Votre Partenaire Idéal Sur Oweke.</p>
-          <button className="cta-button" onClick={() => navigate('/events')}>En Profiter</button>
+          <button className="cta-button">En Profiter</button>
           
           {/* Social Media Links */}
           <div className="social-icons">
@@ -143,7 +143,7 @@ const HomePage = () => {
           Alors, qu'attendez-vous ? Entrez dans l'aventure de la recherche de l'amour et vivez les plus beaux moments de votre vie avec Oweke.
         </p>
 
-        <button className="cta-button" onClick={() => navigate('/events')}>Participer À Un Événement</button>
+        <button className="cta-button">Participer À Un Événement</button>
       </section>
 
       {/* Community Events Section */}
@@ -154,7 +154,7 @@ const HomePage = () => {
             Participez à nos prochains événements communautaires et rencontrez d’autres personnes comme vous. 
             <br /><strong>Partagez, discutez et trouvez peut-être votre partenaire de vie !</strong>
           </p>
-          <button className="cta-button" onClick={() => navigate('/events')}>Découvrez nos Community Events</button>
+          <button className="cta-button">Découvrez nos Community Events</button>
         </div>
         <img src={EventImage} alt="Community Events" className="section-image img-same-size" />
       </section>
@@ -164,7 +164,7 @@ const HomePage = () => {
         <div className="content">
           <h3>Et c’est Simple <span className="underline">à Utiliser!</span></h3>
           <p>Grâce à Oweke ! <br />Vitalizez votre vie amoureuse.</p>
-          <button className="cta-button" onClick={() => navigate('/events')}>Accéder à Oweke Online</button>
+          <button className="cta-button">Accéder à Oweke Online</button>
         </div>
         <div className="image">
           <img src={UsageImage} alt="Simple to Use" className="section-image img-same-size" />

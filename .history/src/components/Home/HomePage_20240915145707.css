@@ -5,9 +5,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FBF7F6;
-    line-height: 1.6; /* Ensures consistent line spacing */
-    letter-spacing: 0.5px; /* Adds uniform letter spacing */
-    font-weight: 500; /* Applies slight boldness */
+    line-height: 1.6; /* Consistent line height */
+    letter-spacing: 1px; /* Consistent letter spacing */
+    font-weight: bold; /* Apply bold text globally */
 }
 
 .home-container {
@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;  /* Reduced padding */
+    padding: 10px 0;
     margin-bottom: 10px;
 }
 
@@ -37,7 +37,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;  /* Reduced gap */
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
@@ -45,9 +45,9 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #4A4A4A;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.5px; /* Added consistent letter spacing */
+    font-size: 18px; /* Increase font size for better visibility */
+    font-weight: bold;
+    letter-spacing: 1px;
     transition: color 0.3s ease;
 }
 
@@ -59,14 +59,14 @@ body {
 .get-app-button {
     background-color: #000;
     color: #fff;
-    padding: 8px 20px;  /* Reduced padding */
+    padding: 10px 25px;
     border: none;
     border-radius: 20px;
     font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
     cursor: pointer;
-    font-size: 14px;
     transition: background-color 0.3s ease;
-    letter-spacing: 0.5px; /* Ensures consistent character spacing */
 }
 
 .get-app-button:hover {
@@ -79,23 +79,22 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 30px 20px;  /* Reduced padding */
+    padding: 30px 20px;
     background-color: #FBF7F6;
     flex-wrap: wrap;
 }
 
 .hero-content {
     max-width: 600px;
-    margin-bottom: 10px;  /* Reduced bottom margin */
+    margin-bottom: 10px;
 }
 
 .hero-content h1 {
     font-size: 36px;
     font-weight: bold;
     color: #4A4A4A;
-    margin-bottom: 10px;  /* Reduced margin between title and text */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 .hero-content h1 span.underline {
@@ -115,12 +114,11 @@ body {
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     color: #4A4A4A;
-    margin-bottom: 15px;  /* Reduced spacing */
-    line-height: 1.6; /* Consistent line height */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    font-weight: 500; /* Slightly bold text */
+    margin-bottom: 15px;
+    line-height: 1.6;
     border-left: 3px solid #000;
     padding-left: 10px;
 }
@@ -130,13 +128,13 @@ body {
     color: #fff;
     padding: 12px 35px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
+    letter-spacing: 1px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 15px;  /* Reduced bottom margin */
+    margin-bottom: 15px;
 }
 
 .cta-button:hover {
@@ -158,7 +156,7 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-    margin-top: 10px;  /* Reduced margin above the icons */
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -183,8 +181,8 @@ body {
 /* Envolée Section */
 .envolee-section {
     background-color: #FBF7F6;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced bottom margin */
+    padding: 40px 20px;
+    margin-bottom: 20px;
     border-radius: 12px;
     text-align: center;
 }
@@ -193,9 +191,8 @@ body {
     font-size: 28px;
     font-weight: bold;
     color: #2E2E2E;
-    margin-bottom: 10px;  /* Reduced spacing */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
+    letter-spacing: 1px;
+    margin-bottom: 10px;
     position: relative;
     display: inline-block;
 }
@@ -214,10 +211,9 @@ body {
 .envolee-section p {
     font-size: 18px;
     color: #6d6d6d;
-    margin-bottom: 15px;  /* Reduced bottom margin */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
-    font-weight: 500; /* Slightly bold text */
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 /* Community Events and Other Sections */
@@ -228,8 +224,8 @@ body {
     text-align: left;
     flex-wrap: wrap;
     gap: 0;
-    padding: 40px 20px;  /* Reduced padding */
-    margin-bottom: 20px;  /* Reduced margin between sections */
+    padding: 40px 20px;
+    margin-bottom: 20px;
 }
 
 .section-image {
@@ -241,8 +237,8 @@ body {
 
 /* Footer */
 .footer1 {
-    background-color: #000;  /* Set to black */
-    padding: 50px 20px;  /* Reduced padding */
+    background-color: #000;
+    padding: 50px 20px;
     text-align: center;
     color: #fff;
 }
@@ -262,10 +258,9 @@ body {
 .footer-section h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #fff;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
     font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
 }
 
 .footer-section ul {
@@ -278,8 +273,8 @@ body {
     margin-bottom: 8px;
     font-size: 14px;
     color: #ccc;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .footer-section ul li a {
@@ -293,8 +288,8 @@ body {
 
 /* Newsletter Section */
 .newsletter-section {
-    background-color: #000;  /* Set to black */
-    padding: 60px 20px;  /* Reduced padding */
+    background-color: #000;
+    padding: 60px 20px;
     text-align: center;
     color: #fff;
 }
@@ -311,7 +306,7 @@ body {
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     width: 250px;
-    letter-spacing: 0.5px; /* Consistent character spacing */
+    letter-spacing: 1px;
 }
 
 .newsletter-form button {
@@ -323,8 +318,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
 }
 
 .newsletter-form button:hover {

@@ -6,8 +6,8 @@ body {
     padding: 0;
     background-color: #FBF7F6;
     line-height: 1.6; /* Ensures consistent line spacing */
-    letter-spacing: 0.5px; /* Adds uniform letter spacing */
-    font-weight: 500; /* Applies slight boldness */
+    letter-spacing: 1px; /* Increased uniform letter spacing */
+    font-weight: bold; /* Applies stronger boldness */
 }
 
 .home-container {
@@ -27,7 +27,7 @@ body {
 }
 
 .logo-text {
-    font-size: 28px;
+    font-size: 30px; /* Slightly larger */
     font-weight: bold;
     color: #4A4A4A;
     letter-spacing: 1px;
@@ -45,9 +45,9 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #4A4A4A;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.5px; /* Added consistent letter spacing */
+    font-weight: bold; /* Increased font weight */
+    font-size: 16px; /* Slightly larger */
+    letter-spacing: 1px; /* Increased consistent letter spacing */
     transition: color 0.3s ease;
 }
 
@@ -59,14 +59,14 @@ body {
 .get-app-button {
     background-color: #000;
     color: #fff;
-    padding: 8px 20px;  /* Reduced padding */
+    padding: 10px 25px;  /* Increased padding */
     border: none;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px; /* Slightly larger */
     transition: background-color 0.3s ease;
-    letter-spacing: 0.5px; /* Ensures consistent character spacing */
+    letter-spacing: 1px; /* Ensures consistent character spacing */
 }
 
 .get-app-button:hover {
@@ -90,11 +90,11 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 36px;
+    font-size: 40px; /* Increased size */
     font-weight: bold;
     color: #4A4A4A;
     margin-bottom: 10px;  /* Reduced margin between title and text */
-    letter-spacing: 0.5px; /* Consistent character spacing */
+    letter-spacing: 1px; /* Consistent character spacing */
     line-height: 1.6; /* Consistent line height */
 }
 
@@ -115,12 +115,12 @@ body {
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 20px; /* Slightly larger */
     color: #4A4A4A;
     margin-bottom: 15px;  /* Reduced spacing */
     line-height: 1.6; /* Consistent line height */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    font-weight: 500; /* Slightly bold text */
+    letter-spacing: 1px; /* Consistent character spacing */
+    font-weight: bold; /* Stronger boldness */
     border-left: 3px solid #000;
     padding-left: 10px;
 }
@@ -130,9 +130,9 @@ body {
     color: #fff;
     padding: 12px 35px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 18px; /* Slightly larger */
     font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
+    letter-spacing: 1px; /* Consistent character spacing */
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -190,11 +190,11 @@ body {
 }
 
 .envolee-section h2 {
-    font-size: 28px;
+    font-size: 32px; /* Increased size */
     font-weight: bold;
     color: #2E2E2E;
     margin-bottom: 10px;  /* Reduced spacing */
-    letter-spacing: 0.5px; /* Consistent character spacing */
+    letter-spacing: 1px; /* Consistent character spacing */
     line-height: 1.6; /* Consistent line height */
     position: relative;
     display: inline-block;
@@ -212,12 +212,12 @@ body {
 }
 
 .envolee-section p {
-    font-size: 18px;
+    font-size: 20px; /* Slightly larger */
     color: #6d6d6d;
     margin-bottom: 15px;  /* Reduced bottom margin */
-    letter-spacing: 0.5px; /* Consistent character spacing */
+    letter-spacing: 1px; /* Consistent character spacing */
     line-height: 1.6; /* Consistent line height */
-    font-weight: 500; /* Slightly bold text */
+    font-weight: bold; /* Slightly stronger boldness */
 }
 
 /* Community Events and Other Sections */
@@ -260,10 +260,10 @@ body {
 }
 
 .footer-section h4 {
-    font-size: 18px;
+    font-size: 20px; /* Slightly larger */
     margin-bottom: 10px;
     color: #fff;
-    letter-spacing: 0.5px; /* Consistent character spacing */
+    letter-spacing: 1px; /* Consistent character spacing */
     line-height: 1.6; /* Consistent line height */
     font-weight: bold;
 }
@@ -276,10 +276,10 @@ body {
 
 .footer-section ul li {
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 16px; /* Slightly larger */
     color: #ccc;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    font-weight: 500;
+    letter-spacing: 1px; /* Consistent character spacing */
+    font-weight: bold;
 }
 
 .footer-section ul li a {
@@ -307,36 +307,8 @@ body {
 
 .newsletter-form input[type="email"] {
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px; /* Slightly larger */
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     width: 250px;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-}
-
-.newsletter-form button {
-    background-color: #FF6C3E;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    transition: background-color 0.3s ease;
-}
-
-.newsletter-form button:hover {
-    background-color: #FF5430;
-}
-
-/* Social Icons in Newsletter */
-.newsletter-social {
-    margin-top: 20px;
-}
-
-.newsletter-social .social-icons {
-    justify-content: center;
-    gap: 15px;
-}
+    letter-spacing: 1px; /* Consistent character spacing */

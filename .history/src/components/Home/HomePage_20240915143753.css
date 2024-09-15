@@ -5,9 +5,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FBF7F6;
-    line-height: 1.6; /* Ensures consistent line spacing */
-    letter-spacing: 0.5px; /* Adds uniform letter spacing */
-    font-weight: 500; /* Applies slight boldness */
 }
 
 .home-container {
@@ -47,7 +44,6 @@ body {
     color: #4A4A4A;
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: 0.5px; /* Added consistent letter spacing */
     transition: color 0.3s ease;
 }
 
@@ -66,7 +62,6 @@ body {
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease;
-    letter-spacing: 0.5px; /* Ensures consistent character spacing */
 }
 
 .get-app-button:hover {
@@ -94,8 +89,6 @@ body {
     font-weight: bold;
     color: #4A4A4A;
     margin-bottom: 10px;  /* Reduced margin between title and text */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
 }
 
 .hero-content h1 span.underline {
@@ -118,9 +111,7 @@ body {
     font-size: 18px;
     color: #4A4A4A;
     margin-bottom: 15px;  /* Reduced spacing */
-    line-height: 1.6; /* Consistent line height */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    font-weight: 500; /* Slightly bold text */
+    line-height: 1.6;
     border-left: 3px solid #000;
     padding-left: 10px;
 }
@@ -132,7 +123,6 @@ body {
     border-radius: 30px;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -194,8 +184,6 @@ body {
     font-weight: bold;
     color: #2E2E2E;
     margin-bottom: 10px;  /* Reduced spacing */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
     position: relative;
     display: inline-block;
 }
@@ -212,12 +200,9 @@ body {
 }
 
 .envolee-section p {
-    font-size: 18px;
+    font-size: 16px;
     color: #6d6d6d;
     margin-bottom: 15px;  /* Reduced bottom margin */
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
-    font-weight: 500; /* Slightly bold text */
 }
 
 /* Community Events and Other Sections */
@@ -263,9 +248,6 @@ body {
     font-size: 18px;
     margin-bottom: 10px;
     color: #fff;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    line-height: 1.6; /* Consistent line height */
-    font-weight: bold;
 }
 
 .footer-section ul {
@@ -278,8 +260,6 @@ body {
     margin-bottom: 8px;
     font-size: 14px;
     color: #ccc;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    font-weight: 500;
 }
 
 .footer-section ul li a {
@@ -311,7 +291,6 @@ body {
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     width: 250px;
-    letter-spacing: 0.5px; /* Consistent character spacing */
 }
 
 .newsletter-form button {
@@ -322,9 +301,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.5px; /* Consistent character spacing */
-    transition: background-color 0.3s ease;
 }
 
 .newsletter-form button:hover {
