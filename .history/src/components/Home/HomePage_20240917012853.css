@@ -5,15 +5,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FBF7F6;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    font-weight: 500;
+    line-height: 1.6; /* Ensures consistent line spacing */
+    letter-spacing: 0.5px; /* Adds uniform letter spacing */
+    font-weight: 500; /* Applies slight boldness */
 }
 
 .home-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px; /* Reduced padding */
+    padding: 0 20px;
     background-color: #FBF7F6;
 }
 
@@ -22,8 +22,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;  /* Reduced padding */
-    margin-bottom: 5px;  /* Reduced bottom margin */
+    padding: 10px 0;  /* Reduced padding */
+    margin-bottom: 10px;
 }
 
 .logo-text {
@@ -37,7 +37,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 10px;  /* Reduced gap */
+    gap: 15px;  /* Reduced gap */
     margin: 0;
     padding: 0;
 }
@@ -47,7 +47,7 @@ body {
     color: #4A4A4A;
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; /* Added consistent letter spacing */
     transition: color 0.3s ease;
 }
 
@@ -59,14 +59,14 @@ body {
 .get-app-button {
     background-color: #000;
     color: #fff;
-    padding: 6px 15px;  /* Reduced padding */
+    padding: 8px 20px;  /* Reduced padding */
     border: none;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; /* Ensures consistent character spacing */
 }
 
 .get-app-button:hover {
@@ -79,33 +79,48 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 20px 10px;  /* Reduced padding */
+    padding: 30px 20px;  /* Reduced padding */
     background-color: #FBF7F6;
     flex-wrap: wrap;
-    margin-bottom: 10px; /* Reduced margin below */
 }
 
 .hero-content {
     max-width: 600px;
-    margin-bottom: 5px;  /* Reduced bottom margin */
+    margin-bottom: 10px;  /* Reduced bottom margin */
 }
 
 .hero-content h1 {
     font-size: 36px;
     font-weight: bold;
     color: #4A4A4A;
-    margin-bottom: 8px;  /* Reduced margin between title and text */
-    letter-spacing: 0.5px;
-    line-height: 1.6;
+    margin-bottom: 10px;  /* Reduced margin between title and text */
+    letter-spacing: 0.5px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
+}
+
+.hero-content h1 span.underline {
+    position: relative;
+    color: #000;
+}
+
+.hero-content h1 span.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #FBF7F6;
+    border-bottom: 3px solid #b969d4;
 }
 
 .hero-content p {
     font-size: 18px;
     color: #4A4A4A;
-    margin-bottom: 10px;  /* Reduced margin */
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    font-weight: 500;
+    margin-bottom: 15px;  /* Reduced spacing */
+    line-height: 1.6; /* Consistent line height */
+    letter-spacing: 0.5px; /* Consistent character spacing */
+    font-weight: 500; /* Slightly bold text */
     border-left: 3px solid #000;
     padding-left: 10px;
 }
@@ -113,15 +128,15 @@ body {
 .cta-button {
     background-color: #000;
     color: #fff;
-    padding: 10px 30px;
+    padding: 12px 35px;
     border-radius: 30px;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; /* Consistent character spacing */
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 10px;  /* Reduced bottom margin */
+    margin-bottom: 15px;  /* Reduced bottom margin */
 }
 
 .cta-button:hover {
@@ -142,8 +157,8 @@ body {
 .social-icons {
     display: flex;
     justify-content: flex-start;
-    gap: 8px;  /* Reduced gap */
-    margin-top: 5px;  /* Reduced margin */
+    gap: 10px;
+    margin-top: 10px;  /* Reduced margin above the icons */
 }
 
 .social-icons a {
@@ -168,8 +183,8 @@ body {
 /* Envolée Section */
 .envolee-section {
     background-color: #FBF7F6;
-    padding: 20px 10px;  /* Reduced padding */
-    margin-bottom: 10px;  /* Reduced bottom margin */
+    padding: 40px 20px;  /* Reduced padding */
+    margin-bottom: 20px;  /* Reduced bottom margin */
     border-radius: 12px;
     text-align: center;
 }
@@ -178,20 +193,31 @@ body {
     font-size: 28px;
     font-weight: bold;
     color: #2E2E2E;
-    margin-bottom: 8px;  /* Reduced margin */
-    letter-spacing: 0.5px;
-    line-height: 1.6;
+    margin-bottom: 10px;  /* Reduced spacing */
+    letter-spacing: 0.5px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
     position: relative;
     display: inline-block;
+}
+
+.envolee-section h2 .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #FBF7F6;
+    border-bottom: 3px solid #b969d4;
 }
 
 .envolee-section p {
     font-size: 18px;
     color: #6d6d6d;
-    margin-bottom: 10px;  /* Reduced bottom margin */
-    letter-spacing: 0.5px;
-    line-height: 1.6;
-    font-weight: 500;
+    margin-bottom: 15px;  /* Reduced bottom margin */
+    letter-spacing: 0.5px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
+    font-weight: 500; /* Slightly bold text */
 }
 
 /* Community Events and Other Sections */
@@ -202,8 +228,8 @@ body {
     text-align: left;
     flex-wrap: wrap;
     gap: 0;
-    padding: 20px 10px;  /* Reduced padding */
-    margin-bottom: 10px;  /* Reduced margin */
+    padding: 40px 20px;  /* Reduced padding */
+    margin-bottom: 20px;  /* Reduced margin between sections */
 }
 
 .section-image {
@@ -215,8 +241,8 @@ body {
 
 /* Footer */
 .footer1 {
-    background-color: #000;
-    padding: 40px 15px;  /* Reduced padding */
+    background-color: #000;  /* Set to black */
+    padding: 50px 20px;  /* Reduced padding */
     text-align: center;
     color: #fff;
 }
@@ -230,15 +256,15 @@ body {
 }
 
 .footer-section {
-    margin: 0 15px;  /* Reduced margin */
+    margin: 0 20px;
 }
 
 .footer-section h4 {
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #fff;
-    letter-spacing: 0.5px;
-    line-height: 1.6;
+    letter-spacing: 0.5px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
     font-weight: bold;
 }
 
@@ -249,10 +275,10 @@ body {
 }
 
 .footer-section ul li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-size: 14px;
     color: #ccc;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; /* Consistent character spacing */
     font-weight: 500;
 }
 
@@ -267,21 +293,16 @@ body {
 
 /* Newsletter Section */
 .newsletter-section {
-    background-color: #000;  /* Black background */
-    padding: 40px 20px;
+    background-color: #000;  /* Set to black */
+    padding: 60px 20px;  /* Reduced padding */
     text-align: center;
     color: #fff;
-    border-radius: 20px;  /* Rounded corners */
-    margin-bottom: 10px;
 }
 
-/* Newsletter Form */
 .newsletter-form {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px; /* Adjust spacing between input and button */
-    margin-bottom: 20px;
+    gap: 10px;
 }
 
 .newsletter-form input[type="email"] {
@@ -289,20 +310,20 @@ body {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
-    width: 300px;  /* Adjust input width */
-    letter-spacing: 0.5px;
+    width: 250px;
+    letter-spacing: 0.5px; /* Consistent character spacing */
 }
 
 .newsletter-form button {
     background-color: #FF6C3E;
     color: white;
     border: none;
-    padding: 10px 25px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; /* Consistent character spacing */
     transition: background-color 0.3s ease;
 }
 
@@ -312,106 +333,10 @@ body {
 
 /* Social Icons in Newsletter */
 .newsletter-social {
-    margin-top: 10px;  /* Adjusted margin */
+    margin-top: 20px;
 }
 
 .newsletter-social .social-icons {
     justify-content: center;
-    gap: 10px;  /* Adjusted spacing between social icons */
-}
-
-/* Footer */
-.footer1 {
-    background-color: #000;  /* Black background */
-    padding: 20px 10px;  /* Reduced padding */
-    text-align: center;
-    color: #fff;
-    border-radius: 20px;  /* Rounded corners */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Footer Content */
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-section {
-    margin-bottom: 10px;  /* Reduced space between sections */
-}
-
-.footer-section h4 {
-    font-size: 16px;  /* Reduced font size */
-    margin-bottom: 8px;
-    color: #fff;
-    letter-spacing: 0.5px;
-    line-height: 1.4;  /* Adjusted line height */
-    font-weight: bold;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 6px;  /* Reduced margin between list items */
-    font-size: 13px;  /* Reduced font size */
-    color: #ccc;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: #ccc;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: #fff;
-}
-
-/* Footer Copyright */
-.footer-copyright {
-    margin-top: 15px;  /* Reduced margin */
-    color: #fff;
-    font-size: 12px;  /* Reduced font size */
-}
-
-/* Adjust Footer for mobile responsiveness */
-@media (max-width: 768px) {
-    .footer1 {
-        padding: 15px 10px;  /* Further reduce padding on mobile */
-    }
-
-    .footer-section {
-        margin-bottom: 8px;
-    }
-
-    .footer-section h4 {
-        font-size: 14px;  /* Further reduce font size on mobile */
-    }
-
-    .footer-section ul li {
-        font-size: 12px;
-    }
-
-    .footer-copyright {
-        font-size: 11px;
-    }
-}
-
-/* Footer Copyright */
-.footer-copyright {
-    margin-top: 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-}
+    gap: 15px;
+}a

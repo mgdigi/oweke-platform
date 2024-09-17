@@ -206,22 +206,4 @@ const HomePage = () => {
             <h4>Collaborateurs</h4>
             <ul>
               <li><Link to="/signin">Se connecter</Link></li>
-              <li><Link to="/partners">Espace Partenaires</Link></li>
-              <li><Link to="/signup">S’inscrire</Link></li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Politique de confidentialité & CGV</h4>
-            <ul>
-              <li><Link to="/privacy">Politique de confidentialité</Link></li>
-              <li><Link to="/terms">CGV</Link></li>
-            </ul>
-          </div>
-        </div>
-        <p className="footer-copyright">Copyright © 2024 Oweke</p>
-      </footer>
-    </div>
-  );
-};
-
-export default HomePage;
+              <li><Link to="/partners">Espace Partenaires</

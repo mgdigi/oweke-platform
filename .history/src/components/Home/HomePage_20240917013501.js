@@ -171,55 +171,87 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="newsletter-section">
-        <h3>S'inscrire au Newsletter</h3>
-        <form className="newsletter-form">
-            <input type="email" placeholder="Votre adresse email" />
-            <button type="submit">S'inscrire</button>
-        </form>
-        <div className="newsletter-social">
-            <h3>Rejoindre notre Communauté</h3>
-            <div className="social-icons">
-                <a href="#"><FaFacebookF /></a>
-                <a href="#"><FaInstagram /></a>
-                <a href="#"><FaTwitter /></a>
-                <a href="#"><FaLinkedin /></a>
-            </div>
-        </div>
-      </section>
-
-      {/* Footer Section */}
+      {/* Footer */}
       <footer className="footer1">
-        <div className="footer-content">
-          <div className="footer-section">
+  <div className="footer-content">
+    <div className="footer-section">
+      <h4>Community</h4>
+      <ul>
+        <li><Link to="/about">À propos</Link></li>
+        <li><Link to="/live-dating">Live Dating</Link></li>
+        <li><Link to="/events">Community Events</Link></li>
+        <li><Link to="/blog">Blog</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+    </div>
+    <div className="footer-section">
+      <h4>Collaborateurs</h4>
+      <ul>
+        <li><Link to="/signin">Se connecter</Link></li>
+        <li><Link to="/partners">Espace Partenaires</Link></li>
+        <li><Link to="/signup">S’inscrire</Link></li>
+      </ul>
+    </div>
+    <div className="footer-section">
+      <h4>Politique de confidentialité & CGV</h4>
+      <ul>
+        <li><Link to="/privacy">Politique de confidentialité</Link></li>
+        <li><Link to="/terms">CGV</Link></li>
+      </ul>
+    </div>
+  </div>
+  <p>Copyright © 2024 oweke</p>
+</footer>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+    <h3>S'inscrire au Newsletter</h3>
+    <form class="newsletter-form">
+        <input type="email" placeholder="Votre adresse email" />
+        <button type="submit">S'inscrire</button>
+    </form>
+    <div class="newsletter-social">
+        <h3>Rejoindre notre Communauté</h3>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer1">
+    <div class="footer-content">
+        <div class="footer-section">
             <h4>Community</h4>
             <ul>
-              <li><Link to="/about">À propos</Link></li>
-              <li><Link to="/live-dating">Live Dating</Link></li>
-              <li><Link to="/events">Community Events</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Live Dating</a></li>
+                <li><a href="#">Community Events</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-          </div>
-          <div className="footer-section">
+        </div>
+        <div class="footer-section">
             <h4>Collaborateurs</h4>
             <ul>
-              <li><Link to="/signin">Se connecter</Link></li>
-              <li><Link to="/partners">Espace Partenaires</Link></li>
-              <li><Link to="/signup">S’inscrire</Link></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Espace partenaires</a></li>
+                <li><a href="#">Devenir partenaire</a></li>
             </ul>
-          </div>
-          <div className="footer-section">
+        </div>
+        <div class="footer-section">
             <h4>Politique de confidentialité & CGV</h4>
             <ul>
-              <li><Link to="/privacy">Politique de confidentialité</Link></li>
-              <li><Link to="/terms">CGV</Link></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">CGV</a></li>
             </ul>
-          </div>
         </div>
-        <p className="footer-copyright">Copyright © 2024 Oweke</p>
-      </footer>
+    </div>
+    <p class="footer-copyright">Copyright © 2024 Oli.com</p>
+</footer>
     </div>
   );
 };

@@ -323,7 +323,7 @@ body {
 /* Footer */
 .footer1 {
     background-color: #000;  /* Black background */
-    padding: 20px 10px;  /* Reduced padding */
+    padding: 40px 20px;
     text-align: center;
     color: #fff;
     border-radius: 20px;  /* Rounded corners */
@@ -331,26 +331,27 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 /* Footer Content */
 .footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  /* Center the content */
     justify-content: center;
 }
 
 .footer-section {
-    margin-bottom: 10px;  /* Reduced space between sections */
+    margin-bottom: 20px;  /* Space between sections */
 }
 
 .footer-section h4 {
-    font-size: 16px;  /* Reduced font size */
-    margin-bottom: 8px;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #fff;
     letter-spacing: 0.5px;
-    line-height: 1.4;  /* Adjusted line height */
+    line-height: 1.6;
     font-weight: bold;
 }
 
@@ -361,8 +362,8 @@ body {
 }
 
 .footer-section ul li {
-    margin-bottom: 6px;  /* Reduced margin between list items */
-    font-size: 13px;  /* Reduced font size */
+    margin-bottom: 8px;
+    font-size: 14px;
     color: #ccc;
     letter-spacing: 0.5px;
     font-weight: 500;
@@ -380,31 +381,19 @@ body {
 
 /* Footer Copyright */
 .footer-copyright {
-    margin-top: 15px;  /* Reduced margin */
+    margin-top: 20px;
     color: #fff;
-    font-size: 12px;  /* Reduced font size */
+    font-size: 14px;
 }
 
 /* Adjust Footer for mobile responsiveness */
 @media (max-width: 768px) {
     .footer1 {
-        padding: 15px 10px;  /* Further reduce padding on mobile */
+        padding: 30px 10px;
     }
 
     .footer-section {
-        margin-bottom: 8px;
-    }
-
-    .footer-section h4 {
-        font-size: 14px;  /* Further reduce font size on mobile */
-    }
-
-    .footer-section ul li {
-        font-size: 12px;
-    }
-
-    .footer-copyright {
-        font-size: 11px;
+        margin-bottom: 15px;
     }
 }
 
