@@ -28,10 +28,10 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <div className="illustration">
-        
+        <img src="/assets/images/signup-illustration.png" alt="Illustration" />
       </div>
       <div className="signup-form">
-        <h2>Rejoignez oweke</h2>
+        <h2>Rejoignez Vizmeet</h2>
         <form>
           <label htmlFor="fullName">Nom Complet :</label>
           <input type="text" id="fullName" required />

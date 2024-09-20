@@ -28,7 +28,7 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <div className="illustration">
-        
+        <img sr
       </div>
       <div className="signup-form">
         <h2>Rejoignez oweke</h2>

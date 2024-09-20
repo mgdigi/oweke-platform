@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { signInWithPopup } from 'firebase/auth';
 import { auth, googleProvider, sendEmailVerification } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
-import './Signup.css'; // Ensure the correct path
+import './Signup.css'; // Import CSS for styling
 
 const Signup = () => {
   const navigate = useNavigate();  // Use navigate to redirect
@@ -28,10 +28,10 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <div className="illustration">
-        
+        <img src="/assets/images/signup-illustration.png" alt="Illustration" />
       </div>
       <div className="signup-form">
-        <h2>Rejoignez oweke</h2>
+        <h2>Rejoignez Vizmeet</h2>
         <form>
           <label htmlFor="fullName">Nom Complet :</label>
           <input type="text" id="fullName" required />
@@ -47,15 +47,13 @@ const Signup = () => {
 
           <div className="terms">
             <input type="checkbox" id="terms" required />
-            <label htmlFor="terms">
-              J'accepte les <button className="link-button" onClick={() => console.log('Handle terms click')}>[Termes et Conditions]</button>
-            </label>
+            <label htmlFor="terms">J'accepte les <a href="#">[Termes et Conditions]</a></label>
           </div>
 
           <button type="submit" className="signup-btn">S'inscrire</button>
         </form>
 
-        <p>Déjà membre ? <button className="link-button" onClick={() => console.log('Handle login click')}>[Connectez-vous ici]</button></p>
+        <p>Déjà membre ? <a href="#">[Connectez-vous ici]</a></p>
 
         <div className="social-signup">
           <p>Inscrivez-vous avec :</p>
@@ -63,9 +61,7 @@ const Signup = () => {
         </div>
 
         {verificationSent && (
-          <p className="verification-message">
-            Un e-mail de vérification a été envoyé. Veuillez vérifier votre boîte de réception.
-          </p>
+          <p className="verification-message">Un e-mail de vérification a été envoyé. Veuillez vérifier votre boîte de réception.</p>
         )}
       </div>
     </div>

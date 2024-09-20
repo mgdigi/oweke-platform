@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build",  
+    "public": "build",  // This points to the build folder created by `npm run build`
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -11,7 +11,7 @@ import Blog from './Blog/Blog';  // Importing Blog component
 
 function App() {
   return (
-    <Routes> {/* Use Routes here, without wrapping it in Router */}
+    <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
