@@ -11,20 +11,20 @@ const eventsData = [
     time: "20:00 à 22:00",
     ageRange: "45 à 54 ans",
     region: "Paris",
-    category: "Homme",
-    genderPreference: "Mixte",
+    category: "Men",
+    genderPreference: "Mixed",
     price: 10,
     image: EventCardImage,
   },
   {
     id: 2,
-    title: "Événement de réseautage",
+    title: "Networking Event",
     date: "2023-05-20",
     time: "14:00 à 16:00",
     ageRange: "25 à 34 ans",
     region: "Lyon",
-    category: "Femme",
-    genderPreference: "Femmes uniquement",
+    category: "Women",
+    genderPreference: "Women Only",
     price: 5,
     image: EventCardImage,
   },
@@ -42,9 +42,9 @@ const EventsPage = () => {
   const [loading, setLoading] = useState(false);
 
   const regions = ["Paris", "Lyon", "Marseille"];
-  const categories = ["Homme", "Femme"];
+  const categories = ["Men", "Women"];
   const ageRanges = ["18 à 24 ans", "25 à 34 ans", "35 à 44 ans", "45 à 54 ans"];
-  const genderPreferences = ["Mixte", "Hommes uniquement", "Femmes uniquement"];
+  const genderPreferences = ["Mixed", "Men Only", "Women Only"];
   const priceRanges = ["0-5", "6-10", "11-20"];
 
   const handleFilterChange = () => {
@@ -104,7 +104,7 @@ const EventsPage = () => {
         <h1 className="logo-text">OWEKE</h1>
         <ul className="nav-links">
           <li><a href="/">Accueil</a></li>
-          <li><a href="/events">Événements Communautaires</a></li>
+          <li><a href="/events">Community Events</a></li>
           <li><a href="/counseling">Conseiller Love</a></li>
           <li><a href="/blog">Blog</a></li>
         </ul>
@@ -114,14 +114,14 @@ const EventsPage = () => {
       {/* Hero Section */}
       <header className="hero-section">
         <div className="hero-image">
-          <img src={EventHeroImage} alt="Événements" />
+          <img src={EventHeroImage} alt="Events" />
         </div>
       </header>
 
       <div className="content-container">
         {/* Sidebar for Filters */}
         <aside className="sidebar">
-          <h3>Filtrer les événements</h3>
+          <h3>Filter Events</h3>
           <div className="filter-item">
             <label>Région:</label>
             <select value={selectedRegion} onChange={e => setSelectedRegion(e.target.value)}>
@@ -175,15 +175,15 @@ const EventsPage = () => {
               ))}
             </select>
           </div>
-          <button onClick={handleFilterChange} className="btn">Appliquer les filtres</button>
-          <button onClick={handleResetFilters} className="btn">Réinitialiser les filtres</button>
+          <button onClick={handleFilterChange} className="btn">Apply Filters</button>
+          <button onClick={handleResetFilters} className="btn">Reset Filters</button>
         </aside>
 
         {/* Upcoming Events */}
         <main className="upcoming-events">
-          <h3>Événements à venir :</h3>
+          <h3>Évènements à venir :</h3>
           {loading ? (
-            <div className="loading-spinner">Chargement...</div>
+            <div className="loading-spinner">Loading...</div>
           ) : (
             <div className="events-list">
               {filteredEvents.length > 0 ? (
@@ -195,7 +195,7 @@ const EventsPage = () => {
                     <p>Horraire : {event.time}</p>
                     <p>Tranches d'âges : {event.ageRange}</p>
                     <p>Prix : {event.price} €</p>
-                    <button className="btn">Réserver votre billet</button>
+                    <button className="btn">Reserver Votre Ticket</button>
                     <button className="btn">En savoir plus</button>
                     <div className="advertisement">
                       <p>Publicité ici</p>
@@ -203,7 +203,7 @@ const EventsPage = () => {
                   </div>
                 ))
               ) : (
-                <p className="no-events-message">Aucun événement trouvé</p>
+                <p className="no-events-message">No events found</p>
               )}
             </div>
           )}
@@ -217,7 +217,7 @@ const EventsPage = () => {
             <ul>
               <li><a href="/about">À propos</a></li>
               <li><a href="/live-dating">Live Dating</a></li>
-              <li><a href="/events">Événements Communautaires</a></li>
+              <li><a href="/events">Community Events</a></li>
               <li><a href="/blog">Blog</a></li>
             </ul>
             <ul>
@@ -227,14 +227,4 @@ const EventsPage = () => {
             </ul>
             <ul>
               <li><a href="/privacy">Politique de confidentialité</a></li>
-              <li><a href="/terms">CGV</a></li>
-            </ul>
-          </div>
-          <p>Copyright © 2023 Oweke</p>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default EventsPage;
+              <li><a href="/terms">CGV</a></

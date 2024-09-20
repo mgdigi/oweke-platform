@@ -195,46 +195,4 @@ const EventsPage = () => {
                     <p>Horraire : {event.time}</p>
                     <p>Tranches d'âges : {event.ageRange}</p>
                     <p>Prix : {event.price} €</p>
-                    <button className="btn">Réserver votre billet</button>
-                    <button className="btn">En savoir plus</button>
-                    <div className="advertisement">
-                      <p>Publicité ici</p>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <p className="no-events-message">Aucun événement trouvé</p>
-              )}
-            </div>
-          )}
-        </main>
-      </div>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-links">
-            <ul>
-              <li><a href="/about">À propos</a></li>
-              <li><a href="/live-dating">Live Dating</a></li>
-              <li><a href="/events">Événements Communautaires</a></li>
-              <li><a href="/blog">Blog</a></li>
-            </ul>
-            <ul>
-              <li><a href="/signin">Se connecter</a></li>
-              <li><a href="/partners">Espace Partenaires</a></li>
-              <li><a href="/signup">S’inscrire</a></li>
-            </ul>
-            <ul>
-              <li><a href="/privacy">Politique de confidentialité</a></li>
-              <li><a href="/terms">CGV</a></li>
-            </ul>
-          </div>
-          <p>Copyright © 2023 Oweke</p>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default EventsPage;
+                    <button className="btn"></button>

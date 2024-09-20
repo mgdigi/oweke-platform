@@ -195,7 +195,7 @@ const EventsPage = () => {
                     <p>Horraire : {event.time}</p>
                     <p>Tranches d'âges : {event.ageRange}</p>
                     <p>Prix : {event.price} €</p>
-                    <button className="btn">Réserver votre billet</button>
+                    <button className="btn"></button>Réserver votre billet</button>
                     <button className="btn">En savoir plus</button>
                     <div className="advertisement">
                       <p>Publicité ici</p>

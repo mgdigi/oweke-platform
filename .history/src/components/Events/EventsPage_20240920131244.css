@@ -356,20 +356,4 @@ body {
         font-size: 24px;
     }
 
-    .events-description p, .event-card h4 {
-        font-size: 14px;
-    }
-
-    .cta-button, .event-card .btn {
-        padding: 10px 25px;
-        font-size: 14px;
-    }
-
-    .footer h4 {
-        font-size: 18px;
-    }
-
-    .footer p {
-        font-size: 12px;
-    }
-}
+    .events-description p, .event-card h

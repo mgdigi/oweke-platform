@@ -226,15 +226,4 @@ const EventsPage = () => {
               <li><a href="/signup">S’inscrire</a></li>
             </ul>
             <ul>
-              <li><a href="/privacy">Politique de confidentialité</a></li>
-              <li><a href="/terms">CGV</a></li>
-            </ul>
-          </div>
-          <p>Copyright © 2023 Oweke</p>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default EventsPage;
+              <li><a
