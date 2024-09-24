@@ -286,19 +286,6 @@ body {
     justify-content: center;
 }
 
-/* Footer */
-.footer1 {
-    background-color: #333;
-    padding: 30px 20px;  /* Match padding with the newsletter section */
-    text-align: center;
-    color: #fff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Footer Content */
 .footer-content {
     display: flex;
@@ -342,24 +329,6 @@ body {
 
 .footer-section ul li a:hover {
     color: #fff;
-}
-
-/* Social Icons in Footer */
-.footer-social {
-    margin-top: 10px;
-}
-
-.footer-social .social-icons {
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Footer Copyright */
-.footer-copyright {
-    margin-top: 10px;
-    text-align: center;
-    color: #ccc;
-    font-size: 12px;
 }
 
 /* Newsletter Section */

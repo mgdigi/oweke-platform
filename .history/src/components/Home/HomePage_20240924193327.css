@@ -1,14 +1,14 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+    font-family: 'Poppins', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #FFF8F0; /* Soft background color */
+    background-color: #FFF8F0;
     line-height: 1.6;
     letter-spacing: 0.5px;
     font-weight: 400;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 /* Container */
@@ -78,7 +78,7 @@ body {
 /* Hero Section with Video Background */
 .hero {
     position: relative;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,11 +97,11 @@ body {
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -1;
-    opacity: 0.7; /* Slight opacity for a more subtle effect */
+    opacity: 0.7;
 }
 
 .hero-content {
-    z-index: 2;  /* Ensure content appears above the video */
+    z-index: 2;
     max-width: 600px;
     margin-bottom: 20px;
 }
@@ -190,17 +190,17 @@ body {
     color: #fff;
 }
 
-/* Envolée Section */
-.envolee-section {
+/* Section Styling (Envolée, Community Events, Simple Use) */
+.section {
     background-color: #FFF8F0;
     padding: 30px 20px;
     margin-bottom: 20px;
     border-radius: 15px;
     text-align: center;
-    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    animation: fadeIn 1s ease-in-out;
 }
 
-.envolee-section h2 {
+.section h2, .section h3 {
     font-size: 32px;
     font-weight: bold;
     color: #333;
@@ -209,7 +209,7 @@ body {
     line-height: 1.4;
 }
 
-.envolee-section p {
+.section p {
     font-size: 18px;
     color: #777;
     margin-bottom: 15px;
@@ -218,33 +218,8 @@ body {
     font-weight: 400;
 }
 
-/* Community Events and Other Sections */
-.community-events, .simple-use {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 30px 10px;
-    margin-bottom: 20px;
-}
-
-.section-image {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    margin-left: 0;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    vertical-align: top;
-}
-
-.section-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.section .cta-button {
+    margin-top: 20px;
 }
 
 /* Cards for Highlighting Key Features */
@@ -255,7 +230,7 @@ body {
     padding: 20px;
     transition: box-shadow 0.3s ease;
     text-align: center;
-    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    animation: fadeIn 1s ease-in-out;
 }
 
 .card:hover {
@@ -276,20 +251,7 @@ body {
 /* Footer */
 .footer1 {
     background-color: #333;
-    padding: 20px 10px;
-    text-align: center;
-    color: #fff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Footer */
-.footer1 {
-    background-color: #333;
-    padding: 30px 20px;  /* Match padding with the newsletter section */
+    padding: 30px 20px; /* Match padding with the newsletter section */
     text-align: center;
     color: #fff;
     border-radius: 15px;
@@ -379,7 +341,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
-    flex-wrap: wrap;  /* Ensure responsiveness */
+    flex-wrap: wrap;
 }
 
 .newsletter-form input[type="email"] {
@@ -387,191 +349,4 @@ body {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
-    width: 100%;  /* Full width on smaller screens */
-    max-width: 300px;
-    letter-spacing: 0.5px;
-}
-
-.newsletter-form button {
-    background-color: #FF6F61;
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    transition: background-color 0.3s ease;
-}
-
-.newsletter-form button:hover {
-    background-color: #FF8C73;
-}
-
-/* Social Icons in Newsletter */
-.newsletter-social {
-    margin-top: 10px;
-}
-
-.newsletter-social .social-icons {
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Footer Copyright */
-.footer-copyright {
-    margin-top: 10px;
-    text-align: center;
-    color: #ccc;
-    font-size: 12px;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 10px;
-    }
-
-    .hero-content {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .community-events, .simple-use {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .section-image {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .footer1 {
-        padding: 15px 10px;
-    }
-
-    .footer-section {
-        margin-bottom: 8px;
-    }
-
-    .footer-section h4 {
-        font-size: 14px;
-    }
-
-    .footer-section ul li {
-        font-size: 12px;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .newsletter-form input[type="email"] {
-        width: 100%;
-    }
-
-    .newsletter-social .social-icons {
-        justify-content: center;
-    }
-
-    .footer-copyright {
-        font-size: 11px;
-    }
-}
-
-/* Additional Responsiveness for Smaller Devices */
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 32px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-
-    .envolee-section h2 {
-        font-size: 24px;
-    }
-
-    .envolee-section p {
-        font-size: 16px;
-    }
-}
-
-/* Subtle Animations for Enhanced Experience */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Flexbox Grid for Better Layout Control */
-.flex-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.flex-item {
-    flex: 1;
-    min-width: 280px;
-    margin: 10px;
-}
-
-/* Enhanced Forms for User Interaction */
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-    display: block;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    margin-top: 5px;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: #FF6F61;
-}

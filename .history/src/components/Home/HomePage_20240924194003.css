@@ -1,14 +1,14 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+    font-family: 'Poppins', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #FFF8F0; /* Soft background color */
+    background-color: #FFF8F0;
     line-height: 1.6;
     letter-spacing: 0.5px;
     font-weight: 400;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 /* Container */
@@ -26,6 +26,7 @@ body {
     align-items: center;
     padding: 10px 0;
     margin-bottom: 10px;
+    background-color: #FFF8F0; /* Matching the page background color */
 }
 
 .logo-text {
@@ -78,129 +79,57 @@ body {
 /* Hero Section with Video Background */
 .hero {
     position: relative;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    overflow: hidden;
-    color: #fff;
-    background-color: #f7f0e6;  /* Background color as a fallback */
-}
-
-.hero video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0.7; /* Slight opacity for a more subtle effect */
+    padding: 40px 20px;
+    background-color: #FFF8F0;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .hero-content {
-    z-index: 2;  /* Ensure content appears above the video */
-    max-width: 600px;
-    margin-bottom: 20px;
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
 }
 
-.hero-content h1 {
-    font-size: 42px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px;
-    line-height: 1.4;
-}
-
-.hero-content p {
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    font-weight: 400;
-    padding-left: 10px;
-}
-
-.cta-button {
-    background-color: #FF6F61;
-    color: #fff;
-    padding: 12px 40px;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px;
-}
-
-.cta-button:hover {
-    background-color: #FF8C73;
-}
-
-/* Enhanced Image Styling */
-.img-same-size {
-    width: 100%;
-    max-width: 280px;
+.heroimage {
+    max-width: 40%;
     height: auto;
-    object-fit: cover;
-    display: inline-block;
-    margin: 10px 10px 0 0;
-    padding: 0;
+    margin-left: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     vertical-align: top;
 }
 
-.img-same-size:hover {
+.heroimage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.heroimage:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Social Icons */
-.social-icons {
+/* Section Styling (Envolée, Community Events, Simple Use) */
+.section {
     display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.social-icons a {
-    background-color: #333;
-    color: #fff;
-    font-size: 18px;
-    width: 40px;
-    height: 40px;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-    background-color: #FF6F61;
-    color: #fff;
-}
-
-/* Envolée Section */
-.envolee-section {
-    background-color: #FFF8F0;
+    text-align: left;
     padding: 30px 20px;
     margin-bottom: 20px;
+    background-color: #FFF8F0;
     border-radius: 15px;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    animation: fadeIn 1s ease-in-out;
 }
 
-.envolee-section h2 {
+.section h2, .section h3 {
     font-size: 32px;
     font-weight: bold;
     color: #333;
@@ -209,7 +138,7 @@ body {
     line-height: 1.4;
 }
 
-.envolee-section p {
+.section p {
     font-size: 18px;
     color: #777;
     margin-bottom: 15px;
@@ -218,24 +147,19 @@ body {
     font-weight: 400;
 }
 
-/* Community Events and Other Sections */
-.community-events, .simple-use {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 30px 10px;
-    margin-bottom: 20px;
+.section .cta-button {
+    margin-top: 20px;
+}
+
+.section-content {
+    flex: 1;
+    padding-right: 20px;
 }
 
 .section-image {
-    width: 100%;
-    max-width: 280px;
+    max-width: 40%;
     height: auto;
-    margin-left: 0;
-    object-fit: cover;
+    margin-left: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -247,49 +171,10 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Cards for Highlighting Key Features */
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: box-shadow 0.3s ease;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.card p {
-    font-size: 14px;
-    color: #777;
-}
-
 /* Footer */
 .footer1 {
     background-color: #333;
-    padding: 20px 10px;
-    text-align: center;
-    color: #fff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Footer */
-.footer1 {
-    background-color: #333;
-    padding: 30px 20px;  /* Match padding with the newsletter section */
+    padding: 20px 10px; /* Reduced padding to make the footer more compact */
     text-align: center;
     color: #fff;
     border-radius: 15px;
@@ -379,7 +264,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
-    flex-wrap: wrap;  /* Ensure responsiveness */
+    flex-wrap: wrap;
 }
 
 .newsletter-form input[type="email"] {
@@ -387,7 +272,7 @@ body {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
-    width: 100%;  /* Full width on smaller screens */
+    width: 100%; /* Full width on smaller screens */
     max-width: 300px;
     letter-spacing: 0.5px;
 }
@@ -417,14 +302,6 @@ body {
 .newsletter-social .social-icons {
     justify-content: center;
     gap: 10px;
-}
-
-/* Footer Copyright */
-.footer-copyright {
-    margin-top: 10px;
-    text-align: center;
-    color: #ccc;
-    font-size: 12px;
 }
 
 /* Mobile Responsiveness */
@@ -490,88 +367,4 @@ body {
     }
 
     .footer-copyright {
-        font-size: 11px;
-    }
-}
-
-/* Additional Responsiveness for Smaller Devices */
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 32px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-
-    .envolee-section h2 {
-        font-size: 24px;
-    }
-
-    .envolee-section p {
-        font-size: 16px;
-    }
-}
-
-/* Subtle Animations for Enhanced Experience */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Flexbox Grid for Better Layout Control */
-.flex-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.flex-item {
-    flex: 1;
-    min-width: 280px;
-    margin: 10px;
-}
-
-/* Enhanced Forms for User Interaction */
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-    display: block;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    margin-top: 5px;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: #FF6F61;
-}
+       

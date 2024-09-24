@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './HomePage.css';
 
 // Importing Firebase methods
-import { auth, onAuthStateChange } from '../firebase';  
+import { auth, onAuthStateChanged } from '../firebase';  
 import { signOut, reload } from 'firebase/auth';  
 
 // Importing images and icons
@@ -20,7 +20,7 @@ const HomePage = () => {
 
   useEffect(() => {
     // Listen for authentication state changes
-    const unsubscribe = onAuthStateChange((authUser) => {
+    const unsubscribe = onAuthStateChanged(auth, (authUser) => {
       if (authUser) {
         setUser(authUser);
         setEmailVerified(authUser.emailVerified);  
@@ -89,10 +89,14 @@ const HomePage = () => {
             </>
           )}
         </ul>
-        <button className="get-app-button">Telecharger</button>
+        <button className="get-app-button">Télécharger</button>
       </nav>
 
       <header className="hero">
+        <video autoplay muted loop>
+            <source src="path-to-your-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
         <div className="hero-content">
           <h1>Une Rencontre <br /><span className="underline">Depuis Ta Webcam</span></h1>
           <p>Oweke : Votre Destination Pour L'Amour Et La Romance. <br />
@@ -187,21 +191,4 @@ const HomePage = () => {
             <ul>
               <li><Link to="/signin">Se connecter</Link></li>
               <li><Link to="/partners">Espace Partenaires</Link></li>
-              <li><Link to="/signup">S’inscrire</Link></li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Politique de confidentialité & CGV</h4>
-            <ul>
-              <li><Link to="/privacy">Politique de confidentialité</Link></li>
-              <li><Link to="/terms">CGV</Link></li>
-            </ul>
-          </div>
-        </div>
-        <p className="footer-copyright">Copyright © 2024 Oweke</p>
-      </footer>
-    </div>
-  );
-};
-
-export default HomePage;
+              <
