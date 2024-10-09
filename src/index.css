@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Propriétés Flex */
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-items-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}

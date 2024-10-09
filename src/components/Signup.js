@@ -4,6 +4,9 @@ import { signInWithPopup } from 'firebase/auth';
 import { auth, googleProvider, sendEmailVerification } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import './Signup.css'; // Ensure the correct path
+import SignUpBg from '../assets/signup_bg.jpg';
+import OwekeLogo from '../assets/logo.png';
+import GoogleLogo from '../assets/Google.svg';
 
 const Signup = () => {
   const navigate = useNavigate();  // Use navigate to redirect
@@ -26,48 +29,46 @@ const Signup = () => {
   };
 
   return (
-    <div className="signup-container">
-      <div className="illustration">
-        
+    <div className='container_signUp row align-items-center'>
+      <div className='left' style={{backgroundImage: `url(${SignUpBg})`}}>
+        <h2>Welcome back</h2>
+        <p>To keep connected with us provide us with your information</p>
+        <button onClick={() => console.log('Handle login click')}>Sign in</button>
       </div>
-      <div className="signup-form">
-        <h2>Rejoignez oweke</h2>
+      <div className='right'>
+        <div className='title row align-items-center'>
+          <img src={OwekeLogo} alt="Image" />
+          <h1>OWEKE</h1>
+        </div>
         <form>
-          <label htmlFor="fullName">Nom Complet :</label>
-          <input type="text" id="fullName" required />
+          <label htmlFor="fullName">Your name</label>
+          <input type="text" id="fullName" placeholder='Enter your name' required />
 
-          <label htmlFor="email">E-mail :</label>
-          <input type="email" id="email" required />
+          <label htmlFor="password">Password</label>
+          <input type="password" id="password" placeholder='Enter your password' required />
 
-          <label htmlFor="password">Mot de passe :</label>
-          <input type="password" id="password" required />
-
-          <label htmlFor="confirmPassword">Confirmer le Mot de passe :</label>
-          <input type="password" id="confirmPassword" required />
+          <label htmlFor="confirmPassword">Confirm password</label>
+          <input type="password" id="confirmPassword" placeholder='Enter your password' required />
 
           <div className="terms">
             <input type="checkbox" id="terms" required />
             <label htmlFor="terms">
-              J'accepte les <button className="link-button" onClick={() => console.log('Handle terms click')}>[Termes et Conditions]</button>
+              J'accepte les <a href='#' className="link-button" onClick={() => console.log('Handle terms click')}>Termes et Conditions</a>
             </label>
           </div>
 
-          <button type="submit" className="signup-btn">S'inscrire</button>
+          <div className='column align-items-center'>
+            <button type="submit" className="signup-btn">Sign up</button>
+            <p>Or</p>
+            <button onClick={handleGoogleSignup} className="google-signup-btn"><img src={GoogleLogo} alt="Image" />Sign up with Google</button>
+          </div>
         </form>
-
-        <p>Déjà membre ? <button className="link-button" onClick={() => console.log('Handle login click')}>[Connectez-vous ici]</button></p>
-
-        <div className="social-signup">
-          <p>Inscrivez-vous avec :</p>
-          <button onClick={handleGoogleSignup} className="google-signup-btn">Google</button>
-        </div>
-
-        {verificationSent && (
+      </div>
+      {verificationSent && (
           <p className="verification-message">
             Un e-mail de vérification a été envoyé. Veuillez vérifier votre boîte de réception.
           </p>
         )}
-      </div>
     </div>
   );
 };
