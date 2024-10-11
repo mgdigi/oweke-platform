@@ -40,9 +40,6 @@ const EventsPage = () => {
   const [selectedGenderPreference, setSelectedGenderPreference] = useState("");
   const [selectedPriceRange, setSelectedPriceRange] = useState("");
   const [loading, setLoading] = useState(false);
-  const [bookingSuccess, setBookingSuccess] = useState(false);
-  const [selectedEvent, setSelectedEvent] = useState(null);
-  const [videoCallLink, setVideoCallLink] = useState("");
 
   const regions = ["Paris", "Lyon", "Marseille"];
   const categories = ["Homme", "Femme"];
@@ -100,23 +97,9 @@ const EventsPage = () => {
     setFilteredEvents(eventsData);
   };
 
-  const handleBooking = (eventId) => {
-    setLoading(true); // Simulate booking process
-    setTimeout(() => {
-      const event = eventsData.find(e => e.id === eventId);
-      setSelectedEvent(event);
-      setBookingSuccess(true);
-
-      // Generate dynamic video call link (you can use Zoom, Jitsi, etc.)
-      const generatedVideoLink = `https://zoom.us/j/1234567890?event=${event.id}`; // Example Zoom link
-      setVideoCallLink(generatedVideoLink);
-
-      setLoading(false);
-    }, 1000);
-  };
-
   return (
     <div className="events-page">
+      {/* Navigation Bar */}
       <nav className="navbar">
         <h1 className="logo-text">OWEKE</h1>
         <ul className="nav-links">
@@ -128,6 +111,7 @@ const EventsPage = () => {
         <button className="get-app-button">Get App</button>
       </nav>
 
+      {/* Hero Section */}
       <header className="hero-section">
         <div className="hero-image">
           <img src={EventHeroImage} alt="Événements" />
@@ -135,6 +119,7 @@ const EventsPage = () => {
       </header>
 
       <div className="content-container">
+        {/* Sidebar for Filters */}
         <aside className="sidebar">
           <h3>Filtrer les événements</h3>
           <div className="filter-item">
@@ -194,20 +179,11 @@ const EventsPage = () => {
           <button onClick={handleResetFilters} className="btn">Réinitialiser les filtres</button>
         </aside>
 
+        {/* Upcoming Events */}
         <main className="upcoming-events">
           <h3>Événements à venir :</h3>
           {loading ? (
             <div className="loading-spinner">Chargement...</div>
-          ) : bookingSuccess ? (
-            <div className="booking-confirmation">
-              <h3>Réservation réussie pour l'événement : {selectedEvent.title}</h3>
-              <p>Date : {selectedEvent.date}</p>
-              <p>Heure : {selectedEvent.time}</p>
-              <p>Vous pouvez maintenant rejoindre l'appel vidéo :</p>
-              <a href={videoCallLink} target="_blank" rel="noopener noreferrer">
-                Cliquez ici pour rejoindre la réunion
-              </a>
-            </div>
           ) : (
             <div className="events-list">
               {filteredEvents.length > 0 ? (
@@ -219,9 +195,7 @@ const EventsPage = () => {
                     <p>Horraire : {event.time}</p>
                     <p>Tranches d'âges : {event.ageRange}</p>
                     <p>Prix : {event.price} €</p>
-                    <button className="btn" onClick={() => handleBooking(event.id)}>
-                      Réserver votre billet
-                    </button>
+                    <button className="btn">Réserver votre billet</button>
                     <button className="btn">En savoir plus</button>
                     <div className="advertisement">
                       <p>Publicité ici</p>
@@ -236,6 +210,7 @@ const EventsPage = () => {
         </main>
       </div>
 
+      {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-links">
