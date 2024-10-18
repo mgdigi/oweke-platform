@@ -1,0 +1,102 @@
+.container_signUp {
+    height: 100vh;
+}
+.container_signUp .left {
+    display: none;
+    flex: 1;
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 4rem;
+    background-size: cover;
+}
+.container_signUp .left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+    .container_signUp .left {
+        display: flex;
+    }
+}
+.container_signUp .left button {
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.container_signUp .right {
+    flex: 2;
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.container_signUp .right .title img {
+    max-height: 250px;
+}
+.container_signUp .right .title h1 {
+    display: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 768px) {
+    .container_signUp .right .title h1 {
+        display: block;
+    }
+}
+.container_signUp .right form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.container_signUp .right form label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.container_signUp .right form input[type="text"], .container_signUp .right form input[type="email"], .container_signUp .right form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #FFF;
+    padding: 1rem;
+    width: 100%;
+}
+.container_signUp .right form .terms {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.container_signUp .right form .terms label {
+    text-transform: none;
+    margin-bottom: 0;
+}
+.container_signUp .right form button {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+.container_signUp .right form button[type="submit"] {
+    width: 100%;
+    max-width: 250px;
+    background: #7848F4;
+    color: #FFF;
+    border: none;
+}
+.container_signUp .right form button.google-signup-btn {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background: #FFF;
+    border: 1px solid #E0E0E9;
+}

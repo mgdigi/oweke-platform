@@ -1,0 +1,417 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F6;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; /* Reduced padding */
+    background-color: #FBF7F6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;  /* Reduced padding */
+    margin-bottom: 5px;  /* Reduced bottom margin */
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;  /* Reduced gap */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+    text-decoration: underline;
+}
+
+.get-app-button {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 15px;  /* Reduced padding */
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 20px 10px;  /* Reduced padding */
+    background-color: #FBF7F6;
+    flex-wrap: wrap;
+    margin-bottom: 10px; /* Reduced margin below */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 5px;  /* Reduced bottom margin */
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 8px;  /* Reduced margin between title and text */
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #4A4A4A;
+    margin-bottom: 10px;  /* Reduced margin */
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    border-left: 3px solid #000;
+    padding-left: 10px;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;  /* Reduced bottom margin */
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Uniform Image Size for All Images */
+.img-same-size {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;  /* Reduced gap */
+    margin-top: 5px;  /* Reduced margin */
+}
+
+.social-icons a {
+    background-color: #12002B;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #b969d4;
+    color: #fff;
+}
+
+/* Envolée Section */
+.envolee-section {
+    background-color: #FBF7F6;
+    padding: 20px 10px;  /* Reduced padding */
+    margin-bottom: 10px;  /* Reduced bottom margin */
+    border-radius: 12px;
+    text-align: center;
+}
+
+.envolee-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-bottom: 8px;  /* Reduced margin */
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    position: relative;
+    display: inline-block;
+}
+
+.envolee-section p {
+    font-size: 18px;
+    color: #6d6d6d;
+    margin-bottom: 10px;  /* Reduced bottom margin */
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Community Events and Other Sections */
+.community-events, .simple-use {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 20px 10px;  /* Reduced padding */
+    margin-bottom: 10px;  /* Reduced margin */
+}
+
+.section-image {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer1 {
+    background-color: #000;
+    padding: 40px 15px;  /* Reduced padding */
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-section {
+    margin: 0 15px;  /* Reduced margin */
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #ccc;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #000;  /* Black background */
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;  /* Rounded corners */
+    margin-bottom: 10px;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between input and button */
+    margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    width: 300px;  /* Adjust input width */
+    letter-spacing: 0.5px;
+}
+
+.newsletter-form button {
+    background-color: #FF6C3E;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #FF5430;
+}
+
+/* Social Icons in Newsletter */
+.newsletter-social {
+    margin-top: 10px;  /* Adjusted margin */
+}
+
+.newsletter-social .social-icons {
+    justify-content: center;
+    gap: 10px;  /* Adjusted spacing between social icons */
+}
+
+/* Footer */
+.footer1 {
+    background-color: #000;  /* Black background */
+    padding: 20px 10px;  /* Reduced padding */
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;  /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section {
+    margin-bottom: 10px;  /* Reduced space between sections */
+}
+
+.footer-section h4 {
+    font-size: 16px;  /* Reduced font size */
+    margin-bottom: 8px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 1.4;  /* Adjusted line height */
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;  /* Reduced margin between list items */
+    font-size: 13px;  /* Reduced font size */
+    color: #ccc;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+    margin-top: 15px;  /* Reduced margin */
+    color: #fff;
+    font-size: 12px;  /* Reduced font size */
+}
+
+/* Adjust Footer for mobile responsiveness */
+@media (max-width: 768px) {
+    .footer1 {
+        padding: 15px 10px;  /* Further reduce padding on mobile */
+    }
+
+    .footer-section {
+        margin-bottom: 8px;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;  /* Further reduce font size on mobile */
+    }
+
+    .footer-section ul li {
+        font-size: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 11px;
+    }
+}
+
+/* Footer Copyright */
+.footer-copyright {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}

@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D2B;  /* Background color */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #0D0D2B;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 20px 20px 0 0;  /* Rounded top corners */
+    position: relative;
+}
+
+.hero-section img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    color: #ddd;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-section .event-hero {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add other necessary CSS for the rest of the page here */

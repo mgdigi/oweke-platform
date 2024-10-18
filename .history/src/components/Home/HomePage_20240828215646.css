@@ -1,0 +1,346 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #f9efef;  /* Background color */
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f9efef;  /* Ensure the container background matches */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+    text-decoration: underline;
+}
+
+.get-app-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #f5eded; /* Updated background color */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 span.underline {
+    position: relative;
+    color: #000; /* Ensure text is black */
+}
+
+.hero-content h1 span.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjusts the vertical position of the underline */
+    width: 100%;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #b969d4; /* Color of the underline */
+    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
+}
+
+/* Hero Section - Paragraph */
+.hero-content p {
+    font-size: 18px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved line spacing */
+    border-left: 3px solid #000; /* Changed the line color to black */
+    padding-left: 10px; /* Spacing between the line and the text */
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Spacing between button and icons */
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: auto;
+    margin-left: 50px; /* Adjust spacing to position image */
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #b969d4;
+}
+
+/* Envolée Section */
+.envolee-section {
+    background-color: #f5eded;  /* Matching background color */
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.envolee-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2E2E; /* Darker color */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.envolee-section h2 .underline {
+    position: relative;
+    color: #000; /* Ensure text is black */
+}
+
+.envolee-section h2 .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjusts the vertical position of the underline */
+    width: 100%;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #b969d4; /* Color of the underline */
+    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
+}
+
+.envolee-section p {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 20px;
+}
+
+/* Community Events Section */
+.community-events {
+    background-color: #f5eded;  /* Matching background color */
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.community-events .content {
+    max-width: 50%;
+}
+
+.community-events h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2E2E; /* Darker color */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.community-events h2 .underline {
+    position: relative;
+    color: #000; /* Ensure text is black */
+}
+
+.community-events h2 .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjusts the vertical position of the underline */
+    width: 100%;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #b969d4; /* Color of the underline */
+    border-bottom: 3px solid #b969d4; /* Adds the pink border beneath */
+}
+
+.community-events p {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.cta-button-small {
+    background-color: #000; /* Black button color */
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-small:hover {
+    background-color: #333;
+}
+
+/* Simple to Use Section */
+.simple-use {
+    background-color: #f5eded;  /* Matching background color */
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.simple-use h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2E2E; /* Darker color */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.simple-use p {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #12002B; /* Dark purple background */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0; /* Rounded top corners */
+    margin-top: 40px;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #b969d4;
+}
+

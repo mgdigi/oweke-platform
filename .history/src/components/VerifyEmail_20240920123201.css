@@ -1,0 +1,30 @@
+/* src/components/VerifyEmail.css */
+.verify-email-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.verify-email-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.verify-email-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.resend-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}

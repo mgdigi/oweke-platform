@@ -1,0 +1,326 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F6;
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #FBF7F6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+    text-decoration: underline;
+}
+
+.get-app-button {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 20px 10px;
+    background-color: #FBF7F6;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 5px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span.underline {
+    position: relative;
+    color: #000;
+}
+
+.hero-content h1 span.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #FBF7F6;
+    border-bottom: 3px solid #b969d4;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    border-left: 3px solid #000;
+    padding-left: 8px;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Uniform Image Size for All Images */
+.img-same-size {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    background-color: #12002B;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #b969d4;
+    color: #fff;
+}
+
+/* Envolée Section */
+.envolee-section {
+    background-color: #FBF7F6;
+    padding: 30px 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.envolee-section h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-bottom: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.envolee-section h2 .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #FBF7F6;
+    border-bottom: 3px solid #b969d4;
+}
+
+.envolee-section p {
+    font-size: 14px;
+    color: #6d6d6d;
+    margin-bottom: 10px;
+}
+
+/* Community Events and Other Sections */
+.community-events, .simple-use {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px 15px;
+    margin-bottom: 15px;
+}
+
+.section-image {
+    width: 260px;
+    height: 260px;
+    margin-left: 0;
+    object-fit: cover;
+    display: block;
+}
+
+/* Ensure both images have the same size and alignment */
+.community-events .section-image, .simple-use .section-image {
+    width: 260px;  /* Ensure both are the same width */
+    height: 260px; /* Ensure both are the same height */
+    margin-right: 0; /* Ensures the images don't move or misalign */
+}
+
+/* Footer */
+.footer {
+    background-color: #12002B;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #b969d4;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #17002B;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    width: 240px;
+}
+
+.newsletter-form button {
+    background-color: #FF6C3E;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.newsletter-form button:hover {
+    background-color: #FF5430;
+}

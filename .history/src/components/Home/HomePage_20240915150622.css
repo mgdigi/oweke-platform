@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F6;
+    line-height: 1.6; /* Ensures consistent line spacing */
+    letter-spacing: 1px; /* Increased uniform letter spacing */
+    font-weight: bold; /* Applies stronger boldness */
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #FBF7F6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;  /* Reduced padding */
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 30px; /* Slightly larger */
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;  /* Reduced gap */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: bold; /* Increased font weight */
+    font-size: 16px; /* Slightly larger */
+    letter-spacing: 1px; /* Increased consistent letter spacing */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+    text-decoration: underline;
+}
+
+.get-app-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 25px;  /* Increased padding */
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger */
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px; /* Ensures consistent character spacing */
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 30px 20px;  /* Reduced padding */
+    background-color: #FBF7F6;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 10px;  /* Reduced bottom margin */
+}
+
+.hero-content h1 {
+    font-size: 40px; /* Increased size */
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 10px;  /* Reduced margin between title and text */
+    letter-spacing: 1px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
+}
+
+.hero-content h1 span.underline {
+    position: relative;
+    color: #000;
+}
+
+.hero-content h1 span.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #FBF7F6;
+    border-bottom: 3px solid #b969d4;
+}
+
+.hero-content p {
+    font-size: 20px; /* Slightly larger */
+    color: #4A4A4A;
+    margin-bottom: 15px;  /* Reduced spacing */
+    line-height: 1.6; /* Consistent line height */
+    letter-spacing: 1px; /* Consistent character spacing */
+    font-weight: bold; /* Stronger boldness */
+    border-left: 3px solid #000;
+    padding-left: 10px;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 18px; /* Slightly larger */
+    font-weight: bold;
+    letter-spacing: 1px; /* Consistent character spacing */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;  /* Reduced bottom margin */
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Uniform Image Size for All Images */
+.img-same-size {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;  /* Reduced margin above the icons */
+}
+
+.social-icons a {
+    background-color: #12002B;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #b969d4;
+    color: #fff;
+}
+
+/* Envolée Section */
+.envolee-section {
+    background-color: #FBF7F6;
+    padding: 40px 20px;  /* Reduced padding */
+    margin-bottom: 20px;  /* Reduced bottom margin */
+    border-radius: 12px;
+    text-align: center;
+}
+
+.envolee-section h2 {
+    font-size: 32px; /* Increased size */
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-bottom: 10px;  /* Reduced spacing */
+    letter-spacing: 1px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
+    position: relative;
+    display: inline-block;
+}
+
+.envolee-section h2 .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #FBF7F6;
+    border-bottom: 3px solid #b969d4;
+}
+
+.envolee-section p {
+    font-size: 20px; /* Slightly larger */
+    color: #6d6d6d;
+    margin-bottom: 15px;  /* Reduced bottom margin */
+    letter-spacing: 1px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
+    font-weight: bold; /* Slightly stronger boldness */
+}
+
+/* Community Events and Other Sections */
+.community-events, .simple-use {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 40px 20px;  /* Reduced padding */
+    margin-bottom: 20px;  /* Reduced margin between sections */
+}
+
+.section-image {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer1 {
+    background-color: #000;  /* Set to black */
+    padding: 50px 20px;  /* Reduced padding */
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-section {
+    margin: 0 20px;
+}
+
+.footer-section h4 {
+    font-size: 20px; /* Slightly larger */
+    margin-bottom: 10px;
+    color: #fff;
+    letter-spacing: 1px; /* Consistent character spacing */
+    line-height: 1.6; /* Consistent line height */
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 16px; /* Slightly larger */
+    color: #ccc;
+    letter-spacing: 1px; /* Consistent character spacing */
+    font-weight: bold;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #000;  /* Set to black */
+    padding: 60px 20px;  /* Reduced padding */
+    text-align: center;
+    color: #fff;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 18px; /* Slightly larger */
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    width: 250px;
+    letter-spacing: 1px; /* Consistent character spacing */

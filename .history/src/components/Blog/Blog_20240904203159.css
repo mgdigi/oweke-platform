@@ -1,0 +1,84 @@
+/* General Blog Page Styles */
+.blog-page {
+    font-family: 'Arial', sans-serif;
+    color: #4A4A4A;
+    background-color: #F5F5F5;  /* Light background for the blog page */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Blog Hero Section */
+  .blog-hero-section {
+    background-color: #12002B; /* Dark purple background */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust height as necessary */
+    border-radius: 20px; /* Rounding corners to match your design */
+  }
+  
+  .blog-hero-text {
+    color: #fff; /* Ensure the text is white */
+    font-size: 24px;
+    max-width: 50%;
+    margin-right: 30px;
+  }
+  
+  .blog-hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-hero-image {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  /* Blog Content Section */
+  .blog-content {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for posts */
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .blog-post h2 {
+    font-size: 20px;
+    color: #4A4A4A;
+  }
+  
+  .blog-post p {
+    font-size: 14px;
+    color: #6d6d6d;
+    margin-bottom: 15px;
+  }
+  
+  .blog-post button.cta-button {
+    background-color: #12002B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-post button.cta-button:hover {
+    background-color: #b969d4;
+  }

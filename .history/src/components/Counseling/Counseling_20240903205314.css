@@ -1,0 +1,361 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F6;  /* Background color */
+}
+
+.counseling-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #FBF7F6;  /* Ensure the container background matches */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+    text-decoration: underline;
+}
+
+.get-app-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #12002B;  /* Replace with the exact color code from the image */
+    border-radius: 12px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Main Section */
+.main-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.main-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2E2E; /* Darker color */
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.main-section p {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved line spacing */
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Offer Section */
+.offer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.offer-section img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.offer-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.offer-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-bottom: 15px;
+}
+
+.offer-content p {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved line spacing */
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #FBF7F6;  /* Matching background color */
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.why-choose-us h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E2E2E; /* Darker color */
+    margin-bottom: 15px;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us li {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 10px;
+    line-height: 1.6; /* Improved line spacing */
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #FBF7F6;  /* Matching background color */
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.how-it-works h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E2E2E; /* Darker color */
+    margin-bottom: 15px;
+}
+
+.how-it-works ol {
+    padding-left: 20px;
+}
+
+.how-it-works li {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 10px;
+    line-height: 1.6; /* Improved line spacing */
+}
+
+/* Footer */
+.footer {
+    background-color: #12002B; /* Dark purple background */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0; /* Rounded top corners */
+    margin-top: 40px;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff; /* Ensure text is white */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #b969d4; /* Hover color */
+}
+
+.footer-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 200px; /* Adjust size as needed */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .offer-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .offer-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .offer-section img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .get-app-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+
+    .main-section h2 {
+        font-size: 22px;
+    }
+
+    .main-section p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-section h2 {
+        font-size: 18px;
+    }
+
+    .main-section p {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .footer h4 {
+        font-size: 18px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,238 @@
+/* General Page Styles */
+.events-page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    background-color: #FBF7F6;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+}
+
+.get-app-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #12002B;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 12px;
+    margin-top: 20px; /* Adjust this value to change the space above the image */
+}
+
+/* Events Description */
+.events-description {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.events-description h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+    margin-bottom: 20px;
+}
+
+.events-description p {
+    font-size: 18px;
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    margin-bottom: 40px;
+}
+
+.upcoming-events h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #f5eded;
+    border-radius: 12px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event-card h4 {
+    font-size: 20px;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 10px;
+}
+
+.event-card button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-card button:hover {
+    background-color: #333;
+}
+
+.learn-more-button {
+    margin-top: 10px;
+    background-color: #b969d4;
+    color: #fff;
+}
+
+.learn-more-button:hover {
+    background-color: #a056c2;
+}
+
+/* Footer */
+.footer {
+    background-color: #12002B;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #b969d4;
+}
+
+.footer-image {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .events-list {
+        flex-direction: column;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}

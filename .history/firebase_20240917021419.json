@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "build",  // This points to the build folder created by `npm run build`
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

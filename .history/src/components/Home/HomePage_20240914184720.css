@@ -1,0 +1,90 @@
+.hero-content p {
+    font-size: 14px;
+}
+
+.cta-button {
+    padding: 10px 25px;
+    font-size: 14px;
+}
+
+.footer h4 {
+    font-size: 18px;
+}
+
+.footer p {
+    font-size: 12px;
+}
+}
+
+/* Footer Responsive */
+.footer {
+background-color: #17002B;
+color: white;
+padding: 80px 20px; /* Increased padding for more space */
+margin-top: 0;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.footer-section {
+flex: 1;
+margin-bottom: 20px;
+}
+
+.footer-section h4 {
+font-size: 18px;
+margin-bottom: 20px; /* Increased margin for more space */
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+color: white;
+text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+text-decoration: underline;
+}
+
+.footer-image {
+margin-top: 20px;
+}
+
+/* Social media icons size adjustments */
+.social-icons {
+display: flex;
+justify-content: flex-start;  /* Align to the left */
+gap: 10px;  /* Space between icons */
+margin-top: 20px;
+}
+
+.social-icons a {
+background-color: #12002B; /* Circle background color */
+color: #fff; /* Icon color */
+font-size: 20px; /* Adjust font size */
+width: 40px; /* Width of the circle */
+height: 40px; /* Height of the circle */
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%; /* Makes the icons circular */
+text-decoration: none;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+background-color: #b969d4; /* Hover color for the circle */
+color: #fff; /* Icon color on hover */
+}

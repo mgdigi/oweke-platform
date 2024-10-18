@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.events-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b969d4;
+    text-decoration: underline;
+}
+
+.get-app-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.get-app-button:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #12002B;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Events Description */
+.events-description {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.events-description h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2E2E2E;
+}
+
+.events-description p {
+    font-size: 18px;
+    color: #6d6d6d;
+    line-height: 1.6;
+}
+
+/* Search Filters */
+.search-filters {
+    padding: 30px 0;
+    background-color: #FBF7F6;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.search-filters h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.filter-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-item label {
+    font-size: 16px;
+    color: #2E2E2E;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-item select,
+.filter-item p {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    padding: 30px 0;
+}
+
+.upcoming-events h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.events-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    flex: 1;
+    background-color: #E0B0FF;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+.event-card h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2E2E2E;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #6d6d6d;
+    margin-bottom: 15px;
+}
+
+.event-card .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.event-card .btn:hover {
+    background-color: #333;
+}
+
+/* Advertisement section */
+.advertisement {
+    background-color: #FFC0CB;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.advertisement p {
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+/* Footer */
+.footer {
+    background-color: #12002B;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 40px 40px 0 0;
+    margin-top: 40px;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #b969d4;
+}
+
+/* Footer images */
+.footer-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hero-section, .events-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-image img, .section-image, .event-card img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links ul {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .get-app-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .events-description p, .filter-item select, .filter-item p {
+        font-size: 16px;
+    }
+
+    .cta-button, .event-card .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-description h2 {
+        font-size: 24px;
+    }
+
+    .events-description p, .event-card h4 {
+        font-size: 14px;
+    }
+
+    .cta-button, .event-card .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .footer h4 {
+        font-size: 18px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}

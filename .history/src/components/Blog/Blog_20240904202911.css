@@ -1,0 +1,31 @@
+.blog-hero-section {
+    background-color: #12002B; /* Dark purple background */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center;
+    height: 400px; /* Adjust height as necessary */
+    border-radius: 20px; /* Rounding corners to match your second image */
+  }
+  
+  .blog-hero-section img {
+    max-width: 40%; /* Adjust the image width */
+    height: auto;
+  }
+  
+  .blog-hero-text {
+    color: #fff; /* Ensure the text is white for readability */
+    font-size: 24px;
+    max-width: 50%;
+    margin-right: 30px;
+  }
+  
+  .blog-hero-section .blog-hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-hero-section .blog-hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
