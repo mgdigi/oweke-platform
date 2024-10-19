@@ -2,10 +2,14 @@
 import React from 'react';
 import './HomePage.css'; // You'll create this CSS file for styles
 
+import Header from  '../components/header';
+
+
 const HomePage = () => {
   return (
     <div className="home-container">
       {/* Navigation Bar */}
+
       <nav className="navbar">
         <div className="logo">VIZMEET</div>
         <ul className="nav-links">
@@ -17,6 +21,9 @@ const HomePage = () => {
         </ul>
         <button className="get-app-button">Get App</button>
       </nav>
+
+      <Header />
+
 
       {/* Hero Section */}
       <header className="hero-section">

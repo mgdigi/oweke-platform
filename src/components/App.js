@@ -9,6 +9,9 @@ import EventsPage from './Events/EventsPage';  // Importing EventsPage component
 import Counseling from './Counseling/Counseling'; // Importing Counseling component
 import Blog from './Blog/Blog';  // Importing Blog component
 
+import AboutPage from './About/AboutPage.js';
+
+
 function App() {
   return (
     <Routes> {/* Use Routes here, without wrapping it in Router */}
@@ -16,6 +19,9 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/dashboard" element={<Dashboard />} />
+
+      <Route path="/about" element={<AboutPage />} />
+
       <Route path="/events" element={<EventsPage />} />
       <Route path="/counseling" element={<Counseling />} />  {/* Added route for Counseling */}
       <Route path="/blog" element={<Blog />} />  {/* Added route for Blog */}
