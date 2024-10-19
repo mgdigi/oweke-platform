@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './Blog.css';
 import { FacebookShareButton, TwitterShareButton } from 'react-share';
+
 import StarRatingComponent from 'react-star-rating-component';
 
+import ReactStars from 'react-rating-stars-component';  // Mise à jour
 
 const Blog = () => {
-  // State for blog posts, comments, ratings
+
   const [rating, setRating] = useState(0);
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState('');
@@ -15,8 +17,9 @@ const Blog = () => {
 
   const onStarClick = (nextValue) => {
     setRating(nextValue);
-    // Logic to send rating to backend
+
     console.log('Rated:', nextValue);
+    // Logic to send rating to backend
   };
 
   const handleCommentSubmit = (e) => {
@@ -51,11 +54,17 @@ const Blog = () => {
               <button>Continue Reading</button>
 
               {/* Blog Rating */}
+
               <StarRatingComponent
                 name={`rateBlog${index}`}
                 starCount={5}
                 value={rating}
                 onStarClick={onStarClick}
+                count={5}
+                onChange={onStarClick}
+                size={24}
+                activeColor="#ffd700"
+
               />
 
               {/* Share Buttons */}
@@ -122,10 +131,10 @@ const Blog = () => {
           </div>
         </div>
         <p>Copyright © 2023 Oweke</p>
-        
       </footer>
     </div>
   );
 };
 
 export default Blog;
+

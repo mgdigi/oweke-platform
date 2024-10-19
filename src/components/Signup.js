@@ -37,7 +37,10 @@ const Signup = () => {
       </div>
       <div className='right'>
         <div className='title row align-items-center'>
+
           <img src={OwekeLogo} alt="Image" />
+
+          <img src={OwekeLogo} alt="logo" />
           <h1>OWEKE</h1>
         </div>
         <form>
@@ -53,14 +56,22 @@ const Signup = () => {
           <div className="terms">
             <input type="checkbox" id="terms" required />
             <label htmlFor="terms">
+
               J'accepte les <a href='#' className="link-button" onClick={() => console.log('Handle terms click')}>Termes et Conditions</a>
+
+              J'accepte les <button className="link-button" onClick={() => console.log('Handle terms click')}>Termes et Conditions</button>
+
             </label>
           </div>
 
           <div className='column align-items-center'>
             <button type="submit" className="signup-btn">Sign up</button>
             <p>Or</p>
+
             <button onClick={handleGoogleSignup} className="google-signup-btn"><img src={GoogleLogo} alt="Image" />Sign up with Google</button>
+
+            <button onClick={handleGoogleSignup} className="google-signup-btn"><img src={GoogleLogo} alt="google" />Sign up with Google</button>
+
           </div>
         </form>
       </div>
