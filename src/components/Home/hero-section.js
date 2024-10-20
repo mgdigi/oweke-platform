@@ -15,7 +15,7 @@ const HeroSection = () => {
                     </video>
                         <div className="container">
                                 <div className="row">
-                                    <div className="col-lg-6 offset-lg-6">
+                                    <div className="col-lg-12 offset-lg-12">
                                          <div className="hi-text">
                                             <span>Participez à des rencontres inoubliables  </span>
                                             <h1>Trouvez  votre <strong> partenaire idéal</strong></h1>

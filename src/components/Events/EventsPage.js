@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './EventsPage.css';
-import EventHeroImage from '../../assets/event-hero.png';
-import EventCardImage from '../../assets/event-card.png';
+import EventCardImage from '../../assets/event-card.jpg';
+import EventCard2Image from '../../assets/event-card2.jpg';
+
+import Header from '../header';
+import Footer from '../footer';
 
 const eventsData = [
   {
@@ -26,7 +29,7 @@ const eventsData = [
     category: "Femme",
     genderPreference: "Femmes uniquement",
     price: 5,
-    image: EventCardImage,
+    image: EventCard2Image,
   },
 ];
 
@@ -116,23 +119,21 @@ const EventsPage = () => {
   };
 
   return (
-    <div className="events-page">
-      <nav className="navbar">
-        <h1 className="logo-text">OWEKE</h1>
-        <ul className="nav-links">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/events">Événements Communautaires</a></li>
-          <li><a href="/counseling">Conseiller Love</a></li>
-          <li><a href="/blog">Blog</a></li>
-        </ul>
-        <button className="get-app-button">Get App</button>
-      </nav>
+    <div>
+      <Header />
 
-      <header className="hero-section">
-        <div className="hero-image">
-          <img src={EventHeroImage} alt="Événements" />
+      <section class="breadcrumb-section set-bg" data-setbg="img/event-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h2>Nos Evenements </h2>
+                  
+                    </div>
+                </div>
+            </div>
         </div>
-      </header>
+    </section>
 
       <div className="content-container">
         <aside className="sidebar">
@@ -236,28 +237,7 @@ const EventsPage = () => {
         </main>
       </div>
 
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-links">
-            <ul>
-              <li><a href="/about">À propos</a></li>
-              <li><a href="/live-dating">Live Dating</a></li>
-              <li><a href="/events">Événements Communautaires</a></li>
-              <li><a href="/blog">Blog</a></li>
-            </ul>
-            <ul>
-              <li><a href="/signin">Se connecter</a></li>
-              <li><a href="/partners">Espace Partenaires</a></li>
-              <li><a href="/signup">S’inscrire</a></li>
-            </ul>
-            <ul>
-              <li><a href="/privacy">Politique de confidentialité</a></li>
-              <li><a href="/terms">CGV</a></li>
-            </ul>
-          </div>
-          <p>Copyright © 2023 Oweke</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

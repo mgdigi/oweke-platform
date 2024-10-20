@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-import './HomePage.css';
 
 
 // Importing Firebase methods
@@ -88,7 +87,7 @@ const HomePage = () => {
 
       <EventSection />
 
-      <section className="banner-section set-bg" data-setbg="img/banner-bg.jpeg">
+      <section className="banner-section set-bg" data-setbg="img/banner-bg.jpg">
                 <div className="container">
                     <div cla
                     ssName="row">
@@ -129,7 +128,7 @@ const HomePage = () => {
                                     <li>Assistance expert</li>
                                 </ul>
                                 <a href="#" className="primary-btn pricing-btn">S'inscrire</a>
-                                <a href="#" className="thumb-icon"><i className="fa fa-picture-o" /></a>
+                            
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-8">
@@ -146,7 +145,7 @@ const HomePage = () => {
                                     <li>Assistance expert</li>
                                 </ul>
                                 <a href="#" className="primary-btn pricing-btn">S'inscrire</a>
-                                <a href="#" className="thumb-icon"><i className="fa fa-picture-o" /></a>
+                               
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-8">
@@ -163,7 +162,7 @@ const HomePage = () => {
                                     <li>Assistance expert</li>
                                 </ul>
                                 <a href="#" className="primary-btn pricing-btn">S'inscrire</a>
-                                <a href="#" className="thumb-icon"><i className="fa fa-picture-o" /></a>
+                               
                             </div>
                         </div>
                     </div>

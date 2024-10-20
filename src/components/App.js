@@ -10,6 +10,7 @@ import Counseling from './Counseling/Counseling'; // Importing Counseling compon
 import Blog from './Blog/Blog';  // Importing Blog component
 
 import AboutPage from './About/AboutPage.js';
+import ContactPage from './Contact/ContactPage.js';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path="/about" element={<AboutPage />} />
 
       <Route path="/events" element={<EventsPage />} />
+      <Route path='/contact' element={<ContactPage />} />
       <Route path="/counseling" element={<Counseling />} />  {/* Added route for Counseling */}
       <Route path="/blog" element={<Blog />} />  {/* Added route for Blog */}
     </Routes>

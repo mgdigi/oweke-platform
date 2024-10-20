@@ -488,32 +488,30 @@ ol {
   Hero Section
 -----------------------*/
 
-.hs-slider.owl-carousel .owl-item.active .hs-item .hi-text span {
-	position: relative;
-	top: 0;
-	-webkit-transition: all 0.2s ease 0.2s;
-	-o-transition: all 0.2s ease 0.2s;
-	transition: all 0.2s ease 0.2s;
-	opacity: 1;
+.hs-slider.owl-carousel .owl-item.active .hs-item .hi-text {
+    display: flex;  /* Active le flexbox */
+    flex-direction: column;  /* Aligne les éléments verticalement */
+    align-items: center;  /* Centre les éléments horizontalement */
+    justify-content: center;  /* Centre les éléments verticalement */
+    text-align: center;  /* Centre le texte dans les éléments */
+    position: relative;
+    top: 0px;  /* Ajuste cette valeur pour remonter le texte */
+    transform: translateY(-30px);  /* Ajuste cette valeur pour remonter tout le bloc */
 }
 
-.hs-slider.owl-carousel .owl-item.active .hs-item .hi-text h1 {
-	position: relative;
-	top: 0;
-	-webkit-transition: all 0.4s ease 0.4s;
-	-o-transition: all 0.4s ease 0.4s;
-	transition: all 0.4s ease 0.4s;
-	opacity: 1;
-}
-
+.hs-slider.owl-carousel .owl-item.active .hs-item .hi-text span,
+.hs-slider.owl-carousel .owl-item.active .hs-item .hi-text h1,
 .hs-slider.owl-carousel .owl-item.active .hs-item .hi-text .primary-btn {
-	position: relative;
-	top: 0;
-	-webkit-transition: all 0.6s ease 0.6s;
-	-o-transition: all 0.6s ease 0.6s;
-	transition: all 0.6s ease 0.6s;
-	opacity: 1;
+    position: relative;
+    top: 0px; 
+    -webkit-transition: all 0.2s ease 0.2s;
+    -o-transition: all 0.2s ease 0.2s;
+    transition: all 0.2s ease 0.2s;
+    opacity: 1;
+    text-align: center;  /* Centre les textes individuellement */
 }
+
+
 
 .hs-slider.owl-carousel .owl-nav button {
 	height: 46px;
@@ -759,7 +757,7 @@ ol {
 
 .bs-text .bt-tips {
 	font-size: 20px;
-	color: #c4c4c4;
+	color: #ffffff;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 45px;
