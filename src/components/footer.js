@@ -72,7 +72,7 @@ const footer = () => {
         <div className="col-lg-12 text-center">
           <div className="copyright-text">
             <p>
-              Copyright © All rights reserved | MGDIGI<i className="fa fa-heart" aria-hidden="true" /> by <a href="https://mgdigi.github.io/mgdigi/" target="_blank">MGDIGI</a>
+              Copyright © All rights reserved | OWEKE<i className="fa fa-heart" aria-hidden="true" />
             </p>
           </div>
         </div>

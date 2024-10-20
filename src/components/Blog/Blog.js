@@ -4,6 +4,9 @@ import { FacebookShareButton, TwitterShareButton } from 'react-share';
 
 import StarRatingComponent from 'react-star-rating-component';
 
+import Header from '../header';
+import Footer from '../footer';
+
 import ReactStars from 'react-rating-stars-component';  // Mise à jour
 
 const Blog = () => {
@@ -29,17 +32,24 @@ const Blog = () => {
   };
 
   return (
-    <div className="blog-container">
-      {/* Blog Hero Section */}
-      <section className="blog-hero-section">
-        <div className="blog-hero-content">
-          <h1>Explore Our Blog</h1>
-          <p>Discover the latest insights, tips, and stories on love, relationships, and dating.</p>
+    <div>
+
+      <Header />
+
+      <section class="breadcrumb-section set-bg" data-setbg="img/blog-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h2>Latest Blog Posts </h2>
+                  
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="blog-hero-image">
-          <img src={require('../../assets/bloghero.png').default} alt="Blog Hero" />
-        </div>
-      </section>
+    </section>
+
+    
 
       {/* Blog Cards */}
       <section className="blog-cards-section">
@@ -47,7 +57,7 @@ const Blog = () => {
         <div className="blog-cards">
           {[...Array(6)].map((_, index) => (
             <div className="blog-card" key={index}>
-              <img src={require('../../assets/blog-image.png').default} alt="Blog Post" />
+              <img src="img/blog-image.jpg" alt="Blog Post" />
               <h3>Que pensez-vous des rencontres amoureuses sur internet ?</h3>
               <p>5 avril 2023 - Blog, Rencontres amoureuses, Séduction, Véritable amour</p>
               <p>Ma rencontre avec mon âme sœur sur Internet...</p>
@@ -59,7 +69,7 @@ const Blog = () => {
                 name={`rateBlog${index}`}
                 starCount={5}
                 value={rating}
-                onStarClick={onStarClick}
+               
                 count={5}
                 onChange={onStarClick}
                 size={24}
@@ -102,36 +112,7 @@ const Blog = () => {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h4>Community</h4>
-            <ul>
-              <li><a href="/about">À propos</a></li>
-              <li><a href="/live-dating">Live Dating</a></li>
-              <li><a href="/events">Community Events</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Collaborateurs</h4>
-            <ul>
-              <li><a href="/signin">Se connecter</a></li>
-              <li><a href="/partners">Espace Partenaires</a></li>
-              <li><a href="/signup">S’inscrire</a></li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Politique de confidentialité & CGV</h4>
-            <ul>
-              <li><a href="/privacy">Politique de confidentialité</a></li>
-              <li><a href="/terms">CGV</a></li>
-            </ul>
-          </div>
-        </div>
-        <p>Copyright © 2023 Oweke</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
