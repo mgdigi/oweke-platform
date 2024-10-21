@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
 
 
 const EventSection = () => {
+
+    useEffect(() => {
+        if (window.jQuery) {
+            // Remplace l'attribut data-setbg par l'image de fond
+            window.jQuery(".set-bg").each(function () {
+                var bg = window.jQuery(this).attr("data-setbg");
+                window.jQuery(this).css("background-image", "url(" + bg + ")");
+            });
+        }
+    }, []);
  // Le tableau vide assure que l'effet ne s'exécute qu'une fois
 
     return (

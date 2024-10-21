@@ -23,7 +23,7 @@ function App() {
 
       <Route path="/about" element={<AboutPage />} />
 
-      <Route path="/events" element={<EventsPage />} />
+      <Route path="/events" element={<EventsPage />} /> 
       <Route path='/contact' element={<ContactPage />} />
       <Route path="/counseling" element={<Counseling />} />  {/* Added route for Counseling */}
       <Route path="/blog" element={<Blog />} />  {/* Added route for Blog */}
