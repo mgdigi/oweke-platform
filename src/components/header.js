@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-const header = () => { 
+const Header = () => { 
+
+  useEffect(() => {
+    // Vérifie si jQuery est bien chargé
+    if (window.jQuery) {
+        // Logique du menu mobile
+        window.jQuery('.canvas-open').on('click', function () {
+            window.jQuery('.offcanvas-menu-wrapper').addClass('show-offcanvas-menu-wrapper');
+            window.jQuery('.offcanvas-menu-overlay').addClass('active');
+            window.jQuery('.mobile-menu').css('display', 'block');
+        });
+
+        window.jQuery('.canvas-close, .offcanvas-menu-overlay').on('click', function () {
+            window.jQuery('.offcanvas-menu-wrapper').removeClass('show-offcanvas-menu-wrapper');
+            window.jQuery('.offcanvas-menu-overlay').removeClass('active');
+            window.jQuery('.mobile-menu').css('display', 'none');
+        });
+    }
+}, []);
+
     return (
         <div>
 
@@ -81,4 +100,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+import $ from 'jquery';
 
 
 // Importing Firebase methods
@@ -19,6 +20,8 @@ const AboutPage = () => {
   const [emailVerified, setEmailVerified] = useState(false);  
   const navigate = useNavigate();  
 
+  
+
   useEffect(() => {
     // Listen for authentication state changes
     const unsubscribe = onAuthStateChange((authUser) => {
@@ -34,6 +37,23 @@ const AboutPage = () => {
   }, []);
 
   useEffect(() => {
+    if (window.jQuery) {
+        window.jQuery(".ts_slider").owlCarousel({
+            loop: true,
+            margin: 0,
+            items: 1,
+            dots: false,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            smartSpeed: 1200,
+            autoHeight: false,
+            autoplay: true
+        });
+    }
+}, []);
+
+
+  useEffect(() => {
     // Polling to check for email verification every 5 seconds
     const checkEmailVerification = () => {
       if (user && !emailVerified) {
@@ -47,6 +67,18 @@ const AboutPage = () => {
           .catch((error) => console.error('Error reloading user:', error));
       }
     };
+
+    function setBackgroundImages() {
+      $('.set-bg').each(function() {
+        var bg = $(this).data('setbg');
+        if (bg) {
+          $(this).css('background-image', 'url(' + bg + ')');
+        }
+      });
+    }
+
+    // Appeler cette fonction après le rendu de la page
+    setBackgroundImages();
 
     const interval = setInterval(checkEmailVerification, 5000);  
 

@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './EventsPage.css';
 import EventCardImage from '../../assets/event-card.jpg';
 import EventCard2Image from '../../assets/event-card2.jpg';
+
+import $ from 'jquery';
 
 import Header from '../header';
 import Footer from '../footer';
@@ -34,6 +36,21 @@ const eventsData = [
 ];
 
 const EventsPage = () => {
+  useEffect(() => {
+    // Fonction pour définir les images de fond
+    function setBackgroundImages() {
+      $('.set-bg').each(function() {
+        var bg = $(this).data('setbg');
+        if (bg) {
+          $(this).css('background-image', 'url(' + bg + ')');
+        }
+      });
+    }
+
+    // Appeler cette fonction après le rendu de la page
+    setBackgroundImages();
+  }, []);
+
   const [filteredEvents, setFilteredEvents] = useState(eventsData);
   const [selectedRegion, setSelectedRegion] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");

@@ -595,7 +595,16 @@ ol {
 	height: auto; /* Pour garder le rapport d'aspect */
 	z-index: 1; /* Mettre la vidéo derrière le texte */
 	transform: translate(-50%, -50%); /* Centrer la vidéo */
+	pointer-events: none;
   }
+  @media (max-width: 768px) {
+    .hero-video {
+        min-width: 100%; /* Assure que la vidéo couvre la largeur de l'écran */
+        min-height: 100%; /* Assure que la vidéo couvre la hauteur de l'écran */
+        object-fit: cover; /* Important pour maintenir un bon ratio d'aspect */
+    }
+}
+
   
   .hs-item .hi-text {
 	position: relative; /* Pour que le texte soit au-dessus de la vidéo */

@@ -355,6 +355,10 @@ body {
     .cta-button {
         padding: 10px 25px;
         font-size: 14px;
+        width: 100%; /* Rendre le bouton responsive en occupant toute la largeur du conteneur */
+        max-width: 300px; /* Limiter la largeur maximale du bouton */
+        border-radius: 20px; /* Diminuer le radius pour s'adapter au design mobile */
+        margin-bottom: 30px;
     }
 
     .footer h4 {

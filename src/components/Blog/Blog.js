@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Blog.css';
 import { FacebookShareButton, TwitterShareButton } from 'react-share';
+
+import $ from 'jquery';
 
 import StarRatingComponent from 'react-star-rating-component';
 
@@ -10,6 +12,21 @@ import Footer from '../footer';
 import ReactStars from 'react-rating-stars-component';  // Mise à jour
 
 const Blog = () => {
+
+  useEffect(() => {
+    // Fonction pour définir les images de fond
+    function setBackgroundImages() {
+      $('.set-bg').each(function() {
+        var bg = $(this).data('setbg');
+        if (bg) {
+          $(this).css('background-image', 'url(' + bg + ')');
+        }
+      });
+    }
+
+    // Appeler cette fonction après le rendu de la page
+    setBackgroundImages();
+  }, []);
 
   const [rating, setRating] = useState(0);
   const [comments, setComments] = useState([]);

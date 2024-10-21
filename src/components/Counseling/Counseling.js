@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Counseling.css';  // Assuming you will create this CSS file
+
+import $ from 'jquery';
 
 import CounselingImage from '../../assets/counseling-image.png';  // Replace with the actual path to your image
 import OfferImage from '../../assets/offer-image.jpg';  // Replace with the actual path to your image
@@ -10,6 +12,20 @@ import Footer from '../footer'
 
 
 const Counseling = () => {
+  useEffect(() => {
+    // Fonction pour définir les images de fond
+    function setBackgroundImages() {
+      $('.set-bg').each(function() {
+        var bg = $(this).data('setbg');
+        if (bg) {
+          $(this).css('background-image', 'url(' + bg + ')');
+        }
+      });
+    }
+
+    // Appeler cette fonction après le rendu de la page
+    setBackgroundImages();
+  }, []);
   return (
     <div>
       {/* Navigation Bar */}

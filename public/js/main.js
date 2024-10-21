@@ -22,10 +22,23 @@
     /*------------------
         Background Set
     --------------------*/
-    $('.set-bg').each(function () {
-        var bg = $(this).data('setbg');
-        $(this).css('background-image', 'url(' + bg + ')');
+    $(document).ready(function() {
+        // Fonction pour définir les images de fond
+        function setBackgroundImages() {
+            $('.set-bg').each(function() {
+                var bg = $(this).data('setbg');
+                if (bg) {
+                    $(this).css('background-image', 'url(' + bg + ')');
+                }
+            });
+        }
+    
+        // Appeler cette fonction après le chargement de la page
+        setBackgroundImages();
     });
+    
+    
+    
 
     //Canvas Menu
     $(document).ready(function() {

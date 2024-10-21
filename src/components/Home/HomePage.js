@@ -40,6 +40,8 @@ const HomePage = () => {
     return () => unsubscribe();
   }, []);
 
+  
+
   useEffect(() => {
     // Polling to check for email verification every 5 seconds
     const checkEmailVerification = () => {
